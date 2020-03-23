@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  outline: px solid red;
+}
+
+#sidebar {
+  width: 25vw;
+  height: 100vh;
+  background: #fffbf5;
+  color: #026540;
+  position: fixed;
+  padding: 30px;
+  text-align: center;
+  display: block;
+  text-align: left;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+#nav {
+  position: fixed;
+  bottom: 0;
+  margin: 1em 0 2em 0;
+  width: calc(25vw - 60px);
+}
+
+#nav div {
+ line-height: 1.5em;
+ cursor: pointer;
+  width: 100%;
+}
+
+#nav div:hover {
+  text-decoration: underline;
+    color: 2px solid #026540;
+}
+
+#faqs, #about, #disclaimer{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
+}
+
+
+
+body {
+  background: #026540;
+  color: #fffbf5;
+  
+}
+
+.wrapper {
+  width: 75vw;
+  margin-left: 25vw;
+  padding: 1em;
+  padding-top: 80px;
+  display: flex;  
+  flex-flow: row wrap;
+}
+
+.wrapper > * {
+  padding: 10px;
+  margin: 10px;
+  flex: 1 100%;
+  text-align: left;
+}
+
+.wrapper > * > * {
+  width: 100%;
+}
+
+#intro{
+  order: 1;
+  font-size: 1.5em;
+  font-weight: normal;
+  background: ;
+}
+
+#intro p{
+  padding-bottom: 1em;
+}
+
+aside{
+  font-size: 1.5em;
+}
+
+aside > a {
+  color: ;
+  text-decoration: ;
+}
+
+#picture{
+  order: 2;
+}
+
+#josef {
+  order: 3;
+  padding: 20px 20vw;
+  overflow:hidden;
+  height:100%;
+  width:100%;
+  min-height:500px;
+  min-width:300px;
+}
+
+@media all and (min-width: 600px) {
+  aside, .aside, #intro, #picture { flex: 40%; }
+}
+
+@media all and (min-width: 800px) {
+}
