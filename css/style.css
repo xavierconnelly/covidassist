@@ -1,8 +1,36 @@
+/*
+  green: #026540;
+  cream: #fffbf5;
+*/
+
 * {
   margin: 0;
   box-sizing: border-box;
   outline: px solid red;
+  scroll-behavior: smooth;
 }
+
+h1 {
+  font-size: 1.5em;
+}
+
+body {
+  background: #026540;
+  color: #fffbf5;
+}
+
+aside {
+  font-size: 1.5em;
+}
+
+aside > a {
+  color: ;
+  text-decoration: ;
+}
+
+
+/* /////////////// */
+/* Side Navigation */
 
 #sidebar {
   width: 25vw;
@@ -16,10 +44,6 @@
   text-align: left;
 }
 
-h1 {
-  font-size: 1.5em;
-}
-
 #nav {
   position: fixed;
   bottom: 0;
@@ -28,37 +52,54 @@ h1 {
 }
 
 #nav div {
- line-height: 1.5em;
- cursor: pointer;
+  line-height: 1.5em;
+  cursor: pointer;
   width: 100%;
 }
 
 #nav div:hover {
   text-decoration: underline;
-    color: 2px solid #026540;
+  color: 2px solid #026540;
 }
 
-#faqs, #about, #disclaimer{
+
+/* //////////////////////// */
+/* Side Navigation Expanded */
+
+.sidenav {
   height: 100%;
   width: 0;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #fffbf5;
+  color: #026540;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
-  text-align:center;
+  text-align: left;
 }
 
-
-
-body {
-  background: #026540;
-  color: #fffbf5;
-  
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: 0.3s;
 }
+
+.sidenav .closebtn:hover {
+  color: red;
+}
+
+/* //// */
+/* Body */
 
 .wrapper {
   width: 75vw;
@@ -80,29 +121,23 @@ body {
   width: 100%;
 }
 
-#intro{
+#intro {
   order: 1;
   font-size: 1.5em;
   font-weight: normal;
   background: ;
 }
 
-#intro p{
+#intro p {
   padding-bottom: 1em;
 }
 
-aside{
-  font-size: 1.5em;
-}
-
-aside > a {
-  color: ;
-  text-decoration: ;
-}
-
-#picture{
+#picture {
   order: 2;
 }
+
+/* /////// */
+/* Chatbot */
 
 #josef {
   order: 3;
