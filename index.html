@@ -16,41 +16,61 @@
       <script src="/js/scripts.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     
-</head>
+  </head>
 
-<body>
-  
-  <header id="sidebar">
-      <h1 id="title"> What Can I Get? </h1>
-      <div id="nav">    
-        <div id="faqs"onclick="openFaqs()"> FAQs </div>
-        <div id="about" onclick="openAbout()"> About </div>
-        <div id="disclaimer" onclick="openDisclaimer()"> Disclaimer </div>
-      </div>
-  </header>
-  
-  
-<div class="wrapper">
-  
-  <aside id="intro">
-   <p>In response to the COVID-19 pandemic, the government has announced sweeping changes to the welfare system. </p>
-<p>We hope to help you understand what benefits you will and won't receive and what you need to do.</p>
-    <p>
-    <a href="#josef">
-      Get Started
-     </a>
-    </p>
-  </aside>
-  
-  <aside id="picture">
-     <img src="https://res-5.cloudinary.com/the-university-of-melbourne/image/upload/s--fU4L_P1q--/c_fill,f_auto,h_1200,q_75,w_1800/v1/pursuit-uploads/820/407/3b1/8204073b12eeb46524f636b9495c8ad597e0279f391aae36a3894a4e3b71.jpg">
-  </aside>
-  
-  <aside class="aside" id="josef">
-      <iframe src="https://chat.joseflegal.com/okGJQ62A" frameborder="0" style="overflow:hidden;height:100%;width:100%;min-height:500px;min-width:300px;" height="100%" width="100%"></iframe>
+  <body>
     
-  </aside>
-  
-</div>
-</body>
+    <div id="faqs" class="sidenav" onclick="openFaqs()"> 
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times </a>
+      <div>
+        FAQs
+      </div>
+    </div>
+
+     <div id="about" class="sidenav" onclick="openAbout()">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times </a>
+      <div>
+        About
+      </div>
+     </div>
+
+    <div id="disclaimer" class="sidenav" onclick="openDisclaimer()">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times </a>
+      <div>
+        About
+      </div>
+    </div>
+    
+    <header id="sidebar">
+        <h1 id="title"> What Can I Get? </h1>
+        <div id="nav">    
+          <div id="faqs" onclick="openFaqs()"> FAQs </div>
+          <div id="about" onclick="openAbout()"> About </div>
+          <div id="disclaimer" onclick="openDisclaimer()"> Disclaimer </div>
+        </div>
+    </header>
+    
+    <div class="wrapper">
+      <aside id="intro">
+        <p>
+          In response to the COVID-19 pandemic, the government has announced sweeping changes to the welfare system.
+        </p>
+        <p>
+          We hope to help you understand what benefits you will and won't receive and what you need to do.
+        </p>
+        <a href="#josef">
+          Get Started
+        </a>
+      </aside>
+
+      <aside id="picture">
+        <img src="https://res-5.cloudinary.com/the-university-of-melbourne/image/upload/s--fU4L_P1q--/c_fill,f_auto,h_1200,q_75,w_1800/v1/pursuit-uploads/820/407/3b1/8204073b12eeb46524f636b9495c8ad597e0279f391aae36a3894a4e3b71.jpg">
+      </aside>
+
+      <aside class="aside" id="josef">
+        <iframe src="https://chat.joseflegal.com/okGJQ62A" frameborder="0" style="overflow:hidden;height:100%;width:100%;min-height:500px;min-width:300px;" height="100%" width="100%"></iframe>
+      </aside>
+    </div>
+
+  </body>
 </html>
