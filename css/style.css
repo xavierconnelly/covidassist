@@ -72,6 +72,16 @@ header h1 {
     transition: 1s;
 }
 
+@media all and (max-width: 900px) {
+  #menu {
+      width: 100vw;
+      margin: auto;
+      padding-top: 160px;
+      border-left: unset;
+      text-align: center;
+  }
+}
+
 .nav-header {
   padding: 6px 0;
 }
@@ -189,11 +199,10 @@ body {
   }
 }
 @media all and (max-width: 600px) {
-#josef {
-  display: block;
-  height: calc(100vh - 40px);
-}
-  #josef iframe {
-  padding: 60px 20px 60px 20px;
-}
+  #josef {
+    height: calc(100vh - 40px);
+  }
+    #josef iframe {
+    padding: 60px 20px 60px 20px;
+  }
 }
