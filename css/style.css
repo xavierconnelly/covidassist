@@ -28,6 +28,10 @@ aside > a {
   text-decoration: ;
 }
 
+p {
+  padding-bottom: 1em;
+}
+
 
 /* /////////////// */
 /* Side Navigation */
@@ -112,7 +116,7 @@ aside > a {
 }
 
 .nav-body {
-
+  width: 40vw;
 }
 
 #accordian {
