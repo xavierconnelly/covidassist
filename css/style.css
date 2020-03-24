@@ -189,7 +189,11 @@ body {
   }
 }
 @media all and (max-width: 600px) {
+#josef {
+  display: block;
+  height: calc(100vh - 40px);
+}
   #josef iframe {
-  padding: 60px 15px 30px 15px;
+  padding: 60px 20px 60px 20px;
 }
 }
