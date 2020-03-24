@@ -188,6 +188,8 @@ body {
     flex: 40%;
   }
 }
-
-@media all and (min-width: 800px) {
+@media all and (max-width: 600px) {
+  #josef iframe {
+  padding: 60px 15px 30px 15px;
+}
 }
