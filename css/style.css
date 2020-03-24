@@ -1,146 +1,124 @@
-/*
-  green: #026540;
-  cream: #fffbf5;
-*/
+/* cream #f9eedc */
+/* white #fffbf5 */
+/* green #026540 */
 
 * {
   margin: 0;
   box-sizing: border-box;
-  outline: px solid red;
-  scroll-behavior: smooth;
 }
 
-h1 {
-  font-size: 1.5em;
-}
-
-body {
+header {
+  width: 100vw;
   background: #026540;
-  color: #fffbf5;
-}
-
-aside {
-  font-size: 1.5em;
-}
-
-aside > a {
-  color: ;
-  text-decoration: ;
-}
-
-p {
-  padding-bottom: 1em;
-}
-
-
-/* /////////////// */
-/* Side Navigation */
-
-#sidebar {
-  width: 25vw;
-  height: 100vh;
-  background: #fffbf5;
-  color: #026540;
+  color: #f9eedc;
   position: fixed;
-  padding: 30px;
-  text-align: center;
-  display: block;
+  z-index: 99;
+  border-bottom: 2px solid #f9eedc;
+}
+
+header h1 {
+  font-size: 35px;
+  display: inline-block;
   text-align: left;
-  z-index: 3;
-  border-right: 2px solid;
+  margin: 20px
 }
 
-#nav {
-  position: fixed;
-  bottom: 0;
-  margin: 1em 0 2em 0;
-  width: calc(25vw - 60px);
-}
 
-#nav div {
-  line-height: 1.5em;
+/* Hamburger */
+
+.container {
+  display: inline-block;
   cursor: pointer;
-  width: 100%;
-}
-
-#nav div:hover {
-  text-decoration: underline;
-  color: 2px solid #026540;
-}
-
-
-/* //////////////////////// */
-/* Side Navigation Expanded */
-
-.sidenav {
-  height: 100%;
-  width: 0;
   position: fixed;
-  z-index: 1;
+  right: 0;
   top: 0;
-  left: 0;
-  background-color: #fffbf5;
-  color: #026540;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-  text-align: left;
+  margin: 20px;
 }
 
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  color: inherit;
-  display: block;
-  transition: 0.3s;
+.hamburger1, .hamburger2, .hamburger3 {
+  width: 35px;
+  height: 5px;
+  background-color: #f9eedc;
+  margin: 6px 0;
+  transition: 0.4s;
 }
 
-.sidenav .closebtn:hover {
-  color: red;
+.change .hamburger1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-.nav-whole {
-  margin-left: 25vw;
+.change .hamburger2 {opacity: 0;}
+
+.change .hamburger3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+#menu {
+    position: fixed;
+    z-index: 50;
+    height: 100vh;
+    background: #fffbf5;
+    color: #026540;
+    left: 100vw;
+    width: 50vw;
+    margin-top: 80px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-left: 2px solid;
+    transition: 1s;
 }
 
 .nav-header {
+  padding: 6px 0;
+}
+
+.nav-header:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#faqs, #about, #disclaimer {
+    left: 100vw;
+    background: inherit;
+    color: inherit;
+    min-height: 100vh;
+    padding: 100px 20px 20px 20px;
+    position: fixed;
+    width: 50vw;
+    z-index: 5;
+    transition: 1s;
+}
+
+.nav-title {
   font-size: 1.5em;
+  padding-bottom: 1em;
 }
 
 .nav-body {
-  width: 40vw;
+  width: 80%;
 }
 
-.accordian {
-  width: 40vw;
+body {
+  background: #f9eedc;
+  color: #026540;
 }
-
-/* //// */
-/* Body */
 
 .wrapper {
-  width: ;
-  margin-left: 25vw;
-  padding: 1em;
+  padding: ;
   padding-top: 80px;
   display: flex;  
   flex-flow: row wrap;
 }
 
 .wrapper > * {
-  padding: 10px;
-  margin: 10px;
   flex: 1 100%;
   text-align: left;
 }
 
 .wrapper > * > * {
-  width: 100%;
+  width: ;
 }
 
 #intro {
@@ -148,35 +126,57 @@ p {
   font-size: 1.5em;
   font-weight: normal;
   background: ;
+  padding: 10px;
+  margin: 10px;
+  width: 50vw;
 }
 
 #intro p {
   padding-bottom: 1em;
+  width: 450px;
 }
 
-#intro a {
-  color: inherit;
+#view {
+  order: 3;
+  cursor: pointer;
+  background: #026540 ;
+  color: #f9eedc ; 
+  text-align: center;
+ /* margin: auto; */
+  border-radius: 50px;
+  width: 450px;
 }
 
-#picture {
-  order: 2;
+#view div {
 }
 
-/* /////// */
-/* Chatbot */
+/*
+#josef {
+  display: none;
+  order: 3;
+  padding: 100px 40px 60px 40px;
+  background: white;
+  height: calc(100vh - 160px);
+  margin: auto;
+}
+*/
 
 #josef {
+  display: none;
   order: 3;
-  padding: 20px 20vw;
-  overflow:hidden;
-  height:100%;
-  width:100%;
-  min-height:500px;
-  min-width:300px;
+  background: #026540;
+  height: calc(100vh - 80px);
 }
 
-@media all and (min-width: 600px) {
-  aside, .aside, #intro, #picture { flex: 40%; }
+
+#josef iframe {
+  height: ;
+  padding: 100px 40px 60px 40px;
+}
+  
+
+@media all and (min-width: 500px) {
+  #intro, #view, #josef { flex: 40%; }
 }
 
 @media all and (min-width: 800px) {
