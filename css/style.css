@@ -146,13 +146,41 @@ body {
   width: 80%;
 }
 
-.accordian {
-  display: none;
+/* ////////////////////////// */
+/* Frequently Asked Questions */
+/* ////////////////////////// */
+
+.accordion {
+  background-color: #f9eedc;
+  color: #026540;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1em;
+  transition: 0.4s;
 }
+
+.active,
+.accordion:hover {
+  background-color: #026540;
+  color: #f9eedc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: #f9eedc;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
 
 /* //////////// */
 /* Main Content */
-/* //////////./ */
+/* //////////// */
 
 .wrapper {
   padding: ;
