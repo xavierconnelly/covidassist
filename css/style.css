@@ -42,6 +42,8 @@ aside > a {
   text-align: center;
   display: block;
   text-align: left;
+  z-index: 3;
+  border-right: 2px solid;
 }
 
 #nav {
