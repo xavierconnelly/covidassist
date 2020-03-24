@@ -1,26 +1,37 @@
+function openJosef() {
+            document.getElementById("view").style.display = "none";
+            document.getElementById("josef").style.display = "block";
+        }
+
+function openMenu(x) {
+  x.classList.toggle("change");
+  
+  var y = document.getElementById("menu");
+  if (y.style.left === "50vw") {
+    y.style.left = "100vw";
+    document.getElementById("faqs").style.left = "100vw";
+    document.getElementById("about").style.left = "100vw";
+    document.getElementById("disclaimer").style.left = "100vw";
+  } else {
+    y.style.left = "50vw";
+  }
+}
+
+
 function openFaqs() {
-  document.getElementById("faqs").style.width = "100%";
-}
-function closeFaqs() {
-  document.getElementById("faqs").style.width = "0";
-}
+   document.getElementById("faqs").style.left = "0vw";
+   document.getElementById("about").style.left = "50vw";
+   document.getElementById("disclaimer").style.left = "50vw";
+ }
 
 function openAbout() {
-  document.getElementById("about").style.width = "100%";
-}
-function closeAbout() {
-  document.getElementById("about").style.width = "0";
-}
+   document.getElementById("faqs").style.left = "50vw";
+   document.getElementById("about").style.left = "0vw";
+   document.getElementById("disclaimer").style.left = "50vw";
+ }
 
 function openDisclaimer() {
-  document.getElementById("disclaimer").style.width = "100%";
-}
-function closeDisclaimer() {
-  document.getElementById("disclaimer").style.width = "0";
-}
-
-  $( function() {
-    $( "#accordion" ).accordion({
-      collapsible: true
-    });
-  } );
+   document.getElementById("faqs").style.left = "50vw";
+   document.getElementById("about").style.left = "50vw";
+   document.getElementById("disclaimer").style.left = "0vw";
+ }
