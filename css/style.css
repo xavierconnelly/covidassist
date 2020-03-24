@@ -154,6 +154,10 @@ p {
   padding-bottom: 1em;
 }
 
+#intro a {
+  color: inherit;
+}
+
 #picture {
   order: 2;
 }
