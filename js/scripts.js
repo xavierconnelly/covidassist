@@ -3,37 +3,39 @@ function openJosef() {
     document.getElementById("josef").style.display = "block";
 }
 
+
 function openMenu(x) {
-  x.classList.toggle("change");
+    x.classList.toggle("change");
+    
+    var z = window.matchMedia("(max-width: 900px)")
+    if (z.matches) { // If less than 900px
   
-  var z = window.matchMedia("(max-width: 900px)")
-  
-  if (z.matches) { // If less than 800px
-   var y = document.getElementById("menu");
-      if (y.style.left === "0vw") {
+    var y = document.getElementById("menu");
+    if (y.style.left === "0vw") {
         y.style.left = "100vw";
-        document.getElementById("faqs").style.left = "100vw";
-        document.getElementById("about").style.left = "100vw";
-        document.getElementById("disclaimer").style.left = "100vw";
-      } else {
+        document.getElementById("faqs").style.left = "0vw";
+        document.getElementById("about").style.left = "0vw";
+        document.getElementById("disclaimer").style.left = "0vw";
+  } else {
         y.style.left = "0vw";
-      }
+    }
   } else {
       var y = document.getElementById("menu");
       if (y.style.left === "50vw") {
-        y.style.left = "100vw";
-        document.getElementById("faqs").style.left = "100vw";
-        document.getElementById("about").style.left = "100vw";
-        document.getElementById("disclaimer").style.left = "100vw";
+          y.style.left = "100vw";
+          document.getElementById("faqs").style.left = "100vw";
+          document.getElementById("about").style.left = "100vw";
+          document.getElementById("disclaimer").style.left = "100vw";
       } else {
         y.style.left = "50vw";
       }
-  }; 
+  };
 }
 
+
 function openFaqs() {
-  var b = window.matchMedia("(max-width: 800px)")
-  if (b.matches) { // If less than 800px
+  var b = window.matchMedia("(max-width: 900px)")
+  if (b.matches) { // If less than 900px
       document.getElementById("faqs").style.left = "0vw";
       document.getElementById("about").style.left = "100vw";
       document.getElementById("disclaimer").style.left = "100vw";
@@ -71,4 +73,22 @@ function openDisclaimer() {
       document.getElementById("about").style.left = "50vw";
       document.getElementById("disclaimer").style.left = "0vw";
   }
+} 
+
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
 }
+
+
