@@ -1,56 +1,78 @@
 function openJosef() {
-            document.getElementById("view").style.display = "none";
-            document.getElementById("josef").style.display = "block";
-        }
+    document.getElementById("view").style.display = "none";
+    document.getElementById("josef").style.display = "block";
+}
+
 
 function openMenu(x) {
-  x.classList.toggle("change");
-  
-
-  
-  var z = window.matchMedia("(max-width: 900px)")
-  
-  if (z.matches) { // If less than 800px
-   var y = document.getElementById("menu");
-      if (y.style.left === "0vw") {
+    x.classList.toggle("change");
+    
+    var z = window.matchMedia("(max-width: 900px)")
+    if (z.matches) { // If less than 900px
+    
+    var y = document.getElementById("menu");
+    if (y.style.left === "0vw") {
         y.style.left = "100vw";
-        document.getElementById("faqs").style.left = "100vw";
-        document.getElementById("about").style.left = "100vw";
-        document.getElementById("disclaimer").style.left = "100vw";
-      } else {
-        y.style.left = "0vw";
-      }
+        document.getElementById("faqs").style.left = "0vw";
+        document.getElementById("about").style.left = "0vw";
+        document.getElementById("disclaimer").style.left = "0vw";
   } else {
-      var y = document.getElementById("menu");
+        y.style.left = "0vw";
+    }
+  };  else {
+        var y = document.getElementById("menu");
       if (y.style.left === "50vw") {
-        y.style.left = "100vw";
-        document.getElementById("faqs").style.left = "100vw";
-        document.getElementById("about").style.left = "100vw";
-        document.getElementById("disclaimer").style.left = "100vw";
+          y.style.left = "100vw";
+          document.getElementById("faqs").style.left = "100vw";
+          document.getElementById("about").style.left = "100vw";
+          document.getElementById("disclaimer").style.left = "100vw";
       } else {
         y.style.left = "50vw";
       }
   };
-  
 }
 
 
-
-
 function openFaqs() {
-   document.getElementById("faqs").style.left = "0vw";
-   document.getElementById("about").style.left = "50vw";
-   document.getElementById("disclaimer").style.left = "50vw";
- }
+  var b = window.matchMedia("(max-width: 900px)")
+  if (b.matches) { // If less than 900px
+      document.getElementById("faqs").style.left = "0vw";
+      document.getElementById("about").style.left = "100vw";
+      document.getElementById("disclaimer").style.left = "100vw";
+      document.getElementById("menu").style.left = "100vw";
+  } else {
+      document.getElementById("faqs").style.left = "0vw";
+      document.getElementById("about").style.left = "50vw";
+      document.getElementById("disclaimer").style.left = "50vw";
+  }
+}
+
 function openAbout() {
-   document.getElementById("faqs").style.left = "50vw";
-   document.getElementById("about").style.left = "0vw";
-   document.getElementById("disclaimer").style.left = "50vw";
- }
+  var b = window.matchMedia("(max-width: 900px)")  
+  if (b.matches) { // If less than 900px
+      document.getElementById("faqs").style.left = "100vw";
+      document.getElementById("about").style.left = "0vw";
+      document.getElementById("disclaimer").style.left = "100vw";
+      document.getElementById("menu").style.left = "100vw";
+  } else {
+      document.getElementById("faqs").style.left = "50vw";
+      document.getElementById("about").style.left = "0vw";
+      document.getElementById("disclaimer").style.left = "50vw";
+  } 
+}
+
 function openDisclaimer() {
-   document.getElementById("faqs").style.left = "50vw";
-   document.getElementById("about").style.left = "50vw";
-   document.getElementById("disclaimer").style.left = "0vw";
- }
+  var b = window.matchMedia("(max-width: 900px)")  
+  if (b.matches) { // If less than 900px
+      document.getElementById("faqs").style.left = "100vw";
+      document.getElementById("about").style.left = "100vw";
+      document.getElementById("disclaimer").style.left = "0vw";
+      document.getElementById("menu").style.left = "100vw";
+  } else {
+      document.getElementById("faqs").style.left = "50vw";
+      document.getElementById("about").style.left = "50vw";
+      document.getElementById("disclaimer").style.left = "0vw";
+  }
+} 
 
 
