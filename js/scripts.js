@@ -18,3 +18,9 @@ function openDisclaimer() {
 function closeDisclaimer() {
   document.getElementById("disclaimer").style.width = "0";
 }
+
+  $( function() {
+    $( "#accordion" ).accordion({
+      collapsible: true
+    });
+  } );
