@@ -1,184 +1,75 @@
-/* cream #f9eedc */
-/* white #fffbf5 */
-/* green #026540 */
+ <body>
 
-* {
-  margin: 0;
-  box-sizing: border-box;
-  font-family: arial, sans-serif;
-}
-
-header {
-  width: 100vw;
-  background: #026540;
-  color: #f9eedc;
-  position: fixed;
-  z-index: 99;
-  border-bottom: 2px solid #f9eedc;
-}
-
-header h1 {
-  font-size: 35px;
-  display: inline-block;
-  text-align: left;
-  margin: 20px
-}
-
-
-/* Hamburger */
-
-.container {
-  display: inline-block;
-  cursor: pointer;
-  position: fixed;
-  right: 0;
-  top: 0;
-  margin: 20px;
-}
-
-.hamburger1, .hamburger2, .hamburger3 {
-  width: 35px;
-  height: 5px;
-  background-color: #f9eedc;
-  margin: 6px 0;
-  transition: 0.4s;
-}
-
-.change .hamburger1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.change .hamburger2 {opacity: 0;}
-
-.change .hamburger3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
-}
-
-#menu {
-    position: fixed;
-    z-index: 50;
-    height: 100vh;
-    background: #fffbf5;
-    color: #026540;
-    left: 100vw;
-    width: 50vw;
-    margin-top: 80px;
-    padding: 20px;
-    box-sizing: border-box;
-    border-left: 2px solid;
-    transition: 1s;
-}
-
-.nav-header {
-  padding: 6px 0;
-}
-
-.nav-header:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-#faqs, #about, #disclaimer {
-    left: 100vw;
-    background: inherit;
-    color: inherit;
-    min-height: 100vh;
-    padding: 100px 20px 20px 20px;
-    position: fixed;
-    width: 50vw;
-    z-index: 5;
-    transition: 1s;
-}
-
-.nav-title {
-  font-size: 1.5em;
-  padding-bottom: 1em;
-}
-
-.nav-body {
-  width: 80%;
-}
-
-body {
-  background: #f9eedc;
-  color: #026540;
-}
-
-.wrapper {
-  padding: ;
-  padding-top: 80px;
-  display: flex;  
-  flex-flow: row wrap;
-}
-
-.wrapper > * {
-  flex: 1 100%;
-  text-align: left;
-}
-
-.wrapper > * > * {
-  width: ;
-}
-
-#intro {
-  order: 1;
-  font-size: 1.5em;
-  font-weight: normal;
-  background: ;
-  padding: 10px;
-  margin: 10px;
-  width: 50vw;
-}
-
-#intro p {
-  padding-bottom: 1em;
-  width: 450px;
-}
-
-#view {
-  order: 3;
-  cursor: pointer;
-  background: #026540 ;
-  color: #f9eedc ; 
-  text-align: center;
- /* margin: auto; */
-  border-radius: 50px;
-  width: 450px;
-}
-
-#view div {
-}
-
-/*
-#josef {
-  display: none;
-  order: 3;
-  padding: 100px 40px 60px 40px;
-  background: white;
-  height: calc(100vh - 160px);
-  margin: auto;
-}
-*/
-
-#josef {
-  display: none;
-  order: 3;
-  background: #026540;
-  height: calc(100vh - 80px);
-}
-
-
-#josef iframe {
-  height: ;
-  padding: 100px 40px 60px 40px;
-}
+    <header id="nav">
+      <h1>What Can I Get?</h1>
+      <div class="container" onclick="openMenu(this)">
+        <div class="hamburger1"></div>
+        <div class="hamburger2"></div>
+        <div class="hamburger3"></div>
+      </div>
+    </header>
   
+    <div id="menu">
+      <div class="nav-header" onclick="openFaqs()">
+        FAQs
+      </div>
+      <div class="nav-header" onclick="openAbout()">
+        About
+      </div>
+      <div class="nav-header" onclick="openDisclaimer()">
+        Disclaimer
+      </div>
+    </div>
 
-@media all and (min-width: 500px) {
-  #intro, #view, #josef { flex: 40%; }
-}
+       <div class="nav-whole" id="faqs">
+        <div class="nav-title">
+          FAQs
+        </div>
+        <div class="nav-body">
+          <p> This information has been designed as an interim FAQ document about welfare payments, and changes to those payments in Australia, as a result of Covid-19. </p>
+          <p> Please note that this information is general information only and should not be considered as personal advice. </p>
+        </div>
+         </div>
+   
+   
+    <div class="nav-whole" id="about">
+      <div class="nav-title">
+        About
+      </div>
+      <div class="nav-body">
+        <p> Myki Fines – Know Your Rights is a project of Liberty Victoria’s Rights Advocacy Project. </p>
+        <p> We would like to thank Tanja Golding, Julian Burnside QC and Adrian Dodd for their help and guidance. </p>
+        <p> Team members: Anika Baset, Emma Buckley Lennox, Sam Flynn, Natalie Lilford & Christine Todd. </p>
+        <p> Team supervisors: Evelyn Tadros & Michael Griffiths. </p>
+        <br>
+        <p style="border-top: 1px solid;"> Do you have a comment, question or suggestion? Email hello@whatcaniget.org.au </p>
+      </div>
+    </div>
+   
+      <div class="nav-whole" id="disclaimer">
+        <div class="nav-title">
+          Disclaimer
+        </div>
+        <div class="nav-body">
+          <p> This information is up to date as of 6 April 2016. This website is not intended to be comprehensive nor does it constitute legal advice. You should seek legal advice before acting or relying on any of this information. </p>
+          <p> This project has no affiliation with Public Transport Victoria or anyone administering or enforcing the Myki system. This website is intended only to provide only a summary and general overview of the options available when you receive a Myki fine. </p>
+          <p> This website is intended for use by people 18 years and over. If you are under 18 and have a Myki fine we recommend you contact Youthlaw on 9611 2412 </p>
+        </div>
+      </div>
 
-@media all and (min-width: 800px) {
-}
+    <div class="wrapper">
+
+      <aside id="intro">
+        <p>In response to the COVID-19 pandemic, the government has announced sweeping changes to the welfare system. </p>
+        <p>We hope to help you understand what benefits you will and won't receive and what you need to do.</p>
+        <div id="view" onclick="openJosef()">
+          <div> Get started </div>
+        </div>        
+      </aside>
+    
+      <aside class="aside" id="josef">
+        <iframe src="https://chat.joseflegal.com/okGJQ62A" frameborder="0" style="overflow:hidden;height:100%;width:100%;min-height:500px;min-width:300px;" height="100%" width="100%"></iframe>
+      </aside>
+
+    </div>
+  </body>
