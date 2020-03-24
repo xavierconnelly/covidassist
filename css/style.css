@@ -104,10 +104,8 @@ p {
   color: red;
 }
 
-.sidenav div {
+.nav-whole {
   margin-left: 25vw;
-  padding: 1em;
-  padding-top: ;
 }
 
 .nav-header {
