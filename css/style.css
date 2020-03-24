@@ -98,6 +98,25 @@ aside > a {
   color: red;
 }
 
+.sidenav div {
+  width: 75vw;
+  margin-left: 25vw;
+  padding: 1em;
+  padding-top: ;
+}
+
+.nav-header {
+  font-size: 1.5em;
+}
+
+.nav-body {
+
+}
+
+#accordian {
+
+}
+
 /* //// */
 /* Body */
 
