@@ -6,6 +6,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: arial, sans-serif;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -60,8 +61,8 @@ header h1 {
     position: fixed;
     z-index: 50;
     height: 100vh;
-    background: #fffbf5;
-    color: #026540;
+    background: #026540;
+    color: #f9eedc; 
     left: 100vw;
     width: 50vw;
     margin-top: 80px;
@@ -137,30 +138,38 @@ body {
   width: 450px;
 }
 
+@media all and (max-width: 900px) {
+  #intro {
+    font-size: 1.2em;
+  }
+  #intro p {
+    width: unset;
+  }
+}
+
+@media all and (max-width: 600px) {
+  #intro {
+    font-size: 1em;
+  }
+  #intro p {
+    width: unset;
+  }
+}
+  
 #view {
   order: 3;
   cursor: pointer;
   background: #026540 ;
   color: #f9eedc ; 
   text-align: center;
- /* margin: auto; */
   border-radius: 50px;
   width: 450px;
 }
 
-#view div {
+#view a {
+  text-decoration: none;
+  color: inherit;
 }
-
-/*
-#josef {
-  display: none;
-  order: 3;
-  padding: 100px 40px 60px 40px;
-  background: white;
-  height: calc(100vh - 160px);
-  margin: auto;
-}
-*/
 
 #josef {
   display: none;
@@ -169,15 +178,15 @@ body {
   height: calc(100vh - 80px);
 }
 
-
 #josef iframe {
   height: ;
   padding: 100px 40px 60px 40px;
 }
-  
 
-@media all and (min-width: 500px) {
-  #intro, #view, #josef { flex: 40%; }
+@media all and (min-width: 600px) {
+  #intro, #view, #josef { 
+    flex: 40%;
+  }
 }
 
 @media all and (min-width: 800px) {
