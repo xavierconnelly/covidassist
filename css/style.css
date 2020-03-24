@@ -150,11 +150,27 @@ body {
 /* Frequently Asked Questions */
 /* ////////////////////////// */
 
+/* cream #f9eedc */
+/* white #fffbf5 */
+/* green #026540 */
+
+body {
+  background-color: #f9eedc;
+  color: #026540;
+}
+
+#accordian {
+  width: 80%;
+  padding-top: 1em;
+  border-top: 1px solid;
+  margin-top: 1em;
+}
+
 .accordion {
   background-color: #f9eedc;
   color: #026540;
   cursor: pointer;
-  padding: 18px;
+  padding: 0.5em 0;;
   width: 100%;
   border: none;
   text-align: left;
@@ -175,8 +191,9 @@ body {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease-out;
-  border-top: 2px solid;  
+  border-top: 2px solid;
 }
+
 
 
 /* //////////// */
