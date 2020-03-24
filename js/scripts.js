@@ -6,16 +6,35 @@ function openJosef() {
 function openMenu(x) {
   x.classList.toggle("change");
   
-  var y = document.getElementById("menu");
-  if (y.style.left === "50vw") {
-    y.style.left = "100vw";
-    document.getElementById("faqs").style.left = "100vw";
-    document.getElementById("about").style.left = "100vw";
-    document.getElementById("disclaimer").style.left = "100vw";
+
+  
+  var z = window.matchMedia("(max-width: 900px)")
+  
+  if (z.matches) { // If less than 800px
+   var y = document.getElementById("menu");
+      if (y.style.left === "0vw") {
+        y.style.left = "100vw";
+        document.getElementById("faqs").style.left = "100vw";
+        document.getElementById("about").style.left = "100vw";
+        document.getElementById("disclaimer").style.left = "100vw";
+      } else {
+        y.style.left = "0vw";
+      }
   } else {
-    y.style.left = "50vw";
-  }
+      var y = document.getElementById("menu");
+      if (y.style.left === "50vw") {
+        y.style.left = "100vw";
+        document.getElementById("faqs").style.left = "100vw";
+        document.getElementById("about").style.left = "100vw";
+        document.getElementById("disclaimer").style.left = "100vw";
+      } else {
+        y.style.left = "50vw";
+      }
+  };
+  
 }
+
+
 
 
 function openFaqs() {
@@ -23,15 +42,15 @@ function openFaqs() {
    document.getElementById("about").style.left = "50vw";
    document.getElementById("disclaimer").style.left = "50vw";
  }
-
 function openAbout() {
    document.getElementById("faqs").style.left = "50vw";
    document.getElementById("about").style.left = "0vw";
    document.getElementById("disclaimer").style.left = "50vw";
  }
-
 function openDisclaimer() {
    document.getElementById("faqs").style.left = "50vw";
    document.getElementById("about").style.left = "50vw";
    document.getElementById("disclaimer").style.left = "0vw";
  }
+
+
