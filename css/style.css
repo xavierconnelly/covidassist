@@ -88,9 +88,9 @@ footer a:hover {
   transition: all .2s ease;
 }
 
-.hamburger_linetop,
-.hamburger_linemiddle,
-.hamburger_linebottom {
+.hamburger_line_top,
+.hamburger_line_middle,
+.hamburger_line_bottom {
   background-color: #f9eedc;
   transition: 0.4s;
   height: 3px;
