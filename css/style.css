@@ -98,7 +98,7 @@ footer a:hover {
   width: 24px;
 }
 
-.hamburger_line_top {
+.change .hamburger_line_top {
   -webkit-transform: rotate(45deg) translate3d(5px, 4px, 0);
   transform: rotate(45deg) translate3d(5px, 4px, 0);
   -webkit-transform: center;
