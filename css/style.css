@@ -277,9 +277,9 @@ body {
   color: inherit;
 }
 
-/* //////////// */
+/* /////// */
 /* Chatbot */
-/* //////////./ */
+/* /////// */
 
 #josef {
   display: none;
@@ -305,4 +305,14 @@ body {
     #josef iframe {
     padding: 60px 20px 60px 20px;
   }
+}
+
+/* /////// */
+/* Sharing */
+/* /////// */
+
+
+footer {
+  position: fixed;
+  color: #FCB80E;
 }
