@@ -22,7 +22,7 @@ header {
   color: #f9eedc;
   position: fixed;
   z-index: 99;
-  border-bottom: 2px solid #f9eedc;
+  /*border-bottom: 2px solid #f9eedc;*/
 }
 
 header h1 {
