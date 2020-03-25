@@ -26,15 +26,16 @@ header {
 }
 
 header h1 {
-  font-size: 35px;
+  font-size: 55px;
   display: inline-block;
   text-align: left;
-  margin: 20px
+  margin: 20px;
+  width: 9ch;
 }
 
 body {
-  background: #f9eedc;
-  color: #026540;
+  background: #026540;
+  color: #f9eedc;
 }
 
 
@@ -50,26 +51,37 @@ body {
   right: 0;
   top: 0;
   margin: 20px;
+  height: 20px;
+  width: 20px;
+  padding: ;
+  z-index: 900;
+  transition: all .2s ease;
 }
 
 .hamburger1, .hamburger2, .hamburger3 {
-  width: 35px;
-  height: 5px;
   background-color: #f9eedc;
-  margin: 6px 0;
   transition: 0.4s;
+  height: 3px;
+  margin-top: 5px;
+  width: 24px;
 }
 
 .change .hamburger1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
+  -webkit-transform: rotate(45deg) translate3d(5px, 4px, 0);
+  transform: rotate(45deg) translate3d(5px, 4px, 0);
+  -webkit-transform: center;
+  transform-origin: center;
 }
 
-.change .hamburger2 {opacity: 0;}
+.change .hamburger2 {
+  opacity: 0;
+}
 
 .change .hamburger3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
+  -webkit-transform: rotate(-45deg) translate3d(7px, -6px, 0);
+  transform: rotate(-45deg) translate3d(7px, -6px, 0);
+  -webkit-transform: center;
+  transform-origin: center;
 }
 
 /* //// */
@@ -228,7 +240,7 @@ body {
 
 #intro p {
   padding-bottom: 1em;
-  width: 450px;
+  width: 330px;
 }
 
 @media all and (max-width: 900px) {
@@ -256,7 +268,7 @@ body {
   color: #f9eedc ; 
   text-align: center;
   border-radius: 50px;
-  width: 450px;
+  width: 330px;
 }
 
 #view a {
