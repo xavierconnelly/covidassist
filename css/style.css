@@ -138,7 +138,7 @@ body {
     min-height: 100vh;
     padding: 170px 20px 20px 20px;
     position: fixed;
-    width: 50vw;
+    width: 330px;
     z-index: 5;
     transition: 1s;
 }
@@ -148,6 +148,10 @@ body {
       width: 100vw;
       transition: 0.5s;
   }
+}
+
+#about p {
+  padding-bottom: 1em;
 }
 
 .nav-title {
