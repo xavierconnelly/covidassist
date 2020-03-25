@@ -39,13 +39,42 @@ body {
   color: #f9eedc;
 }
 
+/* /////// */
+/* Sharing */
+/* /////// */
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  background: #fcb80e;
+  color: #333333;
+  z-index: 300;
+  width: 100vw;
+  text-align: center;
+  padding: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  font-style: italic;
+  color: 
+}
+
 
 /* ///////// */
 /* Hamburger */
 /* ///////// */
 
 
-.container {
+.hamburger {
   display: inline-block;
   cursor: pointer;
   position: fixed;
@@ -59,7 +88,7 @@ body {
   transition: all .2s ease;
 }
 
-.hamburger1, .hamburger2, .hamburger3 {
+.hamburger_linetop, .hamburger_linemiddle, .hamburger_linebottom {
   background-color: #f9eedc;
   transition: 0.4s;
   height: 3px;
@@ -67,18 +96,18 @@ body {
   width: 24px;
 }
 
-.change .hamburger1 {
+.hamburger_linetop {
   -webkit-transform: rotate(45deg) translate3d(5px, 4px, 0);
   transform: rotate(45deg) translate3d(5px, 4px, 0);
   -webkit-transform: center;
   transform-origin: center;
 }
 
-.change .hamburger2 {
+.change .hamburger_linemiddle {
   opacity: 0;
 }
 
-.change .hamburger3 {
+.change .hamburger_linebottom {
   -webkit-transform: rotate(-45deg) translate3d(7px, -6px, 0);
   transform: rotate(-45deg) translate3d(7px, -6px, 0);
   -webkit-transform: center;
@@ -117,11 +146,11 @@ body {
   }
 }
 
-.nav-header {
+.menu_link {
   padding: 6px 0;
 }
 
-.nav-header:hover {
+.menu_link:hover {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -301,35 +330,6 @@ body {
     #josef iframe {
     padding: 60px 20px 60px 20px;
   }
-}
-
-/* /////// */
-/* Sharing */
-/* /////// */
-
-
-footer {
-  position: fixed;
-  bottom: 0;
-  background: #fcb80e;
-  color: #333333;
-  z-index: 300;
-  width: 100vw;
-  text-align: center;
-  padding: 10px;
-}
-
-footer a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-  padding: 0 10px;
-}
-
-footer a:hover {
-  text-decoration: underline;
-  font-style: italic;
-  color: 
 }
 
 
