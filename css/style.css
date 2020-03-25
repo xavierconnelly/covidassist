@@ -98,18 +98,18 @@ footer a:hover {
   width: 24px;
 }
 
-.hamburger_linetop {
+.hamburger_line_top {
   -webkit-transform: rotate(45deg) translate3d(5px, 4px, 0);
   transform: rotate(45deg) translate3d(5px, 4px, 0);
   -webkit-transform: center;
   transform-origin: center;
 }
 
-.change .hamburger_linemiddle {
+.change .hamburger_line_middle {
   opacity: 0;
 }
 
-.change .hamburger_linebottom {
+.change .hamburger_line_bottom {
   -webkit-transform: rotate(-45deg) translate3d(7px, -6px, 0);
   transform: rotate(-45deg) translate3d(7px, -6px, 0);
   -webkit-transform: center;
