@@ -29,7 +29,6 @@ header {
   z-index: 200;
   margin-top: 40px;
   /*border-bottom: 2px solid #f9eedc;*/
-  font-family: inherit;
 }
 
 header h1 {
@@ -38,6 +37,7 @@ header h1 {
   text-align: left;
   margin: 0px 0px 0px 40px;
   /* width: 9ch;*/
+  font-family: inherit;
 }
 
 
@@ -54,7 +54,6 @@ footer {
   width: 100vw;
   text-align: center;
   padding: 10px;
-  font-family: inherit;
 }
 
 footer a {
@@ -62,6 +61,7 @@ footer a {
   color: inherit;
   cursor: pointer;
   padding: 0 10px;
+  font-family: inherit;
 }
 
 footer a:hover {
