@@ -21,7 +21,7 @@ header {
   /*background: #026540;*/
   color: #f9eedc;
   position: fixed;
-  z-index: 99;
+  z-index: 200;
   /*border-bottom: 2px solid #f9eedc;*/
 }
 
