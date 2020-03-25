@@ -210,7 +210,7 @@ body {
 
 .wrapper {
   padding: ;
-  padding-top: 80px;
+  padding-top: 150px;
   display: flex;  
   flex-flow: row wrap;
 }
@@ -226,9 +226,7 @@ body {
 
 #intro {
   order: 1;
-  font-size: 1.5em;
-  font-weight: normal;
-  background: ;
+  font-size: 1em;
   padding: 10px;
   margin: 10px;
   width: 50vw;
