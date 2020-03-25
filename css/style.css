@@ -314,5 +314,8 @@ body {
 
 footer {
   position: fixed;
-  color: #FCB80E;
+  background: #fcb80e;
+  color: #333333;
 }
+
+
