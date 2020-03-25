@@ -314,8 +314,11 @@ body {
 
 footer {
   position: fixed;
+  bottom: 0;
+  height: 20px;
   background: #fcb80e;
   color: #333333;
+  z-index: 300;
 }
 
 
