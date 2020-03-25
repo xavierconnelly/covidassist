@@ -13,10 +13,11 @@
   font-family: arial, sans-serif;
   scroll-behavior: smooth;
   outline: px solid red;
+  font-family: 'Cabin', sans-serif;
 }
 
 header {
-  width: 100vw;
+  /*width: 100vw;*/
   /*background: #026540;*/
   color: #f9eedc;
   position: fixed;
