@@ -290,7 +290,7 @@ body {
 
 #josef iframe {
   height: ;
-  padding: 0px 40px 40px 40px;
+  padding: 0px 20px 80px 80px;
 }
 
 @media all and (min-width: 600px) {
@@ -315,12 +315,11 @@ body {
 footer {
   position: fixed;
   bottom: 0;
-  height: 20px;
   background: #fcb80e;
   color: #333333;
   z-index: 300;
   width: 100vw;
-  text-align: centaer;
+  text-align: center;
   padding: 10px;
 }
 
@@ -328,4 +327,12 @@ footer a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+  padding: 0 10px;
 }
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+
