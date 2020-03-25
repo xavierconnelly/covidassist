@@ -278,7 +278,7 @@ body {
   display: none;
   order: 3;
   background: #026540;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 150px);
 }
 
 #josef iframe {
