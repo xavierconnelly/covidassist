@@ -22,24 +22,25 @@
   </head>
  <body>
 
-    <header id="nav">
+    <header>
       <h1>Help I Don't</h1><br>
       <h1>Speak Government</h1>
-      <div class="container" onclick="openMenu(this)">
-        <div class="hamburger1"></div>
-        <div class="hamburger2"></div>
-        <div class="hamburger3"></div>
-      </div>
     </header>
+
+    <div class="hamburger" onclick="openMenu(this)">
+      <div class="hamburger_line_top"></div>
+      <div class="hamburger_line_middle"></div>
+      <div class="hamburger_line_bottom"></div>
+    </div>
   
     <div id="menu">
-      <div class="nav-header" onclick="openFaqs()">
+      <div class="menu_link" onclick="openFaqs()">
         FAQs
       </div>
-      <div class="nav-header" onclick="openAbout()">
+      <div class="menu_link" onclick="openAbout()">
         About
       </div>
-      <div class="nav-header" onclick="openDisclaimer()">
+      <div class="menu_link" onclick="openDisclaimer()">
         Disclaimer
       </div>
     </div>
