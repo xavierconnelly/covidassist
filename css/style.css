@@ -216,8 +216,6 @@ body {
 /* //////////// */
 
 .wrapper {
-  padding: ;
-  padding-top: 150px;
   display: flex;  
   flex-flow: row wrap;
 }
@@ -227,14 +225,10 @@ body {
   text-align: left;
 }
 
-.wrapper > * > * {
-  width: ;
-}
-
 #intro {
   order: 1;
   font-size: 1em;
-  padding: 10px;
+  padding: 170px 10px 10px 10px;
   margin: 10px 0px 0px 30px;
   width: 50vw;
 }
@@ -275,6 +269,7 @@ body {
 #view a {
   text-decoration: none;
   color: inherit;
+  padding: 10px;
 }
 
 /* /////// */
@@ -284,6 +279,7 @@ body {
 #josef {
   display: none;
   order: 3;
+  padding: 170px 10px 10px 10px;
   background: #026540;
   height: calc(100vh - 150px);
 }
@@ -332,6 +328,8 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+  font-style: italic;
+  color: 
 }
 
 
