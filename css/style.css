@@ -29,7 +29,7 @@ header h1 {
   font-size: 55px;
   display: inline-block;
   text-align: left;
-  margin: 20px;
+  margin: 20px 0px 0px 20px;
   width: 9ch;
 }
 
@@ -50,7 +50,7 @@ body {
   position: fixed;
   right: 0;
   top: 0;
-  margin: 20px;
+  margin: 40px;
   height: 20px;
   width: 20px;
   padding: ;
@@ -136,7 +136,7 @@ body {
     background: inherit;
     color: inherit;
     min-height: 100vh;
-    padding: 170px 0px 20px 20px;
+    padding: 170px 0px 20px 40px;
     position: fixed;
     width: 420px;
     z-index: 5;
