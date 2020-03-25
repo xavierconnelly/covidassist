@@ -55,7 +55,7 @@ function openAbout() {
       document.getElementById("disclaimer").style.left = "100vw";
       document.getElementById("menu").style.left = "100vw";
   } else {
-      document.getElementById("faqs").style.left = "50vw";
+      document.getElementById("faqs").style.left = "0vw";
       document.getElementById("about").style.left = "0vw";
       document.getElementById("disclaimer").style.left = "50vw";
   } 
@@ -69,8 +69,8 @@ function openDisclaimer() {
       document.getElementById("disclaimer").style.left = "0vw";
       document.getElementById("menu").style.left = "100vw";
   } else {
-      document.getElementById("faqs").style.left = "50vw";
-      document.getElementById("about").style.left = "50vw";
+      document.getElementById("faqs").style.left = "0vw";
+      document.getElementById("about").style.left = "0vw";
       document.getElementById("disclaimer").style.left = "0vw";
   }
 } 
@@ -90,5 +90,3 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
-
-
