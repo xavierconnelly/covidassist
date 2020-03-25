@@ -15,6 +15,12 @@
   outline: px solid red;
 }
 
+body {
+  background: #026540;
+  color: #f9eedc;
+  font-family: 'Cabin', sans-serif;
+}
+
 header {
   /*width: 100vw;*/
   /*background: #026540;*/
@@ -23,6 +29,7 @@ header {
   z-index: 200;
   margin-top: 40px;
   /*border-bottom: 2px solid #f9eedc;*/
+  font-family: inherit;
 }
 
 header h1 {
@@ -33,11 +40,6 @@ header h1 {
   /* width: 9ch;*/
 }
 
-body {
-  background: #026540;
-  color: #f9eedc;
-  font-family: 'Cabin', sans-serif;
-}
 
 /* //////////////////////////////////////////////////////////////////////////////// */
 /* Sharing */
@@ -52,6 +54,7 @@ footer {
   width: 100vw;
   text-align: center;
   padding: 10px;
+  font-family: inherit;
 }
 
 footer a {
@@ -256,6 +259,7 @@ footer a:hover {
 #intro p {
   padding-bottom: 1em;
   width: 330px;
+  font-family: inherit;
 }
 
 @media all and (max-width: 900px) {
