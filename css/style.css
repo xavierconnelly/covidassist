@@ -18,7 +18,7 @@
 
 header {
   width: 100vw;
-  background: #026540;
+  /*background: #026540;*/
   color: #f9eedc;
   position: fixed;
   z-index: 99;
@@ -166,10 +166,6 @@ body {
 /* white #fffbf5 */
 /* green #026540 */
 
-body {
-  background-color: #f9eedc;
-  color: #026540;
-}
 
 #accordian {
   width: 80%;
