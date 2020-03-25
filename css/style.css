@@ -159,7 +159,7 @@ footer a:hover {
 .info {
     left: 100vw;
     background: inherit;
-    color: inherit;
+    color: #eee;
     min-height: 100vh;
     padding: 200px 0px 20px 40px;
     position: fixed;
@@ -249,6 +249,7 @@ footer a:hover {
   padding: 170px 10px 10px 10px;
   margin: 10px 0px 0px 30px;
   width: 50vw;
+  color: #eee;
 }
 
 #intro p {
