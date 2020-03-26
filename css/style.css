@@ -224,9 +224,8 @@ left: 100vw;
 }
 
 .accordion_bundle {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid inherit;
   padding-bottom: 15px;
-  display: flex;
 }
 
 .question {
@@ -238,7 +237,7 @@ left: 100vw;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 1em;
+  font-size: 30px;
   transition: 0.4s;
 }
 
@@ -278,7 +277,6 @@ left: 100vw;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease-out;
-  border-top: 2px solid;
 }
 
 /* //////////////////////////////////////////////////////////////////////////////// */
