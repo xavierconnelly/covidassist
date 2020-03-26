@@ -217,7 +217,7 @@ footer a:hover {
   background-color: #026540;
   color: #f9eedc;
   cursor: pointer;
-  padding: 0.5em 2em 0.5em 2em;
+  padding: 0.5em 0.5em 0.5em 2em;
   width: 100%;
   border: none;
   text-align: left;
@@ -241,7 +241,15 @@ footer a:hover {
 }
 
 .active:after {
-  content: "▲"; /* Switch to PNG */
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: url(../images/Arrow_up.png);
+  width: 30px;
+  height: 20px;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .answer {
