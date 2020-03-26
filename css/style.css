@@ -233,7 +233,9 @@ left: 100vw;
   cursor: pointer;
   padding-right: 40px;
   width: 100%;
+  border: none;
   text-align: left;
+  outline: none;
   font-size: 1em;
   transition: 0.4s;
 }
