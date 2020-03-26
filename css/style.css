@@ -13,6 +13,7 @@
   font-family: arial, sans-serif;
   scroll-behavior: smooth;
   outline: px solid red;
+  font-family: 'Cabin', sans-serif;
 }
 
 body {
@@ -197,7 +198,7 @@ footer a:hover {
 /* Frequently Asked Questions */
 /* //////////////////////////////////////////////////////////////////////////////// */
 
-#accordian {
+#accordion {
   width: 80%;
   padding-top: 1em;
   border-top: 1px solid;
