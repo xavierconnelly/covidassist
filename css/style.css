@@ -165,12 +165,13 @@ footer a:hover {
     left: 100vw;
     background: inherit;
     color: #eee;
-    min-height: 100vh;
-    padding: 200px 0px 20px 40px;
+    height: 100vh;
+    padding: 200px 0px 80px 40px;
     position: fixed;
-    width: 420px;
+    width: 50vw;
     z-index: 5;
     transition: 1s;
+    overflow: scroll;
 }
 
 @media all and (max-width: 900px) {
@@ -226,7 +227,7 @@ footer a:hover {
 
 .panel {
   padding: 0 18px;
-  background-color: #f9eedc;
+  /*background-color: #f9eedc;*/
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease-out;
