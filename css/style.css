@@ -225,6 +225,18 @@ footer a:hover {
   color: #f9eedc;
 }
 
+.accordion:after {
+  content: '&#9495;'; /* Switch to PNG */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "&#x2517;"; /* Switch to PNG */
+}
+
 .panel {
   padding: 0 18px;
   /*background-color: #f9eedc;*/
