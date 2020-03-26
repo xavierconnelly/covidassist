@@ -224,7 +224,7 @@ left: 100vw;
 }
 
 .accordion_bundle {
-  border-bottom: 1px solid inherit;
+  border-bottom: 2px solid #f9eedc;
   padding-bottom: 15px;
 }
 
@@ -243,8 +243,8 @@ left: 100vw;
 
 .active,
 .question:hover {
-  background-color: #026540;
-  color: #f9eedc;
+  background-color: #f9eedc;
+  color: #026540;
 }
 
 .question:after {
@@ -272,7 +272,7 @@ left: 100vw;
 }
 
 .answer {
-  padding: 0 18px;
+  padding-left: 20px;
   /*background-color: #f9eedc;*/
   max-height: 0;
   overflow: hidden;
