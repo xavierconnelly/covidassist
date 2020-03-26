@@ -232,7 +232,7 @@ left: 100vw;
   background-color: #026540;
   color: #f9eedc;
   cursor: pointer;
-  padding-right: 40px;
+  padding: 10px 40px 10px 10px;
   width: 100%;
   border: none;
   text-align: left;
@@ -272,7 +272,7 @@ left: 100vw;
 }
 
 .answer {
-  padding-left: 20px;
+  padding: 10px 20px 10px 20px;
   /*background-color: #f9eedc;*/
   max-height: 0;
   overflow: hidden;
