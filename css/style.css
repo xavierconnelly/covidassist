@@ -208,9 +208,14 @@ footer a:hover {
   margin-top: 1em;
 }
 
+#accordion a {
+  text-decoration: none';
+  color: inherit;
+}
+
 .accordion {
-  /*background-color: #f9eedc;*/
-  /*color: #026540;*/
+  background-color: #026540;
+  color: #f9eedc;
   cursor: pointer;
   padding: 0.5em 0;;
   width: 100%;
