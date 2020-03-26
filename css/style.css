@@ -1,8 +1,8 @@
 /* cream #f9eedc */
-/* grey  #eee    */
+/* grey #eee */
 /* white #fffbf5 */
 /* green #026540 */
-
+/* yellow #fcb80e */
 
 
 /* //////////////////////////////////////////////////////////////////////////////// */
@@ -225,7 +225,7 @@ left: 100vw;
 
 .accordion_bundle {
   border-bottom: 2px solid #f9eedc;
-  padding-bottom: 15px;
+  padding-bottom: ;
 }
 
 .question {
@@ -336,6 +336,10 @@ left: 100vw;
   border-radius: 50px;
   width: 330px;
   padding: 10px;
+}
+
+#view:hover {
+ background: #fcb80e;
 }
 
 #view a {
