@@ -176,6 +176,20 @@ footer a:hover {
     overflow: scroll;
 }
 
+
+/* Switching to the right hand side
+left: 100vw;
+    background: inherit;
+    color: #eee;
+    height: 100vh;
+    padding: 40px 0px 70px 0px;
+    width: 50vw;
+    z-index: 5;
+    transition: 1s;
+    overflow: scroll;
+  }
+*/
+
 @media all and (max-width: 900px) {
 .info {
       width: 100vw;
@@ -202,26 +216,24 @@ footer a:hover {
 /* //////////////////////////////////////////////////////////////////////////////// */
 
 #accordion {
-  width: 80%;
+  width: 100%;
   padding-top: 1em;
-  border-top: 1px solid;
   margin-top: 1em;
 }
 
-#accordion a {
-  text-decoration: none';
-  color: inherit;
+.accordion bundle {
+  border-bottom: 1px solid #000;
+  padding-bottom: 15px;
+  display: flex;
 }
 
 .question {
   background-color: #026540;
   color: #f9eedc;
   cursor: pointer;
-  padding: 10px 40px 10px 10px;
+  padding-right: 40px;
   width: 100%;
-  border: none;
   text-align: left;
-  outline: none;
   font-size: 1em;
   transition: 0.4s;
 }
