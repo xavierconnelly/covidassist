@@ -217,7 +217,7 @@ footer a:hover {
   background-color: #026540;
   color: #f9eedc;
   cursor: pointer;
-  padding: 0.5em 0.5em 0.5em 2em;
+  padding: 10px 40px 10px 10px;
   width: 100%;
   border: none;
   text-align: left;
@@ -233,11 +233,15 @@ footer a:hover {
 }
 
 .question:after {
-  content: '▼'; /* Switch to PNG */
-  font-size: 1em;
-  color: #eee;
-  float: right;
-  margin-left: 5px;
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: url(../assets/Arrow_down.png);
+  width: 30px;
+  height: 20px;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .active:after {
@@ -245,7 +249,7 @@ footer a:hover {
   position: absolute;
   right: 10px;
   top: 10px;
-  background: url(../images/Arrow_up.png);
+  background: url(../assets/Arrow_up.png);
   width: 30px;
   height: 20px;
   background-size: 100%;
