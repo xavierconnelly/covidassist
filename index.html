@@ -22,8 +22,8 @@
  <body>
 
     <header>
-      <h1>Help I Don't</h1><br>
-      <h1>Speak Government</h1>
+      <h1>Help,</h1><br>
+      <h1>I'm F**ked!</h1>
     </header>
 
     <div class="hamburger" onclick="openMenu(this)">
@@ -130,4 +130,24 @@
     </footer>
 
   </body>
+
+      <script type="text/javascript">
+        
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+          });
+        }
+
+      </script>
+  
 </html>
