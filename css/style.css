@@ -1,6 +1,8 @@
 /* cream #f9eedc */
+/* grey  #eee    */
 /* white #fffbf5 */
 /* green #026540 */
+
 
 
 /* //////////////////////////////////////////////////////////////////////////////// */
@@ -226,9 +228,9 @@ footer a:hover {
 }
 
 .accordion:after {
-  content: '&#9495;'; /* Switch to PNG */
+  content: '▼'; /* Switch to PNG */
   font-size: 13px;
-  color: #777;
+  color: #eee;
   float: right;
   margin-left: 5px;
 }
