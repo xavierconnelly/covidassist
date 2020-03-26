@@ -209,8 +209,8 @@ footer a:hover {
 }
 
 .accordion {
-  background-color: #f9eedc;
-  color: #026540;
+  /*background-color: #f9eedc;*/
+  /*color: #026540;*/
   cursor: pointer;
   padding: 0.5em 0;;
   width: 100%;
@@ -236,7 +236,7 @@ footer a:hover {
 }
 
 .active:after {
-  content: "&#x2517;"; /* Switch to PNG */
+  content: "&#x2517"; /* Switch to PNG */
 }
 
 .panel {
