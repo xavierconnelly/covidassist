@@ -199,7 +199,7 @@ left: 100vw;
   }
 }
 
-.info h3 {
+.info > h3 {
   font-size: 1.5em;
   padding-bottom: 1em;
 }
