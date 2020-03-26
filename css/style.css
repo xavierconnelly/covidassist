@@ -16,12 +16,14 @@
   scroll-behavior: smooth;
   outline: px solid red;
   font-family: 'Cabin', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
   background: #026540;
   color: #f9eedc;
   font-family: 'Cabin', sans-serif;
+  line-height: 1.3;
 }
 
 header {
