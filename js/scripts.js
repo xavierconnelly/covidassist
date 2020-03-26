@@ -31,44 +31,44 @@ function openMenu(x) {
   };
 }
 
-function openFaqs() {
-  var b = window.matchMedia("(max-width: 900px)")
-  if (b.matches) { // If less than 900px
-      document.getElementById("faqs").style.left = "0vw";
-      document.getElementById("about").style.left = "100vw";
-      document.getElementById("disclaimer").style.left = "100vw";
-      document.getElementById("menu").style.left = "100vw";
-  } else {
-      document.getElementById("faqs").style.left = "0vw";
-      document.getElementById("about").style.left = "50vw";
-      document.getElementById("disclaimer").style.left = "50vw";
-  }
-}
-
 function openAbout() {
   var b = window.matchMedia("(max-width: 900px)")  
   if (b.matches) { // If less than 900px
-      document.getElementById("faqs").style.left = "0vw";
       document.getElementById("about").style.left = "0vw";
+      document.getElementById("faqs").style.left = "0vw";
       document.getElementById("disclaimer").style.left = "100vw";
       document.getElementById("menu").style.left = "100vw";
   } else {
-      document.getElementById("faqs").style.left = "0vw";
       document.getElementById("about").style.left = "0vw";
+      document.getElementById("faqs").style.left = "0vw";
       document.getElementById("disclaimer").style.left = "50vw";
   } 
+}
+
+function openFaqs() {
+  var b = window.matchMedia("(max-width: 900px)")
+  if (b.matches) { // If less than 900px
+      document.getElementById("about").style.left = "0vw";
+      document.getElementById("faqs").style.left = "100vw";
+      document.getElementById("disclaimer").style.left = "100vw";
+      document.getElementById("menu").style.left = "100vw";
+  } else {
+      document.getElementById("about").style.left = "0vw";
+      document.getElementById("faqs").style.left = "50vw";
+      document.getElementById("disclaimer").style.left = "50vw";
+  }
 }
 
 function openDisclaimer() {
   var b = window.matchMedia("(max-width: 900px)")  
   if (b.matches) { // If less than 900px
-      document.getElementById("faqs").style.left = "0vw";
       document.getElementById("about").style.left = "0vw";
+      document.getElementById("faqs").style.left = "0vw";
       document.getElementById("disclaimer").style.left = "0vw";
       document.getElementById("menu").style.left = "100vw";
   } else {
-      document.getElementById("faqs").style.left = "0vw";
       document.getElementById("about").style.left = "0vw";
+      document.getElementById("faqs").style.left = "0vw";
       document.getElementById("disclaimer").style.left = "0vw";
   }
 } 
