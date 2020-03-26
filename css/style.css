@@ -213,11 +213,11 @@ footer a:hover {
   color: inherit;
 }
 
-.accordion {
+.question {
   background-color: #026540;
   color: #f9eedc;
   cursor: pointer;
-  padding: 0.5em 0;;
+  padding: 0.5em 5em 0.5em 2em;
   width: 100%;
   border: none;
   text-align: left;
@@ -227,12 +227,12 @@ footer a:hover {
 }
 
 .active,
-.accordion:hover {
+.question:hover {
   background-color: #026540;
   color: #f9eedc;
 }
 
-.accordion:after {
+.question:after {
   content: '▼'; /* Switch to PNG */
   font-size: 13px;
   color: #eee;
@@ -241,10 +241,10 @@ footer a:hover {
 }
 
 .active:after {
-  content: "&#x2517"; /* Switch to PNG */
+  content: "▲"; /* Switch to PNG */
 }
 
-.panel {
+.answer {
   padding: 0 18px;
   /*background-color: #f9eedc;*/
   max-height: 0;
