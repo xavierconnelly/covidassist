@@ -30,11 +30,24 @@
   </head>
  <body>
 
+	 
 
+          <div onclick="ajaxTest()">
+            <div>Click here</div> 
+	 </div>
+	 
+	 
+	 
 <p>You are on page <span id="pnum">root</span></p>
 <a id="nextPage" href="/something/">Click to go to next page</a>
 
   </body>
+
+<script type="text/javascript">
+  function ajaxTest() {
+    $("#nextPage").load("/ajax-test.html");
+  };
+</script>
 
       	<script type="text/javascript">
 
