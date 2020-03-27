@@ -53,6 +53,14 @@
 			  renderPageNumber(pageNumberData);
 			};
 
+			document.body.addEventListener('click', function(ev){
+			  ev.preventDefault(); //stops the link from executing
+			  if (ev.target.nodeName == 'A'){
+			    var fakeURL = ev.target.getAttribute('href');
+			    changePageTo(fakeURL);
+			  }
+			});
+
 		</script>
 
       	<script type="text/javascript">
@@ -62,14 +70,6 @@
 			  pageNumberData -= 1;
 			  console.log(backButtonEvent.state);
 			  renderPageNumber(pageNumberData);
-			});
-
-			document.body.addEventListener('click', function(ev){
-			  ev.preventDefault(); //stops the link from executing
-			  if (ev.target.nodeName == 'A'){
-			    var fakeURL = ev.target.getAttribute('href');
-			    changePageTo(fakeURL);
-			  }
 			});
 */
       	</script>
