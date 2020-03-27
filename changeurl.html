@@ -59,19 +59,8 @@
 
       	<script type="text/javascript">
 
-			var firstURL = window.location.pathname;
-			var pageNumberData = 0;
-
-			var renderPageNumber = function(n){
-			  pnum.innerHTML = n || "root";
-			  nextPage.setAttribute("href", "page"+n);
-			};
-
 			var changePageTo = function(newURL){
-			  pageNumberData += 1;
-			  history.pushState({dataAboutThisPage: pageNumberData}, "Page Title", newURL);
-			  //URL only changes in normal sites not codepen...
-			  renderPageNumber(pageNumberData);
+			  history.pushState({}, "Page Title", newURL);
 			};
 
 			document.body.addEventListener('click', function(ev){
