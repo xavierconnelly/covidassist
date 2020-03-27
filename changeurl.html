@@ -63,6 +63,10 @@
 			  history.pushState({}, "Page Title", newURL);
 			};
 
+			window.addEventListener('popstate', function(backButtonEvent){
+			  console.log(backButtonEvent.state);
+			});
+
 			document.body.addEventListener('click', function(ev){
 			  ev.preventDefault(); //stops the link from executing
 			  if (ev.target.nodeName == 'A'){
@@ -72,16 +76,5 @@
 			});
 
 		</script>
-
-      	<script type="text/javascript">
-
-/*
-			window.addEventListener('popstate', function(backButtonEvent){
-			  pageNumberData -= 1;
-			  console.log(backButtonEvent.state);
-			  renderPageNumber(pageNumberData);
-			});
-*/
-      	</script>
 
 </html>
