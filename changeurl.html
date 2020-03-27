@@ -23,7 +23,7 @@
       		cursor: pointer;
       	}
       	header:hover { 
-      		color: yellow;
+      		color: blue;
 		}
       </style>
 
@@ -35,6 +35,17 @@
       <h1>I'm F**ked!</h1>
     </header>
 
+
+		<div class="wri-mar-ele" tabindex="0" onclick="constructionOfAnArchitect()">
+            <div>Construction of an Architect</div>
+            <div>MAS Context</div>
+            <div>2020</div>
+          </div>
+
+          <div id="writing-container">
+          	hello
+          </div>
+
   </body>
 
       <script type="text/javascript">
@@ -44,6 +55,10 @@
 		     document.title = response.pageTitle;
 		     window.history.pushState({"html":response.html,"pageTitle":response.pageTitle},"", "https://whatcaniget.netlify.com/something/");
 		 }
+
+		  function constructionOfAnArchitect() {
+		    $("#writing-container").load("https://jamesandjimmy.com/writing/construction-of-an-architect.txt") .scrollTop(0);
+		  };
 
       </script>
 
