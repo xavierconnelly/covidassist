@@ -19,6 +19,13 @@
       <script src="/js/scripts.js"></script>
     
       <style type="text/css">
+
+      	* {
+      		color: white;
+      		text-decoration: none;
+      		width: 50vw;
+      		padding: 40px;
+      	}
       	header {
       		cursor: pointer;
       	}
@@ -30,16 +37,12 @@
   </head>
  <body>
 
+    <a onclick="ajaxTest()" id="nextPage" href="/something/">
+		Click here
+	</a>
 	 
-
-          <div onclick="ajaxTest()">
-            <div>Click here</div> 
-	 </div>
-	 
-	 
-	 
-<p>You are on page <span id="pnum">root</span></p>
-<a id="nextPage" href="/something/">Click to go to next page</a>
+	<p>You are on page <span id="pnum">root</span></p>
+	<div id="box"></div>
 
   </body>
 
@@ -50,7 +53,7 @@
 
 		<script type="text/javascript">
 		  function ajaxTest() {
-		    $("#nextPage").load("/ajax-test.html");
+		    $("#box").load("/ajax-test.html");
 		  };
 		</script>
 
