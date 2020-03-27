@@ -31,23 +31,40 @@
  <body>
 
 
-		<div class="wri-mar-ele" tabindex="0" onclick="constructionOfAnArchitect()">
-            <div>Construction of an Architect</div>
-            <div>MAS Context</div>
-            <div>2020</div>
-          </div>
-
-          <div id="writing-container">
-          	hello
-          </div>
+<p>You are on page <span id="pnum">root</span></p>
+<a id="nextPage" href="page1.html">Click to go to next page</a>
 
   </body>
 
       <script type="text/javascript">
+var firstURL = window.location.pathname;
+var pageNumberData = 0;
 
-		  function constructionOfAnArchitect() {
-		    $("#writing-container").load("https://jamesandjimmy.com/writing/construction-of-an-architect.txt") .scrollTop(0);
-		  };
+var renderPageNumber = function(n){
+  pnum.innerHTML = n || "root";
+  nextPage.setAttribute("href", "page"+n);
+};
+
+var changePageTo = function(newURL){
+  pageNumberData += 1;
+  history.pushState({dataAboutThisPage: pageNumberData}, "Page Title", newURL);
+  //URL only changes in normal sites not codepen...
+  renderPageNumber(pageNumberData);
+};
+
+window.addEventListener('popstate', function(backButtonEvent){
+  pageNumberData -= 1;
+  console.log(backButtonEvent.state);
+  renderPageNumber(pageNumberData);
+});
+
+document.body.addEventListener('click', function(ev){
+  ev.preventDefault(); //stops the link from executing
+  if (ev.target.nodeName == 'A'){
+    var fakeURL = ev.target.getAttribute('href');
+    changePageTo(fakeURL);
+  }
+});
 
       </script>
 
