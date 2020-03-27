@@ -30,11 +30,6 @@
   </head>
  <body>
 
-    <header onclick="changeUrl">
-      <h1>Help,</h1><br>
-      <h1>I'm F**ked!</h1>
-    </header>
-
 
 		<div class="wri-mar-ele" tabindex="0" onclick="constructionOfAnArchitect()">
             <div>Construction of an Architect</div>
@@ -49,12 +44,6 @@
   </body>
 
       <script type="text/javascript">
-
-		 function changeUrl(response, urlPath){
-		     document.getElementById("content").innerHTML = response.html;
-		     document.title = response.pageTitle;
-		     window.history.pushState({"html":response.html,"pageTitle":response.pageTitle},"", "https://whatcaniget.netlify.com/something/");
-		 }
 
 		  function constructionOfAnArchitect() {
 		    $("#writing-container").load("https://jamesandjimmy.com/writing/construction-of-an-architect.txt") .scrollTop(0);
