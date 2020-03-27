@@ -32,40 +32,46 @@
 
 
 <p>You are on page <span id="pnum">root</span></p>
-<a id="nextPage" href="page1.html">Click to go to next page</a>
+<a id="nextPage" href="/something/">Click to go to next page</a>
 
   </body>
 
-      <script type="text/javascript">
-var firstURL = window.location.pathname;
-var pageNumberData = 0;
+      	<script type="text/javascript">
 
-var renderPageNumber = function(n){
-  pnum.innerHTML = n || "root";
-  nextPage.setAttribute("href", "page"+n);
-};
+			var firstURL = window.location.pathname;
+			var pageNumberData = 0;
 
-var changePageTo = function(newURL){
-  pageNumberData += 1;
-  history.pushState({dataAboutThisPage: pageNumberData}, "Page Title", newURL);
-  //URL only changes in normal sites not codepen...
-  renderPageNumber(pageNumberData);
-};
+			var renderPageNumber = function(n){
+			  pnum.innerHTML = n || "root";
+			  nextPage.setAttribute("href", "page"+n);
+			};
 
-window.addEventListener('popstate', function(backButtonEvent){
-  pageNumberData -= 1;
-  console.log(backButtonEvent.state);
-  renderPageNumber(pageNumberData);
-});
+			var changePageTo = function(newURL){
+			  pageNumberData += 1;
+			  history.pushState({dataAboutThisPage: pageNumberData}, "Page Title", newURL);
+			  //URL only changes in normal sites not codepen...
+			  renderPageNumber(pageNumberData);
+			};
 
-document.body.addEventListener('click', function(ev){
-  ev.preventDefault(); //stops the link from executing
-  if (ev.target.nodeName == 'A'){
-    var fakeURL = ev.target.getAttribute('href');
-    changePageTo(fakeURL);
-  }
-});
+		</script>
 
-      </script>
+      	<script type="text/javascript">
+
+/*
+			window.addEventListener('popstate', function(backButtonEvent){
+			  pageNumberData -= 1;
+			  console.log(backButtonEvent.state);
+			  renderPageNumber(pageNumberData);
+			});
+
+			document.body.addEventListener('click', function(ev){
+			  ev.preventDefault(); //stops the link from executing
+			  if (ev.target.nodeName == 'A'){
+			    var fakeURL = ev.target.getAttribute('href');
+			    changePageTo(fakeURL);
+			  }
+			});
+*/
+      	</script>
 
 </html>
