@@ -45,7 +45,7 @@
 		Click here for RABBIT
 	</a>
 
-    <a onclick="ajaxTest()" href="/cow/">
+    <a id="button" href="/cow/">
 		Click here for COW
 	</a>
 
@@ -66,6 +66,15 @@
 		    $("#box").load("/ajax-test.html");
 		  };
 		</script>
+
+
+// test - reducing code, though uses IDs still //
+		<script type="text/javascript">
+			document.getElementById('button').onclick = function ajaxTest() { 
+		    $("#box").load("/ajax-test.html");
+		  };
+		</script>
+
 
       	<script type="text/javascript">
 
