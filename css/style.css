@@ -328,8 +328,16 @@ left: 100vw;
   }
 }
 
+#intro hr {
+  width: 500px;
+}
+
 #intro a {
   color: inherit;
+}
+
+#intro ul li {
+  font-family: inherit;
 }
 
 #intro ul li strong {
