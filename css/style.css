@@ -296,7 +296,7 @@ left: 100vw;
 #intro {
   order: 1;
   font-size: 1em;
-  padding: 170px 10px 10px 10px;
+  padding: 170px 10px 70px 10px;
   margin: 10px 0px 0px 30px;
   width: 50vw;
   color: #eee;
@@ -326,6 +326,10 @@ left: 100vw;
   #intro p {
     width: unset;
   }
+}
+
+#intro a {
+  color: inherit;
 }
 
 #intro ul li strong {
