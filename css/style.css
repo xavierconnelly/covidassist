@@ -310,24 +310,6 @@ left: 100vw;
   font-family: inherit;
 }
 
-@media all and (max-width: 900px) {
-  #intro {
-    font-size: 1.2em;
-  }
-  #intro p {
-    width: unset;
-  }
-}
-
-@media all and (max-width: 600px) {
-  #intro {
-    font-size: 1em;
-  }
-  #intro p {
-    width: unset;
-  }
-}
-
 #intro hr {
   width: 500px;
 }
@@ -362,6 +344,27 @@ left: 100vw;
 #view a {
   text-decoration: none;
   color: inherit;
+}
+
+@media all and (max-width: 900px) {
+  #intro {
+    font-size: 1.2em;
+  }
+  #intro p,
+  #intro ul,
+  #intro hr {
+    width: unset;
+  }
+}
+
+@media all and (max-width: 600px) {
+  #intro {
+    font-size: 1em;
+  }
+  #intro p,
+  #intro ul {
+    width: unset;
+  }
 }
 
 /* //////////////////////////////////////////////////////////////////////////////// */
