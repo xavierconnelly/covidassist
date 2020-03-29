@@ -72,7 +72,7 @@ footer a {
 footer a:hover {
   text-decoration: underline;
   font-style: italic;
-  color: 
+  color: #333333;
 }
 
 /* //////////////////////////////////////////////////////////////////////////////// */
@@ -303,9 +303,10 @@ left: 100vw;
   font-family: 'IBM Plex Serif', serif;
 }
 
-#intro p {
+#intro p,
+#intro ul {
   padding-bottom: 1em;
-  width: 330px;
+  width: 500px;
   font-family: inherit;
 }
 
@@ -325,6 +326,10 @@ left: 100vw;
   #intro p {
     width: unset;
   }
+}
+
+#intro ul li strong {
+  text-decoration: underline;
 }
   
 #view {
