@@ -45,6 +45,16 @@ header h1 {
   font-family: inherit;
 }
 
+@media all and (max-width: 900px) {
+  header {
+    margin-top: 20px;
+  }
+  header h1 {
+      font-size: 40px;
+      margin: unset;
+      padding: 10px;
+  }
+}
 
 /* //////////////////////////////////////////////////////////////////////////////// */
 /* Sharing */
@@ -177,7 +187,6 @@ footer a:hover {
     transition: 1s;
     overflow: scroll;
 }
-
 
 /* Switching to the right hand side
 left: 100vw;
@@ -348,7 +357,10 @@ left: 100vw;
 
 @media all and (max-width: 900px) {
   #intro {
+    padding: 50px 10px 10px 10px;
     font-size: 1.2em;
+    margin: unset;
+    font-family: unset;
   }
   #intro p,
   #intro ul,
@@ -394,6 +406,6 @@ left: 100vw;
     height: calc(100vh - 40px);
   }
     #josef iframe {
-    padding: 60px 20px 60px 20px;
+    padding: 80px 20px 60px 20px;
   }
 }
