@@ -1,89 +1,411 @@
-<!DOCTYPE html>
-
-  <head>
-      
-      <title>covidassist</title>
-      
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-
-      <meta name="description" content="In response to the COVID-19 pandemic, the government has announced sweeping changes to the welfare system. We hope to help you understand what benefits you will and won't receive and what you need to do">
-      <meta name="keywords" content="centrelink, covid-19, covid, 19, welfare, help, what, can, get, payments, coronavirus">
-      <meta name="author" content="Xavier Connelly">
-
-      <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif&display=swap">
-      <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
+/* cream #f9eedc */
+/* grey #eee */
+/* white #fffbf5 */
+/* green #026540 */
+/* yellow #fcb80e */
 
 
-      <script src="/js/scripts.js"></script>
-    
-  </head>
- <body>
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* General */
+/* //////////////////////////////////////////////////////////////////////////////// */
 
-    <header>
-      <h1>covidassist</h1>
-    </header>
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: arial, sans-serif;
+  scroll-behavior: smooth;
+  outline: px solid red;
+  font-family: 'Cabin', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
 
-    <div class="wrapper">
-      <aside id="intro">
-        <p> In response to the Coronavirus (COVID-19) Crisis, the Australian Government has announced a number of sweeping changes to our welfare system. </p>
-        <p> We intend to help you navigate the confusing welfare and social support services provided by Centrelink, and state and territory governments during the Coronavirus crisis. </p>
-        <p> <strong> <i> Website will be launching in the coming days. </i> </strong> </p>
-        <br>
-        <hr>
-        <h3> Update: </h3>
-        <br>
-        <p> The Australian Government indicated on <a href="https://www.smh.com.au/politics/federal/uk-style-wage-subsidy-on-the-way-in-morrison-s-plan-to-pay-workers-who-lose-jobs-20200329-p54ex6.html"> Sunday 29 March </a> that they are looking at expanding income support through a mechanism similar to a wage subsidy. This will be for people who have had their income or work impacted by the Covid-19 Crisis.</p>
-        <p> It is unclear at this stage if this will include people who have already been impacted and who have already applied for Centrelink.</p>
-        <p> Traditionally, Australians would get a flat rate payment through Centrelink, regardless of how much you earned prior to losing work.</p>
-        <p> A wage subsidy is a different approach to welfare than we are used to in Australia. It provides income support to you, based on your income prior to being out of work. Countries such as Canada, Denmark, the United Kingdom, France and New Zealand have announced government measures to provide a wage subsidy during the Covid-19 Crisis.</p>
-        <p> A wage subsidy will require your employer to continue to pay you at 70% - 80% of your current salary, which will be reimbursed (paid for) by the Australian Government. A condition will be that your employer re-hires you at the end of the crisis. </p>
-        <br>
-        <h3> Interim advice </h3>
-        <br>
-        <h4> Already on Centrelink payment </h4>
-        <p> Wait for our update following the Government’s announcement later this week about what you should do.</p>
-        <h4> About to apply, or waiting for an outcome from Centrelink </h4>
-        <p> Continue as is. At this stage the details including the start date of the new wage subsidy package are unknown. Applying for, or waiting for an outcome from Centrelink will likely not impact a future wage subsidy program. You will most likely be better to get into the current system now, and make a change into the new system later, if needed.</p>
-        <h4> Have not applied for a Centrelink payment </h4>
-        <ul>
-          <li> <strong> You have had income or work impacted by Covid-19: </strong> If you have not looked into starting an application for a Centrelink payment it may be best to wait until the announcement later this week to assess your options.</li><br>
-          <li> <strong> You have not yet had income or work impacted by Covid-19, but may be impacted in the future: </strong> Rest assured that your options will be clearer in the coming days, depending on your situation. Be sure to visit this site again following the update.</li>
-        </ul>
-        <br>
-        <p> Hold tight, while we wait for the government to announce their latest package. We expect this announcement on Tuesday 31 March or Wednesday 01 April. </p>
-        <p> This website will be launched, to provide information and advice after the Government’s announcement. </p>       
-      </aside>
-    </div>
+body {
+  background: #026540;
+  color: #f9eedc;
+  font-family: 'Cabin', sans-serif;
+  line-height: 1.3;
+}
 
-    <footer id="sharing">
-      Share with others:
-      <a target="blank" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fcovidassist.net.au%2F"> Facebook </a>
-      <a target="blank" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fcovidassist.net.au%2F&text=We%27re+here+to+help+you+navigate+the+confusing+welfare+and+social+support+services+provided+by+Centrelink%2C+and+state+and+territory+governments+during+the+Coronavirus+crisis."> Twitter </a>
-      <a target="blank" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fcovidassist.net.au%2F&title=Covid%20Assist&summary=We%27re+here+to+help+you+navigate+the+confusing+welfare+and+social+support+services+provided+by+Centrelink%2C+and+state+and+territory+governments+during+the+Coronavirus+crisis."> LinkedIn </a>
-      <a target="blank" href="mailto:?Subject=Covid%20Assist&body=Body%20goes%20here"> Email </a>
-    </footer>
+header {
+  /*width: 100vw;*/
+  /*background: #026540;*/
+  color: #f9eedc;
+  position: fixed;
+  z-index: 200;
+  margin-top: 40px;
+  /*border-bottom: 2px solid #f9eedc;*/
+}
 
-  </body>
+header h1 {
+  font-size: 55px;
+  display: inline-block;
+  text-align: left;
+  margin: 0px 0px 0px 40px;
+  /* width: 9ch;*/
+  font-family: inherit;
+}
 
-      <script type="text/javascript">
-        
-        var acc = document.getElementsByClassName("question");
-        var i;
+@media all and (max-width: 900px) {
+  header {
+    margin-top: 20px;
+  }
+  header h1 {
+      font-size: 40px;
+      margin: unset;
+      padding: 10px;
+  }
+}
 
-        for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-              panel.style.maxHeight = null;
-            } else {
-              panel.style.maxHeight = panel.scrollHeight + "px";
-            }
-          });
-        }
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* Sharing */
+/* //////////////////////////////////////////////////////////////////////////////// */
 
-      </script>
+footer {
+  position: fixed;
+  bottom: 0;
+  background: #fcb80e;
+  color: #333333;
+  z-index: 900;
+  width: 100vw;
+  text-align: center;
+  padding: 10px;
+}
 
-</html>
+footer a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 0 10px;
+  font-family: inherit;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  font-style: italic;
+  color: #333333;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* Hamburger */
+/* //////////////////////////////////////////////////////////////////////////////// */
+
+.hamburger {
+  color: #f9eedc;
+  display: inline-block;
+  cursor: pointer;
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin: 40px;
+  height: 20px;
+  width: 20px;
+  z-index: 900;
+  transition: all .2s ease;
+}
+
+.hamburger_line_top,
+.hamburger_line_middle,
+.hamburger_line_bottom {
+  background-color: #f9eedc;
+  transition: 0.4s;
+  height: 3px;
+  margin-top: 5px;
+  width: 24px;
+}
+
+.change .hamburger_line_top {
+  -webkit-transform: rotate(45deg) translate3d(5px, 4px, 0);
+  transform: rotate(45deg) translate3d(5px, 4px, 0);
+  -webkit-transform: center;
+  transform-origin: center;
+}
+
+.change .hamburger_line_middle {
+  opacity: 0;
+}
+
+.change .hamburger_line_bottom {
+  -webkit-transform: rotate(-45deg) translate3d(7px, -6px, 0);
+  transform: rotate(-45deg) translate3d(7px, -6px, 0);
+  -webkit-transform: center;
+  transform-origin: center;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* Menu */
+/* //////////////////////////////////////////////////////////////////////////////// */
+
+#menu {
+    position: fixed;
+    z-index: 300;
+    height: 100vh;
+    background: #026540;
+    color: #f9eedc; 
+    left: 100vw;
+    width: 50vw;
+    /* margin-top: 80px; */
+    font-size: 1.5em;
+    padding: 40px;
+    box-sizing: border-box;
+    border-left: 2px solid;
+    transition: 1s;
+}
+
+@media all and (max-width: 900px) {
+  #menu {
+      width: 100vw;
+      margin: auto;
+      padding-top: 160px;
+      border-left: unset;
+      text-align: center;
+      transition: 0.5s;
+  }
+}
+
+.menu_link {
+  padding: 6px 0;
+}
+
+.menu_link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* Menu Links */
+/* //////////////////////////////////////////////////////////////////////////////// */
+
+.info {
+    left: 100vw;
+    background: inherit;
+    color: #eee;
+    height: 100vh;
+    padding: 200px 0px 80px 40px;
+    position: fixed;
+    width: 50vw;
+    z-index: 5;
+    transition: 1s;
+    overflow: scroll;
+}
+
+/* Switching to the right hand side
+left: 100vw;
+    background: inherit;
+    color: #eee;
+    height: 100vh;
+    padding: 40px 0px 70px 0px;
+    width: 50vw;
+    z-index: 5;
+    transition: 1s;
+    overflow: scroll;
+  }
+*/
+
+@media all and (max-width: 900px) {
+.info {
+      width: 100vw;
+      transition: 0.5s;
+  }
+}
+
+.info > h3 {
+  font-size: 1.5em;
+  padding-bottom: 1em;
+}
+
+.info p,
+.info_body {
+  width: 80%;
+}
+
+#about p {
+  padding-bottom: 1em;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* Frequently Asked Questions */
+/* //////////////////////////////////////////////////////////////////////////////// */
+
+#accordion {
+  width: 100%;
+  padding-top: 1em;
+  margin-top: 1em;
+}
+
+.accordion_bundle {
+  border-bottom: 2px solid #f9eedc;
+  padding-bottom: ;
+}
+
+.question {
+  background-color: #026540;
+  color: #f9eedc;
+  cursor: pointer;
+  padding: 10px 40px 10px 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 30px;
+  transition: 0.4s;
+}
+
+.active,
+.question:hover {
+  background-color: #f9eedc;
+  color: #026540;
+}
+
+.question:after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: url(../assets/Arrow_down.png);
+  width: 30px;
+  height: 20px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.active:after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: url(../assets/Arrow_up.png);
+  width: 30px;
+  height: 20px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.answer {
+  padding: 10px 20px 10px 20px;
+  /*background-color: #f9eedc;*/
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* Main Content */
+/* //////////////////////////////////////////////////////////////////////////////// */
+
+.wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+}
+
+.wrapper > * {
+  flex: 1 100%;
+  text-align: left;
+}
+
+#intro {
+  order: 1;
+  font-size: 1em;
+  padding: 170px 10px 70px 10px;
+  margin: 10px 0px 0px 30px;
+  width: 50vw;
+  color: #eee;
+  font-family: 'IBM Plex Serif', serif;
+}
+
+#intro p,
+#intro ul {
+  padding-bottom: 1em;
+  width: 500px;
+  font-family: inherit;
+}
+
+#intro hr {
+  width: 500px;
+}
+
+#intro a {
+  color: inherit;
+}
+
+#intro ul li {
+  font-family: inherit;
+}
+
+#intro ul li strong {
+  text-decoration: underline;
+}
+  
+#view {
+  order: 3;
+  cursor: pointer;
+  background: #f9eedc;
+  color: #026540; 
+  text-align: center;
+  border-radius: 50px;
+  width: 330px;
+  padding: 10px;
+}
+
+#view:hover {
+ background: #fcb80e;
+}
+
+#view a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media all and (max-width: 900px) {
+  #intro {
+    padding: 50px 10px 10px 10px;
+    font-size: 1.2em;
+    margin: unset;
+    font-family: unset;
+  }
+  #intro p,
+  #intro ul,
+  #intro hr {
+    width: unset;
+  }
+}
+
+@media all and (max-width: 600px) {
+  #intro {
+    font-size: 1em;
+  }
+  #intro p,
+  #intro ul {
+    width: unset;
+  }
+}
+
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* Chatbot */
+/* //////////////////////////////////////////////////////////////////////////////// */
+
+#josef {
+  display: none;
+  order: 3;
+  padding: 100px 10px 10px 10px;
+  background: #026540;
+  height: calc(100vh - 0px);
+}
+
+#josef iframe {
+  height: ;
+  padding: 0px 80px 80px 20px;
+}
+
+@media all and (min-width: 600px) {
+  #intro, #view, #josef { 
+    flex: 40%;
+  }
+}
+@media all and (max-width: 600px) {
+  #josef {
+    height: calc(100vh - 40px);
+  }
+    #josef iframe {
+    padding: 80px 20px 60px 20px;
+  }
+}
