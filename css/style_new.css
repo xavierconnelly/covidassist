@@ -655,7 +655,14 @@ table.fold-table tr.fold.open {
 
 /* Disclaimer
 //////////////////////////////////////////////////////////////////////////// */
+#disclaimer {
+  display: flex;
+  padding-top: 100px;
+}
 
+#disclaimer div {
+  width: 300px;
+}
 
 /* Contact
 //////////////////////////////////////////////////////////////////////////// */
@@ -675,7 +682,7 @@ table.fold-table tr.fold.open {
 }
 
 #contact div {
-  width: 400px;
+  width: 300px;
 }
 
 #contact div p {
