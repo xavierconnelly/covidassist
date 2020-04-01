@@ -1,14 +1,3 @@
-/* cream #f9eedc */
-/* grey #eee */
-/* white #fffbf5 */
-/* green #026540 */
-/* yellow #fcb80e */
-
-
-/* //////////////////////////////////////////////////////////////////////////////// */
-/* General */
-/* //////////////////////////////////////////////////////////////////////////////// */
-
 * {
   outline: px solid grey;
   margin: 0;
@@ -31,7 +20,6 @@ header {
   padding: 40px;
   margin-top: 40px;
   height: 100px;
-  position: ;
   display: -webkit-flex;
   display: flex;
   align-items: center;
@@ -39,7 +27,7 @@ header {
 }
 
 h1, h2, h3, h4, h5, h6, header span {
-  font-family: "Comfortaa", cursive;
+  font-family: "Comfortaa", sans-serif;
 }
 
 h1 {
@@ -60,13 +48,8 @@ a:hover {
   cursor: pointer;
 }
 
-.logo {
-  margin-right: auto;
-  display: flex;
-  align-items: center;
-  position: ;
-  left: 0;
-}
+/* Header 
+////////////////////////////////////////////////////////////////////////////*/
 
 header span {
   font-size: 50px;
@@ -91,6 +74,14 @@ header ul li:not(:last-child):after {
   padding: 0px 0px 0px 5px;
 }
 
+.logo {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  position: ;
+  left: 0;
+}
+
 @media all and (max-width: 900px) {
   header {
     height: 50px;
@@ -112,10 +103,8 @@ header ul li:not(:last-child):after {
   }
 }
 
-
-/* //////////////////////////////////////////////////////////////////////////////// */
-/* Footer */
-/* //////////////////////////////////////////////////////////////////////////////// */
+/* Footer 
+////////////////////////////////////////////////////////////////////////////*/
 
 footer {
   padding: ;
@@ -161,10 +150,8 @@ footer ul li {
   color: #333;
 }
 
-
-/* //////////////////////////////////////////////////////////////////////////////// */
-/* Hamburger */
-/* //////////////////////////////////////////////////////////////////////////////// */
+/* Hamburger 
+//////////////////////////////////////////////////////////////////////////*/
 
 .hamburger {
   color: #f9eedc;
@@ -214,10 +201,7 @@ footer ul li {
   }
 }
 
-
-/* //////////////////////////////////////////////////////////////////////////////// */
-/* Menu */
-/* //////////////////////////////////////////////////////////////////////////////// */
+/* Mobile Menu //////////////////////////////////////////////////////////////////////////*/
 
 #menu {
     position: fixed;
@@ -255,133 +239,8 @@ footer ul li {
   cursor: pointer;
 }
 
-/* //////////////////////////////////////////////////////////////////////////////// */
-/* Menu Links */
-/* //////////////////////////////////////////////////////////////////////////////// */
-
-.info {
-    left: 100vw;
-    background: inherit;
-    color: #eee;
-    height: 100vh;
-    padding: 200px 0px 80px 40px;
-    position: fixed;
-    width: 50vw;
-    z-index: 5;
-    transition: 1s;
-    overflow: scroll;
-}
-
-/* Switching to the right hand side
-left: 100vw;
-    background: inherit;
-    color: #eee;
-    height: 100vh;
-    padding: 40px 0px 70px 0px;
-    width: 50vw;
-    z-index: 5;
-    transition: 1s;
-    overflow: scroll;
-  }
-*/
-
-@media all and (max-width: 900px) {
-.info {
-      width: 100vw;
-      transition: 0.5s;
-  }
-}
-
-.info > h3 {
-  font-size: 1.5em;
-  padding-bottom: 1em;
-}
-
-.info p,
-.info_body {
-  width: 80%;
-}
-
-#about p {
-  padding-bottom: 1em;
-}
-
-/* //////////////////////////////////////////////////////////////////////////////// */
-/* Frequently Asked Questions */
-/* //////////////////////////////////////////////////////////////////////////////// */
-
-#accordion {
-  width: 100%;
-  /*padding-top: 1em;
-  margin-top: 1em;*/
-}
-
-.accordion_bundle {
-  border-bottom: 2px solid #f9eedc;
-  padding-bottom: ;
-}
-
-/* Replaced with new accordion 
-.question {
-  background-color: #026540;
-  color: #f9eedc;
-  cursor: pointer;
-  padding: 10px 40px 10px 10px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 30px;
-  transition: 0.4s;
-}
-
-.question:hover {
-  background-color: #f9eedc;
-  color: #026540;
-}
-
-.question:after {
-  content: "";
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  background: url(../assets/Arrow_down.png);
-  width: 30px;
-  height: 20px;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-*/
-
-/* Maybe delete??????  
-.active {
-  background-color: #f9eedc;
-  color: #026540;
-}
-
-.active:after {
-  content: "";
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  background: url(../assets/Arrow_up.png);
-  width: 30px;
-  height: 20px;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-.answer {
-  padding: 10px 20px 10px 20px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease-out;
-}
-*/
-
-/* //////////////////////////////////////////////////////////////////////////////// */
-/* Main Content */
-/* //////////////////////////////////////////////////////////////////////////////// */
+/* Main Content 
+//////////////////////////////////////////////////////////////////////////// */
 
 #landing {
   background: #2c6540;
@@ -422,7 +281,6 @@ left: 100vw;
   width: 100vw;
   margin-bottom: 300px;
 }
-
 
 .wrapper {
   display: flex;  
@@ -511,9 +369,8 @@ left: 100vw;
   }
 }
 
-/* //////////////////////////////////////////////////////////////////////////////// */
 /* Accordion, Filter, Search
-/* //////////////////////////////////////////////////////////////////////////////// */
+//////////////////////////////////////////////////////////////////////////// */
 
 /* to Delete */
 .filter-selection {
@@ -550,7 +407,9 @@ left: 100vw;
   color: blue;
 }
 
-/* Search + Filter ////////////////////////////////*/
+/* Search + Filter 
+//////////////////////////////////////////////////////////////////////////// */
+
 input {
   border: solid 0px;
   color: #333;
@@ -567,7 +426,6 @@ input.search {
   padding-top: 0px;
   float: right;
 }
-
 
 .sort {
   cursor: pointer;
@@ -653,7 +511,8 @@ input.search {
   display: block;
 }
 
-/* Filter Mask ////////////////////////////////////////*/
+/* Filter Mask 
+//////////////////////////////////////////////////////////////////////////// */
 
 .filter-mask {
   position: absolute;
@@ -688,7 +547,9 @@ input.search {
   }
 }
 
-/* Table ////////////////////////////////////////*/
+/* Table 
+//////////////////////////////////////////////////////////////////////////// */
+
 table {
   width: 100%;
   border-spacing: unset;
@@ -794,11 +655,8 @@ table.fold-table tr.fold.open {
   display: none;
 }
 
-
-
-/* //////////////////////////////////////////////////////////////////////////////// */
-/* Chatbot */
-/* //////////////////////////////////////////////////////////////////////////////// */
+/* Chatbot
+//////////////////////////////////////////////////////////////////////////// */
 
 /*
 #josef {
@@ -826,4 +684,135 @@ table.fold-table tr.fold.open {
     #josef iframe {
     padding: 80px 20px 60px 20px;
   }
+}
+
+/* Frequently Asked Questions
+//////////////////////////////////////////////////////////////////////////// */
+
+/* replaced by new accordion
+
+#accordion {
+  width: 100%;
+  padding-top: 1em;
+  margin-top: 1em;
+}
+
+.accordion_bundle {
+  border-bottom: 2px solid #f9eedc;
+  padding-bottom: ;
+}
+
+.question {
+  background-color: #026540;
+  color: #f9eedc;
+  cursor: pointer;
+  padding: 10px 40px 10px 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 30px;
+  transition: 0.4s;
+}
+
+.question:hover {
+  background-color: #f9eedc;
+  color: #026540;
+}
+
+.question:after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: url(../assets/Arrow_down.png);
+  width: 30px;
+  height: 20px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+*/
+
+/* Maybe delete??????  
+.active {
+  background-color: #f9eedc;
+  color: #026540;
+}
+
+.active:after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: url(../assets/Arrow_up.png);
+  width: 30px;
+  height: 20px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.answer {
+  padding: 10px 20px 10px 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+*/
+
+
+/* cream #f9eedc */
+/* grey #eee */
+/* white #fffbf5 */
+/* green #026540 */
+/* yellow #fcb80e */
+
+
+/* Menu Links
+////////////////////////////////////////////////////////////////////////
+
+.info {
+    left: 100vw;
+    background: inherit;
+    color: #eee;
+    height: 100vh;
+    padding: 200px 0px 80px 40px;
+    position: fixed;
+    width: 50vw;
+    z-index: 5;
+    transition: 1s;
+    overflow: scroll;
+}
+
+Switching to the right hand side
+left: 100vw;
+    background: inherit;
+    color: #eee;
+    height: 100vh;
+    padding: 40px 0px 70px 0px;
+    width: 50vw;
+    z-index: 5;
+    transition: 1s;
+    overflow: scroll;
+  }
+
+
+@media all and (max-width: 900px) {
+.info {
+      width: 100vw;
+      transition: 0.5s;
+  }
+}
+
+.info > h3 {
+  font-size: 1.5em;
+  padding-bottom: 1em;
+}
+
+.info p,
+.info_body {
+  width: 80%;
+}
+
+#about p {
+  padding-bottom: 1em;
 }
