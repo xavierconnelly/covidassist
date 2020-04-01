@@ -10,7 +10,7 @@
 /* //////////////////////////////////////////////////////////////////////////////// */
 
 * {
-  outline: 1px solid grey;
+  outline: px solid grey;
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -153,7 +153,7 @@ footer ul li {
 
 .hamburger {
   color: #f9eedc;
-  display: inline-block;
+  display: none;
   cursor: pointer;
   position: fixed;
   right: 0;
@@ -501,6 +501,7 @@ left: 100vw;
   margin: -20px;
   padding: 20px;
   font-size: 16px;
+  min-height: 100vh;
 }
 
 .filter-selection {
