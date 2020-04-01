@@ -282,10 +282,7 @@ footer ul li {
   display: none; /* to Delete When fixed///////// */
 }
 
-@media all and (max-width: 600px) {
-  .mobile_hide  { 
-    display: none;
-  }
+@media all and (max-width: 900px) {
 	table th:not(:nth-child(3)),
 	table td:not(:nth-child(3)) {
 	  display: none;
@@ -473,13 +470,14 @@ table td:first-child {
 
 table th:not(:nth-child(3)),
 table td:not(:nth-child(3)) {
-  width: 120px;
+  width: 140px;
 }
 
 table th:nth-child(4),
 table td:nth-child(4) {
   padding-right: 40px;
   text-align: right;
+  width: 200px;
 }
 
 /* Fold Table */
