@@ -163,7 +163,7 @@ footer ul li {
 /* Hamburger 
 //////////////////////////////////////////////////////////////////////////*/
 .hamburger {
-  color: #f9eedc;
+  color: #255636;
   display: none;
   cursor: pointer;
   position: fixed;
@@ -232,7 +232,6 @@ footer ul li {
 /* Main Content 
 //////////////////////////////////////////////////////////////////////////// */
 #landing {
-  background: #2c6540;
   min-height: 100vh;
   padding: 20px;
 }
