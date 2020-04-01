@@ -704,7 +704,7 @@ table td {
 
 table th:first-child,
 table td:first-child {
-  padding-left: 60px;
+  padding-left: 40px;
   width: 200px;
 }
 
@@ -713,8 +713,8 @@ table td:not(:nth-child(3)) {
   width: 120px;
 }
 
-table th:(nth-child(4),
-table td:(nth-child(4) {
+table th:(nth-child(4)),
+table td:(nth-child(4)) {
   padding-right: 40px;
   text-align: right;
 }
@@ -794,10 +794,13 @@ table.fold-table tr.fold.open {
   display: none;
 }
 
+
+
 /* //////////////////////////////////////////////////////////////////////////////// */
 /* Chatbot */
 /* //////////////////////////////////////////////////////////////////////////////// */
 
+/*
 #josef {
   display: none;
   order: 3;
