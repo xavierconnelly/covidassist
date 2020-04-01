@@ -544,10 +544,11 @@ input.search {
   padding-top: 0px;
   float: right;
 }
+
+
 .sort {
   cursor: pointer;
 }
-
 .sort:after {
   width: 0;
   height: 0;
@@ -678,9 +679,19 @@ table td {
   border-top: 1px solid #333;
 }
 
+table th(:first-child),
+table td(:first-child) {
+  padding-left: 20px;
+}
+
 table th:not(:nth-child(3)),
 table td:not(:nth-child(3)) {
   width: 120px;
+}
+
+table th(:last-child),
+table td(:last-child) {
+  padding-right: 20px;
 }
 
 /* Fold Table */
