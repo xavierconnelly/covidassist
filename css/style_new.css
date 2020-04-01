@@ -406,10 +406,12 @@ left: 100vw;
   top: 200px;
 }
 
-#resources {
-  height: 100vh;
-  background: lightgrey;
-  font-size: 16px;
+#landing button {
+    background: url(/assets/Arrow_down.png);
+    background-repeat: no-repeat;
+    width: 57px;
+    height: 33px;
+    border: none;
 }
 
 #container {
