@@ -661,6 +661,7 @@ table.fold-table tr.fold.open {
 //////////////////////////////////////////////////////////////////////////// */
 #contact {
   display: flex;
+  flex-wrap: wrap;
   width: 60vw:
 }
 
@@ -670,7 +671,7 @@ table.fold-table tr.fold.open {
 }
 
 #contact div img {
-  width: ;
+  float: right;
 }
 
 #contact div {
@@ -679,10 +680,5 @@ table.fold-table tr.fold.open {
 
 #contact div p {
   padding-bottom: 1em;
+  width: 400px;
 }
-
-
-
-
-
-
