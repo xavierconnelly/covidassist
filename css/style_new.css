@@ -211,7 +211,7 @@ footer ul li {
 }
 
 /* Mobile Menu //////////////////////////////////////////////////////////////////////////*/
-#menu { /* /////////////////////////////////CHANGE THIS*/
+#mobile-menu {
   height: 100vh;
   width: 100vw;
   position: fixed;
@@ -225,7 +225,7 @@ footer ul li {
   z-index: 300;
 }
 
-.menu ul li a {
+#mobile-menu ul li {
   padding: 10px 0;
 }
 
