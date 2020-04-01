@@ -55,7 +55,6 @@ ul {
 
 /* Header 
 ////////////////////////////////////////////////////////////////////////////*/
-
 header span {
   font-size: 50px;
   float: left;
@@ -110,7 +109,6 @@ header ul li:not(:last-child):after {
 
 /* Footer 
 ////////////////////////////////////////////////////////////////////////////*/
-
 footer {
   padding: ;
   color: #333;
@@ -164,7 +162,6 @@ footer ul li {
 
 /* Hamburger 
 //////////////////////////////////////////////////////////////////////////*/
-
 .hamburger {
   color: #f9eedc;
   display: none;
@@ -214,29 +211,26 @@ footer ul li {
 }
 
 /* Mobile Menu //////////////////////////////////////////////////////////////////////////*/
-
 #menu { /* /////////////////////////////////CHANGE THIS*/
-    position: fixed;
-    left: 100vw;
-    z-index: 300;
-    height: 100vh;
-    background: #026540;
-    color: #f9eedc; 
-    font-size: 2em;
-    transition: 1s;
-    width: 100vw;
-    margin: auto;
-    text-align: center;
-    transition: 0.5s;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  left: 100vw;
+  margin: auto;
+  background: #026540;
+  color: #f9eedc; 
+  font-size: 2em;    
+  text-align: center;
+  transition: 0.5s;
+  z-index: 300;
 }
 
-.menu_link {
+.menu ul li a {
   padding: 10px 0;
 }
 
 /* Main Content 
 //////////////////////////////////////////////////////////////////////////// */
-
 #landing {
   background: #2c6540;
   min-height: 100vh;
@@ -366,10 +360,8 @@ footer ul li {
 
 /* Accordion, Filter, Search
 //////////////////////////////////////////////////////////////////////////// */
-
-/* to Delete */
 .filter-selection {
-  display: none;
+  display: none; /* to Delete When fixed///////// */
 }
 
 @media all and (max-width: 600px) {
@@ -404,7 +396,6 @@ footer ul li {
 
 /* Search + Filter 
 //////////////////////////////////////////////////////////////////////////// */
-
 input {
   border: solid 0px;
   color: #333;
@@ -508,7 +499,6 @@ input.search {
 
 /* Filter Mask 
 //////////////////////////////////////////////////////////////////////////// */
-
 .filter-mask {
   position: absolute;
   top: 160px;
