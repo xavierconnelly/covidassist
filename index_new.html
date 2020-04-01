@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+  <head>
+      
+      <title>covidassist</title>
+      
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <meta name="description" content="In response to the COVID-19 pandemic, the government has announced sweeping changes to the welfare system. We hope to help you understand what benefits you will and won't receive and what you need to do">
+      <meta name="keywords" content="centrelink, covid-19, covid, 19, welfare, help, what, can, get, payments, coronavirus">
+      <meta name="author" content="Xavier Connelly">
+
+      <link rel="stylesheet" type="text/css" media="screen" href="./css/style_new.css">
+      <link rel="icon" href="/favicon.svg">
+      <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+
+      <script type="text/javascript" src="/js/scripts.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+      <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img src="https://covidassist.net.au/assets/CA_Logo.svg">
+        <span>covidassist</span>
+      </div>
+      <div class="menu">
+        <ul>
+          <li>About</li>
+          <li>Resources</li>
+          <li>More Help</li>
+          <li>Disclaimer</li>
+          <li>Contact</li>
+        </ul>
+        <div class="hamburger" onclick="openMenu(this)">
+          <div class="hamburger_line_top"></div>
+          <div class="hamburger_line_middle"></div>
+          <div class="hamburger_line_bottom"></div>
+        </div>
+      </div>
+    </header>
+    <!-- UPDATE THIS -->
+    <div id="menu">
+      <div class="menu_link" onclick="openAbout()">
+        About
+      </div>
+      <div class="menu_link" onclick="openFaqs()">
+        Frequently Asked Questions
+      </div>
+      <div class="menu_link" onclick="openResources()">
+        Resources
+      </div>
+      <div class="menu_link" onclick="openDisclaimer()">
+        Disclaimer
+      </div>
+    </div>
+    <div id="container">
+      <div id="landing">
+        <div class="landing-text">
+          <h1>A helpful <br /> hand in trying <br />times</h1>
+          <p>In response to the COVID-19 pandemic, the government has announced sweeping changes to the welfare system</p><br>
+          <p>We intend to help you navigate the confusing welfare and social support services provided by Centrelink, and state and territory governments during this time.</p>
+        </div>
+      </div>
+      <div id="reference">
+        <div id="accordion">
+          <div class="filter-selection">
+            <div>
+              Filter:
+            </div>
+            <span class="container">
+              All
+              <input type="radio" id="filter-all" class="filter-input" name="filter" checked />
+              <span for="filter-all" class="filter-label checkmark"></span>
+            </span>
+            <span class="container">
+              Eligibility
+              <input type="radio" id="blue" class="filter-input" name="filter" />
+              <span for="filter-blue" class="filter-label "></span>
+            </span>
+            <span class="container">
+              Applying
+              <input type="radio" id="green" class="filter-input" name="filter" />
+              <span for="filter-green" class="filter-label checkmark"></span>
+            </span>
+            <span class="container">
+              Payments
+              <input type="radio" name="radio" />
+              <span for="filter-red" class="filter-label checkmark"></span>
+            </span>
+            <input class="search" placeholder="Search" />
+          </div>
+          <table class="fold-table filter-wrap">
+            <thead>
+              <tr>
+                <th class="mobile_hide">Department</th>
+                <th class="mobile_hide">Something</th>
+                <th>Question</th>
+                <th class="mobile_hide sort" data-sort="date">Updated</th>
+                <th class="mobile_hide hidden"></th>
+              </tr>
+            </thead>
+            <tbody class="list">
+              <tr class="view filter-item blue">
+                <td class="mobile_hide">Employment</td>
+                <td class="mobile_hide">Stood down</td>
+                <td class="question">I have been stood down. What does that mean?</td>
+                <td class="mobile_hide">March 24th</td>
+                <td class="mobile_hide date hidden">20|03|24</td>
+              </tr>
+              <tr class="fold">
+                <td class="mobile_hide"></td>
+                <td class="mobile_hide"></td>
+                <td class="answer">
+                  <p>You may now be eligible for the JobSeeker payment including the Coronavirus Supplement. For when and how to apply see FAQ number 4. </p>
+                  <p> If you still have a little bit of income through your work, but not enough to survive, you may still be eligible. The JobSeeker Payment income test stipulated that singles with an income below $542 per week, or couples with an income below $993.50 per week, will still be eligible for payments (albeit at a reduced rate, depending on your private income). </p>
+                  <p> If your partner (as defined by Centrelink) still has a job paying more than $993.50 per week you will not be eligible. </p>
+                  <p> Note the information at FAQ number 4, about when to apply. <strong> There is a strong chance that it may be beneficial for you to wait until 27 April to apply if you are a freelancer, artist, sole trader or in the gig-economy. </strong></p>
+                </td>
+                <td></td>
+                <td class="hidden"></td>
+              </tr>
+              <tr class="view filter-item red">
+                <td>Centrelink</td>
+                <td>Eligibility</td>
+                <td class="question">What is MyGov, how do I get it?</td>
+                <td>March 24th</td>
+                <td class="date hidden">20|03|24</td>
+              </tr>
+              <tr class="fold">
+                <td class="mobile_hide"></td>
+                <td class="mobile_hide"></td>
+                <td class="answer">
+                  <p>If you were a traditional worker and have simply lost your job (termination), go ahead and apply (online) today through MyGov.</p>
+                  <p>If you fall into one of the categories of a freelancer, artist, sole-trader or you still have a job, but have had your shifts cancelled - <strong> it may be easier to wait until 27 April to apply. </strong></p>
+                  <p> From 27 April, you will no longer need to provide employment separation certificates from each employer in the past 12 months. Instead, you can simply make an initial declaration about your identity, residency status and income, and state that you have been made redundant, or had your hours reduced (including to zero), as a result of the economic downturn due to Covid-19. In the case of sole traders and the self-employed, applicants will make a declaration that their business has been suspended or had turnover reduced significantly.</p>
+                  <p> Current eligibility and qualification criteria will apply to applications until 27 April 2020. However if you don’t think you can wait until 27 April, apply now but it may be more difficult to apply.</p>
+                  <p>Once you have decided to apply, you need to create a MyGov account if you don’t already have one. Then you will need to link your account to the Centrelink service. Login into MyGov, select “Link Your First Service” and follow the prompts. You will be asked a series of questions and may need to provide bank details and other information. Then log back into MyGov, select Centrelink, and make your claim. </p>
+                  <p> You will be back paid to the day you first tell Centrelink you intend to apply for a JobSeeker payment, even if you don’t complete your JobSeeker payment application that day.</p>
+                  <p> Note: If you need to provide proof of identity this can be done over the phone – You do not need to go to Centrelink. Your claim will still be processed whilst waiting for identity verification. </p>
+                  <p> This will take time, but you need to be patient. Remember this is a crisis impacting everybody. No government service was ever designed to deal with a situation like this. Staffing levels at Centrelink reflect this, as does the Services Australia website capability. Respect the staff and do your best to help them in this overwhelming situation. </p>
+                </td>
+                <td></td>
+                <td class="hidden"></td>
+              </tr>
+              <tr class="view filter-item green">
+                <td>Centrelink</td>
+                <td>Eligibility</td>
+                <td class="question">I have lots of savings, is there any point in me applying for welfare?</td>
+                <td>March 30th</td>
+                <td class="date hidden">20|03|24</td>
+              </tr>
+              <tr class="fold">
+                <td class="mobile_hide"></td>
+                <td class="mobile_hide"></td>
+                <td class="answer">
+                  <p>Yes, providing you have lost shifts or your job, you will still most likely be eligible. The government has suspended the ‘liquid assets test’ waiting period (cash savings) from 27 April. This means people do not need to use up their savings before they can receive unemployment benefits.</p>
+                  <p> If you have many assets such as multiple houses then you will most likely not be eligible. But for most, you should still qualify.</p>
+                </td>
+                <td></td>
+                <td class="hidden"></td>
+              </tr>
+              <tr class="view filter-item blue">
+                <td>Centrelink</td>
+                <td>Applying</td>
+                <td class="question">When should I apply and what is this about 27 April?</td>
+                <td>1st April</td>
+                <td class="date hidden">20|01|01</td>
+              </tr>
+              <tr class="fold">
+                <td class="mobile_hide"></td>
+                <td class="mobile_hide"></td>
+                <td class="answer">
+                  <ul>
+                    <li>If you are over 22, and are not studying, you should apply for the JobSeeker payment. This is the newly named ‘NewStart’ (colloquially known as the dole). From April 27 the payment rate for a single person with no children can be up to $1,131 a fortnight (variations depending on your situation, such as extra payments for rental assistance). This is inclusive of the new Coronavirus Supplement. </li>
+                    <li> If you are between 22 and 24 and enrolled at an educational institution, you should apply for Youth Allowance </li>
+                    <li> If you are over 25 and are enrolled at an educational institution, you should apply for Austudy (or Abstudy if you are an Aboriginal or Torres Strait Islander student or apprentices).</li>
+                    <li> If you are under 22, and not studying, you should apply for Youth Allowance for job seekers.</li>
+                  </ul>
+                </td>
+                <td></td>
+                <td class="hidden"></td>
+              </tr>
+              <tr class="view filter-item red">
+                <td>Centrelink</td>
+                <td>Applying</td>
+                <td class="question">Lorem Ipsum</td>
+                <td>March 24th</td>
+                <td class="date hidden">20|03|24</td>
+              </tr>
+              <tr class="fold">
+                <td></td>
+                <td></td>
+                <td class="answer"></td>
+                <td></td>
+                <td class="hidden"></td>
+              </tr>
+              <tr class="view filter-item red">
+                <td>Centrelink</td>
+                <td>Applying</td>
+                <td class="question">Lorem Ipsum</td>
+                <td>March 24th</td>
+                <td class="date hidden">20|03|24</td>
+              </tr>
+              <tr class="fold">
+                <td></td>
+                <td></td>
+                <td class="answer"></td>
+                <td></td>
+                <td class="hidden"></td>
+              </tr>
+              <tr class="view filter-item green">
+                <td>Centrelink</td>
+                <td>Applying</td>
+                <td class="question">Lorem Ipsum</td>
+                <td>March 24th</td>
+                <td class="date hidden">20|03|24</td>
+              </tr>
+              <tr class="fold">
+                <td></td>
+                <td></td>
+                <td class="answer"></td>
+                <td></td>
+                <td class="hidden"></td>
+              </tr>
+              <tr class="view filter-item green">
+                <td>Centrelink</td>
+                <td>Applying</td>
+                <td class="question">Lorem Ipsum</td>
+                <td>March 24th</td>
+                <td class="date hidden">20|03|24</td>
+              </tr>
+              <tr class="fold">
+                <td></td>
+                <td></td>
+                <td class="answer"></td>
+                <td></td>
+                <td class="hidden"></td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- mask is last -->
+          <div id="filter-mask"></div>
+        </div>
+        <div id="chatbot">
+        </div>
+      </div>
+    </div>
+    <footer>
+      <ul>
+        <li>About</li>
+        <li>Resources</li>
+        <li>More Help</li>
+        <li>Disclaimer</li>
+        <li>Contact</li>
+      </ul>
+      <div id="sharing">
+        <div>Share with others:</div>
+        <a target="blank" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fcovidassist.net.au%2F"> Facebook </a>
+        <a target="blank" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fcovidassist.net.au%2F&text=We%27re+here+to+help+you+navigate+the+confusing+welfare+and+social+support+services+provided+by+Centrelink%2C+and+state+and+territory+governments+during+the+Coronavirus+crisis."> Twitter </a>
+        <a target="blank" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fcovidassist.net.au%2F&title=Covid%20Assist&summary=We%27re+here+to+help+you+navigate+the+confusing+welfare+and+social+support+services+provided+by+Centrelink%2C+and+state+and+territory+governments+during+the+Coronavirus+crisis."> LinkedIn </a>
+        <a target="blank" href="mailto:?Subject=Covid%20Assist&body=Body%20goes%20here"> Email </a>
+      </div>
+    </footer>
+  </body>
+
+    <script>
+      $(document).ready(function() {
+        $(" #accordion ").load(" https://jamesandjimmy.com/writing/construction-of-an-architect.txt ");
+      });
+    </script>
+
+    <script>
+        $(function () {
+          $("#reference .fold-table tr.view").on("click", function () {
+            $(this).toggleClass("open").next(".fold").toggleClass("open");
+          });
+        });
+    </script>
+
+</html>
