@@ -660,6 +660,7 @@ table.fold-table tr.fold.open {
 #contact  {
   display: flex;
   padding: 100px 0 50px 0;
+  font-size: 16px;
 }
 
 #disclaimer div:first-child {
