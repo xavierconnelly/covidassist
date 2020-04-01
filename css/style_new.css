@@ -257,12 +257,14 @@ footer ul li {
 }
 
 #landing button {
-    background: url(/assets/Arrow_down.png);
-    background-repeat: no-repeat;
-    width: 57px;
-    height: 33px;
-    border: none;
-    cursor: pointer;
+  background: url(/assets/Arrow_down.png);
+  background-repeat: no-repeat;
+  width: 57px;
+  height: 33px;
+  border: none;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
 }
 
 #container {
@@ -534,7 +536,6 @@ input.search {
 
 /* Table 
 //////////////////////////////////////////////////////////////////////////// */
-
 table {
   width: 100%;
   border-spacing: unset;
@@ -638,166 +639,4 @@ table.fold-table tr.fold.open {
 
 .hidden {
   display: none;
-}
-
-/* Chatbot
-//////////////////////////////////////////////////////////////////////////// */
-
-/*
-#josef {
-  display: none;
-  order: 3;
-  padding: 100px 10px 10px 10px;
-  background: #026540;
-  height: calc(100vh - 0px);
-}
-
-#josef iframe {
-  height: ;
-  padding: 0px 80px 80px 20px;
-}
-
-@media all and (min-width: 600px) {
-  #intro, #view, #josef { 
-    flex: 40%;
-  }
-}
-@media all and (max-width: 600px) {
-  #josef {
-    height: calc(100vh - 40px);
-  }
-    #josef iframe {
-    padding: 80px 20px 60px 20px;
-  }
-}
-
-/* Frequently Asked Questions
-//////////////////////////////////////////////////////////////////////////// */
-
-/* replaced by new accordion
-
-#accordion {
-  width: 100%;
-  padding-top: 1em;
-  margin-top: 1em;
-}
-
-.accordion_bundle {
-  border-bottom: 2px solid #f9eedc;
-  padding-bottom: ;
-}
-
-.question {
-  background-color: #026540;
-  color: #f9eedc;
-  cursor: pointer;
-  padding: 10px 40px 10px 10px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 30px;
-  transition: 0.4s;
-}
-
-.question:hover {
-  background-color: #f9eedc;
-  color: #026540;
-}
-
-.question:after {
-  content: "";
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  background: url(../assets/Arrow_down.png);
-  width: 30px;
-  height: 20px;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-*/
-
-/* Maybe delete??????  
-.active {
-  background-color: #f9eedc;
-  color: #026540;
-}
-
-.active:after {
-  content: "";
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  background: url(../assets/Arrow_up.png);
-  width: 30px;
-  height: 20px;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-.answer {
-  padding: 10px 20px 10px 20px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease-out;
-}
-*/
-
-
-/* cream #f9eedc */
-/* grey #eee */
-/* white #fffbf5 */
-/* green #026540 */
-/* yellow #fcb80e */
-
-
-/* Menu Links
-////////////////////////////////////////////////////////////////////////
-
-.info {
-    left: 100vw;
-    background: inherit;
-    color: #eee;
-    height: 100vh;
-    padding: 200px 0px 80px 40px;
-    position: fixed;
-    width: 50vw;
-    z-index: 5;
-    transition: 1s;
-    overflow: scroll;
-}
-
-Switching to the right hand side
-left: 100vw;
-    background: inherit;
-    color: #eee;
-    height: 100vh;
-    padding: 40px 0px 70px 0px;
-    width: 50vw;
-    z-index: 5;
-    transition: 1s;
-    overflow: scroll;
-  }
-
-
-@media all and (max-width: 900px) {
-.info {
-      width: 100vw;
-      transition: 0.5s;
-  }
-}
-
-.info > h3 {
-  font-size: 1.5em;
-  padding-bottom: 1em;
-}
-
-.info p,
-.info_body {
-  width: 80%;
-}
-
-#about p {
-  padding-bottom: 1em;
 }
