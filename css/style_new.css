@@ -661,11 +661,16 @@ table.fold-table tr.fold.open {
 //////////////////////////////////////////////////////////////////////////// */
 #contact {
   display: flex;
-  width: 50vw:
+  width: 60vw:
+}
+
+#contact img,
+#contact div {
+  flex: 40%;
 }
 
 #contact div {
-  width: 400px;
+ 
 }
 
 
