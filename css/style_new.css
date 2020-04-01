@@ -270,6 +270,7 @@ footer ul li {
 #container {
   z-index: 1;
   width: 100vw;
+  min-height: 100vh;
   margin-bottom: 300px;
 }
 
@@ -452,7 +453,7 @@ input.search {
   right: -5px;
 }
 
-/* The container */
+/* The container ///////////////////     RENAME      //////////////////////*/
 .container {
   position: relative;
   padding-left: 20px;
