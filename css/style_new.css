@@ -46,6 +46,7 @@ a {
 
 a:hover {
   cursor: pointer;
+  text-decoration: underline;
 }
 
 /* Header 
@@ -150,6 +151,13 @@ footer ul li {
   color: #333;
 }
 
+@media all and (max-width: 600px) {
+  footer ul {
+    font-size: 30px;
+    padding: 0 0 20px 20px;
+  }
+}
+
 /* Hamburger 
 //////////////////////////////////////////////////////////////////////////*/
 
@@ -203,40 +211,22 @@ footer ul li {
 
 /* Mobile Menu //////////////////////////////////////////////////////////////////////////*/
 
-#menu {
+#menu { /* /////////////////////////////////CHANGE THIS*/
     position: fixed;
     z-index: 300;
     height: 100vh;
     background: #026540;
     color: #f9eedc; 
-    left: 100vw;
-    width: 50vw;
-    /* margin-top: 80px; */
-    font-size: 1.5em;
-    padding: 40px;
-    box-sizing: border-box;
-    border-left: 2px solid;
+    font-size: 2em;
     transition: 1s;
-}
-
-@media all and (max-width: 900px) {
-  #menu {
-      width: 100vw;
-      margin: auto;
-      padding-top: 160px;
-      border-left: unset;
-      text-align: center;
-      transition: 0.5s;
-  }
+    width: 100vw;
+    margin: auto;
+    text-align: center;
+    transition: 0.5s;
 }
 
 .menu_link {
-  padding: 6px 0;
-}
-
-.menu_link:hover {
-  text-decoration: underline;
-  cursor: pointer;
+  padding: 10px 0;
 }
 
 /* Main Content 
