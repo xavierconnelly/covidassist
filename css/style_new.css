@@ -275,92 +275,6 @@ footer ul li {
   margin-bottom: 300px;
 }
 
-.wrapper {
-  display: flex;  
-  flex-flow: row wrap;
-}
-
-.wrapper > * {
-  flex: 1 100%;
-  text-align: left;
-}
-
-#intro {
-  order: 1;
-  font-size: 1em;
-  padding: 170px 10px 70px 10px;
-  margin: 10px 0px 0px 30px;
-  width: 50vw;
-  color: #eee;
-  font-family: 'IBM Plex Serif', serif;
-}
-
-#intro p,
-#intro ul {
-  padding-bottom: 1em;
-  width: 500px;
-  font-family: inherit;
-}
-
-#intro hr {
-  width: 500px;
-}
-
-#intro a {
-  color: inherit;
-}
-
-#intro ul li {
-  font-family: inherit;
-}
-
-#intro ul li strong {
-  text-decoration: underline;
-}
-  
-#view {
-  order: 3;
-  cursor: pointer;
-  background: #f9eedc;
-  color: #026540; 
-  text-align: center;
-  border-radius: 50px;
-  width: 330px;
-  padding: 10px;
-}
-
-#view:hover {
- background: #fcb80e;
-}
-
-#view a {
-  text-decoration: none;
-  color: inherit;
-}
-
-@media all and (max-width: 900px) {
-  #intro {
-    padding: 120px 20px 50px 20px;
-    font-size: 1.3em;
-    margin: unset;
-    font-family: unset;
-  }
-  #intro p,
-  #intro ul,
-  #intro hr {
-    width: unset;
-  }
-}
-
-@media all and (max-width: 600px) {
-  #intro {
-    font-size: 1em;
-  }
-  #intro p,
-  #intro ul {
-    width: unset;
-  }
-}
 
 /* Accordion, Filter, Search
 //////////////////////////////////////////////////////////////////////////// */
@@ -562,8 +476,8 @@ table td:not(:nth-child(3)) {
   width: 120px;
 }
 
-table th:(nth-child(4)),
-table td:(nth-child(4)) {
+table th(:nth-child(4)),
+table td(:nth-child(4)) {
   padding-right: 40px;
   text-align: right;
 }
@@ -649,6 +563,7 @@ table.fold-table tr.fold.open {
 
 /* Resources
 //////////////////////////////////////////////////////////////////////////// */
+
 
 /* More Help
 //////////////////////////////////////////////////////////////////////////// */
