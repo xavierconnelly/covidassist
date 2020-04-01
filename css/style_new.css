@@ -268,11 +268,12 @@ footer ul li {
 }
 
 #container {
+  box-shadow: 4px 4px 1rem rgba(0, 0, 0, 0.25);
   background: #2c6540;
   z-index: 1;
   width: 100vw;
   min-height: 100vh;
-  margin-bottom: 300px;
+  margin: -140px 0 300px 0;
 }
 
 
