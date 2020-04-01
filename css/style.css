@@ -10,144 +10,80 @@
 /* //////////////////////////////////////////////////////////////////////////////// */
 
 * {
-  outline: px solid grey;
   margin: 0;
   box-sizing: border-box;
+  font-family: arial, sans-serif;
   scroll-behavior: smooth;
+  outline: px solid red;
+  font-family: 'Cabin', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
 body {
   background: #026540;
   color: #f9eedc;
+  font-family: 'Cabin', sans-serif;
   line-height: 1.3;
-  width: 100vw;
-  overflow-x: hidden;
 }
 
 header {
-  padding: 40px;
-  height: 100px;
-  position: ;
-  display: -webkit-flex;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  /*width: 100vw;*/
+  /*background: #026540;*/
+  color: #f9eedc;
+  position: fixed;
+  z-index: 200;
+  margin-top: 40px;
+  /*border-bottom: 2px solid #f9eedc;*/
 }
 
-h1, h2, h3, h4, h5, h6, header span {
-  font-family: "Comfortaa", cursive;
-}
-
-h1 {
-  font-size: 60px;
-}
-
-p, ul, a, span, div {
-  font-family: "IBM Plex Sans", sans-serif;
-}
-
-.logo {
-  margin-right: auto;
-  display: flex;
-  align-items: center;
-  position: ;
-  left: 0;
-}
-
-header span {
-  font-size: 50px;
-  float: left;
-}
-
-header ul {
-  height: 100px;
-  display: flex;
-  align-items: center;
-  margin: 0;
-}
-
-header ul li {
+header h1 {
+  font-size: 55px;
   display: inline-block;
-  padding: 0px 5px 0px 5px;
-  white-space: nowrap;
-}
-
-header ul li:not(:last-child):after {
-  content: "|";
-  padding: 0px 0px 0px 5px;
+  text-align: left;
+  margin: 0px 0px 0px 40px;
+  /* width: 9ch;*/
+  font-family: inherit;
 }
 
 @media all and (max-width: 900px) {
   header {
-    height: 50px;
-    display: flex;
-    align-items: center;
+    margin-top: 20px;
   }
-  header img {
-    width: 50px;
-    height: 50px;
-  }
-  header span {
-    font-size: 25px;
-  }
-  header ul {
-    display: none;
-  }
-  .hamburger {
-    display: inline-block;
+  header h1 {
+      font-size: 40px;
+      margin: unset;
+      padding: 10px;
   }
 }
 
-
 /* //////////////////////////////////////////////////////////////////////////////// */
-/* Footer */
+/* Sharing */
 /* //////////////////////////////////////////////////////////////////////////////// */
 
 footer {
-  padding: 20px;
-  color: #333;
-  background: #fcb80e;
   position: fixed;
   bottom: 0;
-  z-index: -1;
-  height: 300px;
+  background: #fcb80e;
+  color: #333333;
+  z-index: 900;
   width: 100vw;
+  text-align: center;
+  padding: 10px;
 }
 
-footer ul {
-  list-style-type: none;
-  font-size: 35px;
-  padding: 0 0 40px 20px;
-  position: absolute;
-  bottom: 0;
-}
-
-footer ul li {
-  margin: 0;
-  padding: 0;
-}
-
-#sharing {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding: 0 20px 40px 0;
-}
-
-#sharing a {
+footer a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
   padding: 0 10px;
+  font-family: inherit;
 }
 
-#sharing a:hover {
+footer a:hover {
   text-decoration: underline;
   font-style: italic;
-  color: #333;
+  color: #333333;
 }
-
 
 /* //////////////////////////////////////////////////////////////////////////////// */
 /* Hamburger */
@@ -155,7 +91,7 @@ footer ul li {
 
 .hamburger {
   color: #f9eedc;
-  display: none;
+  display: inline-block;
   cursor: pointer;
   position: fixed;
   right: 0;
@@ -314,12 +250,10 @@ left: 100vw;
   font-size: 30px;
   transition: 0.4s;
 }
-
 .question:hover {
   background-color: #f9eedc;
   color: #026540;
 }
-
 .question:after {
   content: "";
   position: absolute;
@@ -362,35 +296,6 @@ left: 100vw;
 /* //////////////////////////////////////////////////////////////////////////////// */
 /* Main Content */
 /* //////////////////////////////////////////////////////////////////////////////// */
-
-#landing {
-  background: #2c6540;
-  height: 100vh;
-  padding: 20px;
-}
-
-.landing-text {
-  width: 500px;
-}
-
-@media all and (max-width: 900px) {
-  .landing-text {
-    width: unset;
-  }
-}
-
-#resources {
-  height: 100vh;
-  background: lightgrey;
-  font-size: 16px;
-}
-
-#container {
-  z-index: 1;
-  width: 100vw;
-  margin-bottom: 300px;
-}
-
 
 .wrapper {
   display: flex;  
@@ -503,7 +408,6 @@ left: 100vw;
   margin: -20px;
   padding: 20px;
   font-size: 16px;
-  min-height: 100vh;
 }
 
 .filter-selection {
