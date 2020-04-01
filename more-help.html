@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="eng" xml:lang="eng" xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+      
+      <title>covidassist</title>
+      
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <meta name="description" content="In response to the COVID-19 pandemic, the government has announced sweeping changes to the welfare system. We hope to help you understand what benefits you will and won't receive and what you need to do">
+      <meta name="keywords" content="centrelink, covid-19, covid, 19, welfare, help, what, can, get, payments, coronavirus">
+      <meta name="author" content="Xavier Connelly">
+
+      <link rel="stylesheet" type="text/css" media="screen" href="./css/style_new.css">
+      <link rel="icon" href="/favicon.svg">
+      <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+
+      <script type="text/javascript" src="/js/scripts.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+      <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+
+  </head>
+
+  <body>
+    <header>
+      <a href="/index_new.html" class="logo">
+        <img src="https://covidassist.net.au/assets/CA_Logo.svg" alt="covid assist logo">
+        <span>covidassist</span>
+      </a>
+      <div class="menu">
+        <ul>
+        <li><a href="/about">About</a></li>
+        <li><a href="/index_new/#reference">Resources</a></li>
+        <li><a href="/more-help">More Help</a></li>
+        <li><a href="/disclaimer">Disclaimer</a></li>
+        <li><a href="/contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" onclick="openMenu(this)">
+          <div class="hamburger_line_top"></div>
+          <div class="hamburger_line_middle"></div>
+          <div class="hamburger_line_bottom"></div>
+        </div>
+      </div>
+    </header>
+    <div id="mobile-menu">
+      <ul>
+        <li><a href="/about">About</a></li>
+        <li><a href="/index_new/#reference">Resources</a></li>
+        <li><a href="/more-help">More Help</a></li>
+        <li><a href="/disclaimer">Disclaimer</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+    <div id="container">
+      <div id="more-help">
+      </div>
+    </div>
+    <footer>
+      <ul>
+        <li><a href="/about">About</a></li>
+        <li><a href="/index_new/#reference">Resources</a></li>
+        <li><a href="/more-help">More Help</a></li>
+        <li><a href="/disclaimer">Disclaimer</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+      <div id="sharing">
+        <div>Share with others:</div>
+        <a target="blank" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fcovidassist.net.au%2F"> Facebook </a>
+        <a target="blank" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fcovidassist.net.au%2F&text=We%27re+here+to+help+you+navigate+the+confusing+welfare+and+social+support+services+provided+by+Centrelink%2C+and+state+and+territory+governments+during+the+Coronavirus+crisis."> Twitter </a>
+        <a target="blank" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fcovidassist.net.au%2F&title=Covid%20Assist&summary=We%27re+here+to+help+you+navigate+the+confusing+welfare+and+social+support+services+provided+by+Centrelink%2C+and+state+and+territory+governments+during+the+Coronavirus+crisis."> LinkedIn </a>
+        <a target="blank" href="mailto:?Subject=Covid%20Assist&body=Body%20goes%20here"> Email </a>
+      </div>
+    </footer>
+  </body>
+
+    <script>
+      $(document).ready(function() {
+        $(" #accordion ").load(" https://jamesandjimmy.com/writing/construction-of-an-architect.txt ");
+      });
+    </script>
+
+    <script>
+        $(function () {
+          $("#reference .fold-table tr.view").on("click", function () {
+            $(this).toggleClass("open").next(".fold").toggleClass("open");
+          });
+        });
+    </script>
+
+</html>
