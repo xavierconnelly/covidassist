@@ -374,7 +374,7 @@ left: 100vw;
 #landing {
   background: #2c6540;
   min-height: 100vh;
-  padding: 20px;
+  padding: 20px 20px 100px 20px;
 }
 
 .landing-text {
