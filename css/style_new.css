@@ -661,8 +661,12 @@ table.fold-table tr.fold.open {
 //////////////////////////////////////////////////////////////////////////// */
 #contact {
   display: flex;
+  width: 50vw:
 }
 
+#contact div {
+  width: 400px;
+}
 
 
 
