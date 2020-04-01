@@ -213,6 +213,7 @@ footer ul li {
 
 #menu { /* /////////////////////////////////CHANGE THIS*/
     position: fixed;
+    left: 100vw;
     z-index: 300;
     height: 100vh;
     background: #026540;
