@@ -662,7 +662,7 @@ table.fold-table tr.fold.open {
   padding: 100px 0 50px 0;
 }
 
-#disclaimer:first-child {
+#disclaimer div:first-child {
   width: 50%;
 }
 
