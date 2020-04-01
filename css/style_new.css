@@ -353,7 +353,7 @@ left: 100vw;
 }
 */
 
-/* Maybe delete??????  */
+/* Maybe delete??????  
 .active {
   background-color: #f9eedc;
   color: #026540;
@@ -373,11 +373,11 @@ left: 100vw;
 
 .answer {
   padding: 10px 20px 10px 20px;
-  /*background-color: #f9eedc;*/
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease-out;
 }
+*/
 
 /* //////////////////////////////////////////////////////////////////////////////// */
 /* Main Content */
@@ -414,6 +414,7 @@ left: 100vw;
     width: 57px;
     height: 33px;
     border: none;
+    cursor: pointer;
 }
 
 #container {
@@ -701,9 +702,10 @@ table td {
   border-top: 1px solid #333;
 }
 
-table th(:first-child),
-table td(:first-child) {
-  padding-left: 100px;
+table th:first-child,
+table td:first-child {
+  padding-left: 60px;
+  width: 200px;
 }
 
 table th:not(:nth-child(3)),
@@ -711,9 +713,10 @@ table td:not(:nth-child(3)) {
   width: 120px;
 }
 
-table th(:last-child),
-table td(:last-child) {
-  padding-right: 20px;
+table th:last-child,
+table td:last-child {
+  padding-right: 40px;
+  width: 200px;
 }
 
 /* Fold Table */
