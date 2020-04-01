@@ -204,5 +204,13 @@
       <div id="filter-mask"></div>
     </div>
 
+    <script type="text/javascript">
+        $(function () {
+          $("#reference .fold-table tr.view").on("click", function () {
+            $(this).toggleClass("open").next(".fold").toggleClass("open");
+          });
+        });
+    </script>
+
   </body>
 </html>
