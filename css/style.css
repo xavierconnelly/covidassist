@@ -237,6 +237,7 @@ left: 100vw;
   padding-bottom: ;
 }
 
+/* Replaced with new accordion 
 .question {
   background-color: #026540;
   color: #f9eedc;
@@ -250,7 +251,6 @@ left: 100vw;
   transition: 0.4s;
 }
 
-.active,
 .question:hover {
   background-color: #f9eedc;
   color: #026540;
@@ -266,6 +266,13 @@ left: 100vw;
   height: 20px;
   background-size: 100%;
   background-repeat: no-repeat;
+}
+*/
+
+/* Maybe delete??????  */
+.active {
+  background-color: #f9eedc;
+  color: #026540;
 }
 
 .active:after {
@@ -399,7 +406,7 @@ left: 100vw;
 }
 
 #reference {
-  background: red;
+  background: #eee;
   margin: -20px;
   padding: 20px;
   font-size: 16px;
