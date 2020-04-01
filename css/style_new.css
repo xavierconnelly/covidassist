@@ -662,6 +662,10 @@ table.fold-table tr.fold.open {
   padding-top: 100px;
 }
 
+#disclaimer div {
+  flex: 2 1 auto;
+}
+
 #disclaimer div,
 #contact div {
   flex: 40%;
