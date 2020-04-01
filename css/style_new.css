@@ -669,10 +669,17 @@ table.fold-table tr.fold.open {
   flex: 40%;
 }
 
-#contact div {
- 
+#contact div img {
+  width: ;
 }
 
+#contact div {
+  width: 400px;
+}
+
+#contact div p {
+  padding-bottom: 1em;
+}
 
 
 
