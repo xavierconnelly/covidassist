@@ -659,14 +659,13 @@ table.fold-table tr.fold.open {
 #disclaimer,
 #contact  {
   display: flex;
-  padding-top: 100px;
+  padding: 100px 0 50px 0;
 }
 
-#disclaimer div {
-  flex: 2 1 auto;
+#disclaimer:first-child {
+  width: 50%;
 }
 
-#disclaimer div,
 #contact div {
   flex: 40%;
 }
