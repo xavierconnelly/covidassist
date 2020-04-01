@@ -653,39 +653,28 @@ table.fold-table tr.fold.open {
 /* More Help
 //////////////////////////////////////////////////////////////////////////// */
 
-/* Disclaimer
+/* Disclaimer + Contact
 //////////////////////////////////////////////////////////////////////////// */
-#disclaimer {
+#disclaimer  {
   display: flex;
   padding-top: 100px;
 }
 
-#disclaimer div {
-  width: 300px;
-}
-
-/* Contact
-//////////////////////////////////////////////////////////////////////////// */
-#contact {
-  display: flex;
-  padding-top: 100px;
-}
-
-#contact img,
+#disclaimer div,
 #contact div {
   flex: 40%;
 }
 
+#disclaimer div img,
 #contact div img {
   float: right;
   padding-right: 50px;
 }
 
-#contact div {
-  width: 300px;
-}
-
+#disclaimer h4,
+#contact h4,
+#disclaimer div p,
 #contact div p {
-  padding-bottom: 1em;
-  width: 400px;
+  padding: 0 20px 1em 0;
+  width: 300px;
 }
