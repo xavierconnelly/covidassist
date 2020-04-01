@@ -49,6 +49,15 @@ p, ul, a, span, div {
   font-family: "IBM Plex Sans", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
 .logo {
   margin-right: auto;
   display: flex;
