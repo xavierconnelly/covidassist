@@ -1,12 +1,6 @@
 /////////////////////////////////////////////////////////////////////////////////////////////
 /// Accordion ///////////////////////////////////////////////////////////////////////////////
 
-$(function () {
-  $("#reference .fold-table tr.view").on("click", function () {
-    $(this).toggleClass("open").next(".fold").toggleClass("open");
-  });
-});
-
 /// Search ///
 var options = {
   valueNames: ["date", "question", "answer"]
@@ -66,72 +60,28 @@ function openJosef() {
     document.getElementById("josef").style.display = "block";
 }
 
+/////////////////////////////////////////////////////////////////////////////////////////////
+/// Maybe defunct? //////////////////////////////////////////////////////////////////////////
+
 function openMenu(x) {
     x.classList.toggle("change");
     
     var z = window.matchMedia("(max-width: 900px)")
     if (z.matches) { // If less than 900px
-  
-    var y = document.getElementById("menu");
+
+  ///////// Don't think these should be inside the openMenu function ////////////
+    var y = document.getElementById("mobile-enu");
     if (y.style.left === "0vw") {
         y.style.left = "100vw";
-        document.getElementById("faqs").style.left = "0vw";
-        document.getElementById("about").style.left = "0vw";
-        document.getElementById("disclaimer").style.left = "0vw";
   } else {
         y.style.left = "0vw";
     }
   } else {
-      var y = document.getElementById("menu");
+      var y = document.getElementById("mobile-enu");
       if (y.style.left === "50vw") {
           y.style.left = "100vw";
-          document.getElementById("faqs").style.left = "100vw";
-          document.getElementById("about").style.left = "100vw";
-          document.getElementById("disclaimer").style.left = "100vw";
       } else {
         y.style.left = "50vw";
       }
   };
 }
-
-function openAbout() {
-  var b = window.matchMedia("(max-width: 900px)")  
-  if (b.matches) { // If less than 900px
-      document.getElementById("about").style.left = "0vw";
-      document.getElementById("faqs").style.left = "0vw";
-      document.getElementById("disclaimer").style.left = "100vw";
-      document.getElementById("menu").style.left = "100vw";
-  } else {
-      document.getElementById("about").style.left = "0vw";
-      document.getElementById("faqs").style.left = "0vw";
-      document.getElementById("disclaimer").style.left = "50vw";
-  } 
-}
-
-function openFaqs() {
-  var b = window.matchMedia("(max-width: 900px)")
-  if (b.matches) { // If less than 900px
-      document.getElementById("about").style.left = "0vw";
-      document.getElementById("faqs").style.left = "100vw";
-      document.getElementById("disclaimer").style.left = "100vw";
-      document.getElementById("menu").style.left = "100vw";
-  } else {
-      document.getElementById("about").style.left = "0vw";
-      document.getElementById("faqs").style.left = "50vw";
-      document.getElementById("disclaimer").style.left = "50vw";
-  }
-}
-
-function openDisclaimer() {
-  var b = window.matchMedia("(max-width: 900px)")  
-  if (b.matches) { // If less than 900px
-      document.getElementById("about").style.left = "0vw";
-      document.getElementById("faqs").style.left = "0vw";
-      document.getElementById("disclaimer").style.left = "0vw";
-      document.getElementById("menu").style.left = "100vw";
-  } else {
-      document.getElementById("about").style.left = "0vw";
-      document.getElementById("faqs").style.left = "0vw";
-      document.getElementById("disclaimer").style.left = "0vw";
-  }
-} 
