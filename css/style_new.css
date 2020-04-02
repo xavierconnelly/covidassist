@@ -520,11 +520,28 @@ table.fold-table .fold td {
   padding-bottom: 30px;
 }
 
+table.fold-table .fold td h4,
 table.fold-table .fold td p,
 table.fold-table .fold td ul {
   max-width: 600px;
   padding-right: 50px;
   padding-left: unset;
+}
+
+table.fold-table .fold td h4:first-child
+table.fold-table .fold td p:first-child,
+table.fold-table .fold td ul:first-child {
+  margin-block-start: 0.5em;
+}
+
+table.fold-table .fold td ul li {
+  padding-bottom: 1em;
+  list-style-type: lower-alpha;
+}
+
+table.fold-table .fold td p strong,
+table.fold-table .fold td ul li strong {
+  color: #006bff;
 }
 
 table.fold-table tr.fold td p::selection,
@@ -536,20 +553,6 @@ table.fold-table .fold td ul li strong::selection {
   background: #ffe500; /* change to other yellow */
 }
 
-table.fold-table .fold td p:first-child,
-table.fold-table .fold td ul:first-child {
-  margin-block-start: 0.5em;
-}
-
-table.fold-table .fold td ul li {
-  padding-bottom: 1em;
-}
-
-table.fold-table .fold td p strong,
-table.fold-table .fold td ul li strong {
-  color: #006bff;
-}
-
 table.fold-table tr.view.open {
   color: #006bff;
   font-weight: bold;
@@ -559,6 +562,10 @@ table.fold-table tr.fold.open {
   display: table-row;
 }
 
+/* Hidding Answers 
+  - is stopping search filter though
+  - change to height?
+  */
 .hidden {
   display: none;
 }
