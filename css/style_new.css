@@ -11,9 +11,13 @@ a {
   color: inherit;
 }
 
-a:not(header a):hover {
+a:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+
+header a:hover {
+  text-decoration: unset;
 }
 
 a, div, p, span, ul {
