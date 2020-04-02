@@ -290,13 +290,17 @@ footer ul li {
 }
 
 #reference button {
-  background: url(/assets/Arrow_down.png) center 40px 20px no-repeat;
+  background: url(/assets/Arrow_down.png) no-repeat;
+  background-position: center;
+  width: 40px;
+  height: 20px;
   border: none;
   cursor: pointer;
   margin: 0 0 0 -16px
   position: absolute;
   display: block;
-  top: -20px;
+  left: 50%;
+  top: -40px;
 }
 
 .filter-selection {
