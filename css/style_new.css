@@ -301,6 +301,7 @@ footer ul li {
   display: block;
   left: 50%;
   top: -40px;
+  display: none;
 }
 
 .filter-selection {
