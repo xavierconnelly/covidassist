@@ -550,6 +550,7 @@ table.fold-table .fold td ul:first-child {
 }
 
 table.fold-table .fold td h4,
+table.fold-table .fold td p,
 table.fold-table .fold td ul li {
   padding-bottom: 1em;
   list-style-type: lower-alpha;
