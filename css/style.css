@@ -626,10 +626,8 @@ table.fold-table tr.fold.open {
 
 /* More Help
 //////////////////////////////////////////////////////////////////////////// */
-#more-help .more-flex {
-  display: flex;
+#more-help {
   flex-wrap: wrap;
-  text-align: center;
   justify-content: center;
 }
 #more-help .more-box {
