@@ -593,7 +593,8 @@ table.fold-table tr.fold.open {
 //////////////////////////////////////////////////////////////////////////// */
 #about,
 #disclaimer,
-#contact  {
+#contact,
+#more-help {
   display: flex;
   padding: 300px 0 50px 0;
   font-size: 16px;
@@ -625,3 +626,25 @@ table.fold-table tr.fold.open {
 
 /* More Help
 //////////////////////////////////////////////////////////////////////////// */
+#more-help .more-flex {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+#more-help .more-box {
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid inherit;
+  margin: 5px;
+  text-align: left;
+}
+@media only screen and (max-width: 900px) {
+  .more-box {
+    max-width: 40%;
+  }
+}
+.more-box h4,
+.more-box p {
+  padding: 10px;
+}
