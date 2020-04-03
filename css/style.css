@@ -571,20 +571,11 @@ table.fold-table tr.fold.open {
   display: none;
 }
 
-/* About
+/* About +
+   Disclaimer +
+   Contact
 //////////////////////////////////////////////////////////////////////////// */
-
-
-/* Resources
-//////////////////////////////////////////////////////////////////////////// */
-
-
-/* More Help
-//////////////////////////////////////////////////////////////////////////// */
-
-
-/* Disclaimer + Contact
-//////////////////////////////////////////////////////////////////////////// */
+#about,
 #disclaimer,
 #contact  {
   display: flex;
@@ -592,6 +583,7 @@ table.fold-table tr.fold.open {
   font-size: 16px;
 }
 
+#about div:first-child,
 #disclaimer div:first-child {
   width: 50%;
 }
@@ -606,6 +598,7 @@ table.fold-table tr.fold.open {
   padding-right: 50px;
 }
 
+#about p,
 #disclaimer h4,
 #contact h4,
 #disclaimer div p,
@@ -613,3 +606,6 @@ table.fold-table tr.fold.open {
   padding: 0 20px 1em 0;
   width: 300px;
 }
+
+/* More Help
+//////////////////////////////////////////////////////////////////////////// */
