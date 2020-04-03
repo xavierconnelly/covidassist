@@ -1,0 +1,110 @@
+<html>
+<head>
+<style>
+*{
+	box-sizing: border-box;
+  font-family: helvetica;
+  margin: 0;
+}
+
+/* only important css*/
+p.description {
+	display: none;
+}
+
+.main {
+	width: 70%;
+}
+
+.cartel {
+	position: fixed;
+	right: 0px;
+	top: 0px;
+	padding: 40px;
+	margin-top: 20px;
+	width: 30%;
+}
+
+span {
+  width: 70vw;
+  height: 100vh;
+  display: block;
+}
+</style>
+<script>
+$(window).load(function () {
+    $(window).on("scroll resize", function () {
+        var pos = $('.cartel').offset();
+        $('.post').each(function () {
+            if (pos.top >= $(this).offset().top && pos.top <= $(this).next().offset().top) {
+                $('.cartel').html($(this).find('.description').html());
+            }
+        });
+    });
+
+$(document).ready(function () {
+	$(window).trigger('scroll'); // init the value
+    });
+
+})
+
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) {
+
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 700);
+        return false;
+      }
+    }
+  });
+});
+</script>
+<script type="text/javascript" src="http://www.leopaulbilles.com/js/jquery-1.11.3.min.js"></script>
+</head>
+
+<body>
+  <div class="cartel">
+  </div>
+  <div class="main">
+    <div class='post'>
+      <p class="description">
+        Alternating text here
+      </p>
+      <span style="background: yellow;">
+        something
+      </span>
+    </div>
+    <div class='post'>
+      <p class="description">
+        Takes two to tango
+      </p>
+      <span style="background: red;">
+        something
+      </span>
+    </div>
+    <div class='post'>
+      <p class="description">
+        Three's a crowd
+      </p>
+      <span style="background: blue;">
+        something
+      </span>
+    </div>
+    <div class='post'>
+      <p class="description">
+        Forty four back for more
+      </p>
+      <span style="background: orange;">
+        something
+      </span>
+    </div>
+  </div>
+</body>
+
+</html>
