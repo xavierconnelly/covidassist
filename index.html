@@ -1,99 +1,88 @@
 <!DOCTYPE html>
 
+<html lang="eng" xml:lang="eng" xmlns="http://www.w3.org/1999/xhtml">
+
   <head>
       
-      <title>covidassist</title>
+      <title>Covid Assist</title>
       
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <meta name="description" content="In response to the COVID-19 pandemic, the government has announced sweeping changes to the welfare system. We hope to help you understand what benefits you will and won't receive and what you need to do">
+      <meta name="description" content="A helping hand in trying times. In response to the COVID-19 pandemic, the government has announced sweeping changes to the welfare system. We hope to help you understand what benefits you will and won't receive and what you need to do">
       <meta name="keywords" content="centrelink, covid-19, covid, 19, welfare, help, what, can, get, payments, coronavirus">
       <meta name="author" content="Xavier Connelly">
 
       <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css">
       <link rel="icon" href="/favicon.svg">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif&display=swap">
-      <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
 
       <script type="text/javascript" src="/js/scripts.js"></script>
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
-    
+      <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+
   </head>
- <body>
 
+  <body>
     <header>
-      <h1>covidassist</h1>
-    </header>
-
-    <div class="wrapper">
-      <aside id="intro">
-        <p> In response to the Coronavirus (COVID-19) Crisis, the Australian Government has announced a number of sweeping changes to our welfare system. </p>
-        <p> We intend to help you navigate the confusing welfare and social support services provided by Centrelink, and state and territory governments during this time. </p>
-        <p> <strong> <i> Website will be launching in the coming days. </i> </strong> </p>
-        <br>
-        <hr>
-        <br>
-        <h3>Current status:</h3>
-        <br>
-        <p>Shortly, the Australian Government will be <a href="https://www.abc.net.au/news/2020-03-30/coronavirus-government-to-announce-wage-subsidy/12101648">announcing</a> a new income support measure through a mechanism similar to a wage subsidy. This will be for people who have had their income or work impacted by the Covid-19 Crisis. </p>
-        <p>It is understood that payments will be backdated, to include people who have already had their work or income impacted by the crisis. However this is yet to be confirmed and there is no indication of how this will impact people who have already applied for, or are already on a Centrelink payment.</p>
-        <br>
-        <hr>
-        <br>
-        <h3>What is a wage subsidy?</h3>
-        <br>
-        <p>Traditionally, Australians get a flat rate payment through Centrelink, regardless of how much you earned prior to losing work.</p>
-        <p>A wage subsidy is a different approach to welfare than we are used to in Australia. It provides income support to you, based on your income prior to being out of work. Countries such as Canada, Denmark, the United Kingdom, France and New Zealand have announced government measures to provide a wage subsidy during the Covid-19 Crisis.</p>
-        <p>However, early indications are that the Australian version of a wage subsidy might not be exactly based on the rate of your current salary - as seen in other countries.</p>
-        <p>Regardless, the scheme will see the Government reimburse businesses for keeping you ‘on the books’ during the crisis. A condition will likely be that your employer re-hires you at the end of the crisis.</p>
-        <br>
-        <hr>
-        <br>
-        <h3>Interim advice - as at 30 March</h3>
-        <br>
-        <h4>If you are already on Centrelink payment</h4>
-        <p>We suggest you wait for our update following the Government’s wage subsidy announcement, about what you should do. We will update the website accordingly.</p>
-        <h4>If you are about to apply, or waiting for an outcome from Centrelink</h4>
-        <p>We suggest you continue as is. At this stage the details including the start date of the new wage subsidy package are unknown. Applying for, or waiting for an outcome from Centrelink will likely not impact a future wage subsidy program. You will most likely be better to get into the current system now, and make a change into the new system later, if needed.</p>
-        <h4>If you have not applied for a Centrelink payment</h4>
+      <a href="/index_new.html" class="logo">
+        <img src="https://covidassist.net.au/assets/CA_Logo.svg" alt="covid assist logo">
+        <span>covidassist</span>
+      </a>
+      <div class="menu">
         <ul>
-          <br>
-          <li> <i>If you have had income or work impacted by Covid-19:</i> If you have not looked into starting an application for a Centrelink payment it may be best to wait until the announcement later this week to assess your options.</li><br>
-          <li> <i>If you have not yet had income or work impacted by Covid-19, but may be impacted in the future: </i> Rest assured that your options will be clearer in the coming days, depending on your situation. Be sure to visit this site again following the update.</li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/disclaimer">Disclaimer</a></li>
+        <li><a href="/contact">Contact</a></li>
         </ul>
-        <p>Hold tight, while we wait for the government to announce their latest package. We expect this announcement on Monday 30 March.</p>
-        <p>This website will be launched, to provide information and advice after the Government’s announcement.</p>       
-      </aside>
+        <div class="hamburger" onclick="openMenu(this)">
+          <div class="hamburger_line_top"></div>
+          <div class="hamburger_line_middle"></div>
+          <div class="hamburger_line_bottom"></div>
+        </div>
+      </div>
+    </header>
+    <div id="mobile-menu">
+      <ul>
+        <li><a href="/about">About</a></li>
+        <li><a href="/disclaimer">Disclaimer</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
     </div>
-
-    <footer id="sharing">
-      Share with others:
-      <a target="blank" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fcovidassist.net.au%2F"> Facebook </a>
-      <a target="blank" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fcovidassist.net.au%2F&text=We%27re+here+to+help+you+navigate+the+confusing+welfare+and+social+support+services+provided+by+Centrelink%2C+and+state+and+territory+governments+during+the+Coronavirus+crisis."> Twitter </a>
-      <a target="blank" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fcovidassist.net.au%2F&title=Covid%20Assist&summary=We%27re+here+to+help+you+navigate+the+confusing+welfare+and+social+support+services+provided+by+Centrelink%2C+and+state+and+territory+governments+during+the+Coronavirus+crisis."> LinkedIn </a>
-      <a target="blank" href="mailto:?Subject=Covid%20Assist&body=Body%20goes%20here"> Email </a>
+    <main id="container">
+      <div id="landing">
+        <div class="landing-text">
+          <h1>A helpful <br /> hand in trying <br />times</h1>
+          <p>In response to the Coronavirus (COVID-19) Crisis, the Australian Government has announced a number of sweeping changes to our welfare system and safety nets.</p><br>
+          <p>I intend to help you navigate the confusing wage subsidy, welfare and social support services provided by Centrelink, and state and territory governments during this time.</p><br>
+          <p> will be updating these <a href="#reference">FAQs</a>, and introducing further tools to help assist you over the coming days.</p>
+        </div>
+        <img id="cam-landing" src="/assets/Cam_Gov_Landing.png" alt="Chatbot with speech bubble: don't speak government?">
+      </div>
+    </main>
+    <footer>
+      <ul>
+        <li><a href="/about">About</a></li>
+        <li><a href="/disclaimer">Disclaimer</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+      <div id="sharing">
+        <div>Share with others:</div>
+        <a target="blank" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fcovidassist.net.au%2F"> Facebook </a>
+        <a target="blank" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fcovidassist.net.au%2F&text=We%27re+here+to+help+you+navigate+the+confusing+welfare+and+social+support+services+provided+by+Centrelink%2C+and+state+and+territory+governments+during+the+Coronavirus+crisis."> Twitter </a>
+        <a target="blank" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fcovidassist.net.au%2F&title=Covid%20Assist&summary=We%27re+here+to+help+you+navigate+the+confusing+welfare+and+social+support+services+provided+by+Centrelink%2C+and+state+and+territory+governments+during+the+Coronavirus+crisis."> LinkedIn </a>
+        <a target="blank" href="mailto:?Subject=Covid%20Assist&body=Body%20goes%20here"> Email </a>
+      </div>
     </footer>
-
   </body>
 
-      <script type="text/javascript">
-        
-        var acc = document.getElementsByClassName("question");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-              panel.style.maxHeight = null;
-            } else {
-              panel.style.maxHeight = panel.scrollHeight + "px";
-            }
+    <script>
+        $(function () {
+          $("#reference .fold-table tr.view").on("click", function () {
+            $(this).toggleClass("open").next(".fold").toggleClass("open");
           });
-        }
-
-      </script>
+        });
+    </script>
 
 </html>
