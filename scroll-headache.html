@@ -22,11 +22,9 @@
 p.description {
 	display: none;
 }
-
 .main {
 	width: 70%;
 }
-
 .cartel {
 	position: fixed;
 	right: 0px;
@@ -42,40 +40,6 @@ span {
   display: block;
 }
 </style>
-<script>
-$(window).load(function () {
-    $(window).on("scroll resize", function () {
-        var pos = $('.cartel').offset();
-        $('.post').each(function () {
-            if (pos.top >= $(this).offset().top && pos.top <= $(this).next().offset().top) {
-                $('.cartel').html($(this).find('.description').html());
-            }
-        });
-    });
-
-$(document).ready(function () {
-	$(window).trigger('scroll'); // init the value
-    });
-
-})
-
-$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-        || location.hostname == this.hostname) {
-
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 700);
-        return false;
-      }
-    }
-  });
-});
-</script>
 <script type="text/javascript" src="http://www.leopaulbilles.com/js/jquery-1.11.3.min.js"></script>
 </head>
 
@@ -117,5 +81,38 @@ $(function() {
     </div>
   </div>
 </body>
+<script>
+$(window).load(function () {
+    $(window).on("scroll resize", function () {
+        var pos = $('.cartel').offset();
+        $('.post').each(function () {
+            if (pos.top >= $(this).offset().top && pos.top <= $(this).next().offset().top) {
+                $('.cartel').html($(this).find('.description').html());
+            }
+        });
+    });
 
+$(document).ready(function () {
+	$(window).trigger('scroll'); // init the value
+    });
+
+})
+
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) {
+
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 700);
+        return false;
+      }
+    }
+  });
+});
+</script>
 </html>
