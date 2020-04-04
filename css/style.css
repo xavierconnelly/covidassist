@@ -54,6 +54,11 @@ header {
   transition: all 1s ease-in-out;
 }
 
+/* Active */
+header.active {
+  color: #333;
+}
+
 ul {
   list-style-type: none;
 }
@@ -131,23 +136,6 @@ header ul li:not(:last-child):after {
     display: inline-block;
   }
 }
-
-.light {
-  color: #f9eedc;
-}
-
-.light-bg {
-  background-color: #f9eedc;
-}
-
-.dark {
-  color: #eee;
-}
-
-.dark-bg {
-  background-color: #eee;
-}
-
 
 /* Footer 
 ////////////////////////////////////////////////////////////////////////////*/
