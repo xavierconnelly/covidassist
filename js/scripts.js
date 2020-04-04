@@ -2,16 +2,17 @@
 /// Nav /////////////////////////////////////////////////////////////////////////////////////
 
 // Change Nav Colour On Scroll
-$(window).scroll(function() {
-  var height = $(window).scrollTop();
-  if(height > 300) {
-    $('#header').addClass('active');
-    $('#logo').addClass('dark');
-  } else {
-    $('#header').removeClass('active');
-    $('#logo').removeClass('dark');
-
-  }
+$(document).ready(function(){
+  $(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if(height > 300) {
+      $('#header').addClass('active');
+      $('#logo').addClass('dark');
+    } else {
+      $('#header').removeClass('active');
+      $('#logo').removeClass('dark');
+    }
+  });
 });
 
 /////////////////////////////////////////////////////////////////////////////////////////////
