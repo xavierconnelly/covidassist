@@ -335,6 +335,24 @@
     </footer>
   </body>
 
+
+
+<script>
+// Change Nav Colour On Scroll
+$(document).ready(function(){
+  $(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if(height > 300) {
+      $('#header').addClass('active');
+      $('#logo').addClass('dark');
+    } else {
+      $('#header').removeClass('active');
+      $('#logo').removeClass('dark');
+    }
+  });
+});
+</script>
+
   <script>
       $(function () {
         $("#reference .fold-table tr.view").on("click", function () {
