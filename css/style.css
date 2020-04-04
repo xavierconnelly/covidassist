@@ -47,6 +47,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 ul {
@@ -85,6 +90,26 @@ header ul li:not(:last-child):after {
   position: ;
   left: 0;
 }
+
+/* NEW */
+#logo{
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.light{
+  background: url("https://covidassist.net.au/assets/CA_Logo.svg");
+}
+.dark{
+  background: url("https://covidassist.net.au/assets/CA_Logo_Light.svg");
+}
+/* NEW */
 
 @media all and (max-width: 900px) {
   header {
@@ -635,7 +660,6 @@ table.fold-table tr.fold.open {
   max-width: 300px;
   border: 1px solid inherit;
   margin: 5px;
-  text-align: left;
 }
 @media only screen and (max-width: 900px) {
   .more-box {
@@ -645,4 +669,5 @@ table.fold-table tr.fold.open {
 .more-box h4,
 .more-box p {
   padding: 10px;
+  text-align: justify;
 }
