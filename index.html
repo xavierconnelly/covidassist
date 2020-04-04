@@ -26,9 +26,13 @@
 
   <body>
     <header>
-      <a href="/index_new.html" class="logo">
+<!--  <a href="/index_new.html" class="logo">
         <img src="https://covidassist.net.au/assets/CA_Logo.svg" alt="covid assist logo">
         <span>covidassist</span>
+      </a>-->
+      <a href="/index_new.html" class="logo">
+        <span id="logo" class="light"></span>
+        covidassist
       </a>
       <div class="menu">
         <ul>
@@ -57,8 +61,8 @@
         <div class="landing-text">
           <h1>A helpful <br /> hand in trying <br />times</h1>
           <p>In response to the Coronavirus (COVID-19) Crisis, the Australian Government has announced a number of sweeping changes to our welfare system and safety nets.</p><br>
-          <p>I intend to help you navigate the confusing wage subsidy, welfare and social support services provided by Centrelink, and state and territory governments during this time.</p><br>
-          <p>I will be updating these <a href="#reference">FAQs</a>, and introducing further tools to help assist you over the coming days.</p>
+          <p>This site is intended to help you navigate the confusing wage subsidy, welfare and social support services provided by Centrelink, and state and territory governments during this time.</p><br>
+          <p>We will be updating these <a href="/#reference">FAQs</a>, and introducing further tools to help assist you over the coming days.</p>
         </div>
         <img id="cam-landing" src="/assets/Cam_Gov_Landing.png" alt="Chatbot with speech bubble: don't speak government?">
       </div>
@@ -356,7 +360,7 @@
         // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
         $('html, body').animate({
           scrollTop: $(hash).offset().top
-        }, 2000, function(){
+        }, 800, function(){
 
           // Add hash (#) to URL when done scrolling (default click behavior)
           window.location.hash = hash;
