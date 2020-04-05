@@ -1,5 +1,5 @@
-/////////////////////////////////////////////////////////////////////////////////////////////
-/// Accordion ///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////// ///
+Accordion ///////////////////////////////////////////////////////////////////////////////
 
 /// Search ///
 var options = {
@@ -68,20 +68,6 @@ function openMenu(x) {
     
     var z = window.matchMedia("(max-width: 900px)")
     if (z.matches) { // If less than 900px
-
-  ///////// Don't think these should be inside the openMenu function ////////////
-    var y = document.getElementById("mobile-enu");
-    if (y.style.left === "0vw") {
-        y.style.left = "100vw";
-  } else {
-        y.style.left = "0vw";
-    }
-  } else {
-      var y = document.getElementById("mobile-enu");
-      if (y.style.left === "50vw") {
-          y.style.left = "100vw";
-      } else {
-        y.style.left = "50vw";
-      }
-  };
-}
+    document.getElementById("mobile-menu").style.left('0vw');
+  }
+};
