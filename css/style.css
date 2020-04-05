@@ -528,11 +528,12 @@ table.fold-table tr.fold.open {
 //////////////////////////////////////////////////////////////////////////// */
 @media all and (max-width: 900px) {
   h1 {
-  font-size: unset;
+  font-size: 2em;
   line-height: unset;
   }
   header {
     height: 50px;
+    padding: 20px;
     display: flex;
     align-items: center;
   }
@@ -548,6 +549,9 @@ table.fold-table tr.fold.open {
   }
   .hamburger {
     display: inline-block;
+  }
+  #landing {
+    padding: 20px;
   }
   .landing-text {
     width: unset;
