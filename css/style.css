@@ -5,21 +5,17 @@
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
 }
-
 a {
   text-decoration: none;
   color: inherit;
 }
-
 a:not(header a logo):hover {
   cursor: pointer;
   text-decoration: underline;
 }
-
 a, div, p, span, ul {
   font-family: "IBM Plex Sans", sans-serif;
 }
-
 body {
   background: #026540;
   color: #f9eedc;
@@ -27,16 +23,13 @@ body {
   width: 100vw;
   overflow-x: hidden;
 }
-
 h1, h2, h3, h4, h5, h6, header span {
   font-family: "Comfortaa", sans-serif;
 }
-
 h1 {
   font-size: 80px;
   line-height: 1.2em;
 }
-
 header {
   position: sticky;
   top: 40px;
@@ -53,41 +46,34 @@ header {
   -ms-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
-
 /* Active */
 header.active {
   color: #333;
 }
-
 ul {
   list-style-type: none;
 }
-
 /* Header 
 ////////////////////////////////////////////////////////////////////////////*/
 header span a {
   font-size: 50px;
   float: left;
 }
-
 header ul {
   height: 100px;
   display: flex;
   align-items: center;
   margin: 0;
 }
-
 header ul li {
   display: inline-block;
   padding: 0px 5px 0px 5px;
   white-space: nowrap;
 }
-
 header ul li:not(:last-child):after {
   content: "|";
   padding: 0px 0px 0px 5px;
 }
-
 .logo {
   margin-right: auto;
   display: flex;
@@ -95,7 +81,6 @@ header ul li:not(:last-child):after {
   position: ;
   left: 0;
 }
-
 /* NEW */
 #logo{
   display: inline-block;
@@ -107,36 +92,12 @@ header ul li:not(:last-child):after {
   -ms-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
-
 .light{
   background: url("https://covidassist.net.au/assets/CA_Logo.svg");
 }
 .dark{
   background: url("https://covidassist.net.au/assets/CA_Logo_Light.svg");
 }
-/* NEW */
-
-@media all and (max-width: 900px) {
-  header {
-    height: 50px;
-    display: flex;
-    align-items: center;
-  }
-  header img {
-    width: 50px;
-    height: 50px;
-  }
-  header span {
-    font-size: 25px;
-  }
-  header ul {
-    display: none;
-  }
-  .hamburger {
-    display: inline-block;
-  }
-}
-
 /* Footer 
 ////////////////////////////////////////////////////////////////////////////*/
 footer {
@@ -149,7 +110,6 @@ footer {
   height: 300px;
   width: 100vw;
 }
-
 footer ul {
   list-style-type: none;
   font-size: 35px;
@@ -157,39 +117,27 @@ footer ul {
   position: absolute;
   bottom: 0;
 }
-
 footer ul li {
   margin: 0;
   padding: 0;
 }
-
 #sharing {
   position: absolute;
   bottom: 0;
   right: 0;
   padding: 0 40px 40px 0;
 }
-
 #sharing a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
   padding: 0 10px;
 }
-
 #sharing a:hover {
   text-decoration: underline;
   font-style: italic;
   color: #333;
 }
-
-@media all and (max-width: 600px) {
-  footer ul {
-    font-size: 30px;
-    padding: 0 0 20px 20px;
-  }
-}
-
 /* Hamburger 
 //////////////////////////////////////////////////////////////////////////*/
 .hamburger {
@@ -204,7 +152,6 @@ footer ul li {
   z-index: 900;
   transition: all .4s ease;
 }
-
 .hamburger_line_top,
 .hamburger_line_middle,
 .hamburger_line_bottom {
@@ -213,31 +160,21 @@ footer ul li {
   margin-top: 5px;
   width: 24px;
 }
-
 .change .hamburger_line_top {
   -webkit-transform: rotate(45deg) translate3d(5px, 4px, 0);
   transform: rotate(45deg) translate3d(5px, 4px, 0);
   -webkit-transform: center;
   transform-origin: center;
 }
-
 .change .hamburger_line_middle {
   opacity: 0;
 }
-
 .change .hamburger_line_bottom {
   -webkit-transform: rotate(-45deg) translate3d(7px, -6px, 0);
   transform: rotate(-45deg) translate3d(7px, -6px, 0);
   -webkit-transform: center;
   transform-origin: center;
 }
-
-@media all and (max-width: 900px) {
-  .hamburger {
-    display: inline-block;
-  }
-}
-
 /* Mobile Menu //////////////////////////////////////////////////////////////////////////*/
 #mobile-menu {
   height: 100vh;
@@ -252,38 +189,26 @@ footer ul li {
   transition: 0.5s;
   z-index: 300;
 }
-
 #mobile-menu ul li {
   padding: 10px 0;
 }
-
 /* Main Content 
 //////////////////////////////////////////////////////////////////////////// */
 #landing {
   min-height: 100vh;
   padding: 20px 20px 70px 50px;
 }
-
 .landing-text {
   width: 700px;
   margin-left: 150px;
   padding-top: 240px;
 }
-
-@media all and (max-width: 900px) {
-  .landing-text {
-    width: unset;
-    margin-left: unset;
-  }
-}
-
 #cam-landing {
   width: 500px;
   position: absolute;
   right: 200px;
   top: 200px;
 }
-
 #container {
   box-shadow: 4px 4px 1rem rgba(0, 0, 0, 0.25);
   background: #2c6540;
@@ -292,38 +217,17 @@ footer ul li {
   min-height: 100vh;
   margin: -140px 0 300px 0;
 }
-
-@media all and (max-width: 900px) {
-  #cam-landing {
-    display: none;
-  }
-}
-
-
 /* Accordion, Filter, Search
 //////////////////////////////////////////////////////////////////////////// */
 .filter-selection {
   display: none; /* to Delete When fixed///////// */
 }
-
-@media all and (max-width: 900px) {
-	table th:not(:nth-child(3)),
-	table td:not(:nth-child(3)) {
-	  display: none;
-	}
-  table th:nth-child(3),
-  table td:nth-child(3) {
-      padding: 0.4em 20px;
-  }
-}
-
 #reference {
   background: #eee;
   padding-bottom: 100px;
   font-size: 16px;
   min-height: 100vh;
 }
-
 #reference button {
   background: url(/assets/Arrow_down.png) no-repeat;
   background-position: center;
@@ -331,33 +235,23 @@ footer ul li {
   height: 20px;
   border: none;
   cursor: pointer;
-  margin: 0 0 0 -16px
+  margin: 0 0 0 -16px;
   position: absolute;
   display: block;
   left: 50%;
   top: -40px;
   display: none;
 }
-
 .filter-selection {
   padding-bottom: 30px;
 }
-
 .filter-selection span {
   /*padding: 0px 10px;*/
   cursor: pointer;
 }
-
 .filter-selection span:hover {
   color: blue;
 }
-
-@media only screen and (max-width: 900px) {
-  #cam-reference { /* Need to fix this to work on larger screens to */
-    width: 100vw;
-  }
-}
-
 /* Search + Filter 
 //////////////////////////////////////////////////////////////////////////// */
 input {
@@ -376,7 +270,6 @@ input.search {
   padding-top: 0px;
   float: right;
 }
-
 .sort {
   cursor: pointer;
 }
@@ -413,7 +306,6 @@ input.search {
   top: -10px;
   right: -5px;
 }
-
 /* The container ///////////////////     RENAME      //////////////////////*/
 .container {
   position: relative;
@@ -427,12 +319,10 @@ input.search {
   -ms-user-select: none;
   user-select: none;
 }
-
 /* Hide the browser's default radio button */
 .container input {
   display: inline-block;
 }
-
 /* Create a custom radio button */
 .checkmark {
   position: absolute;
@@ -443,24 +333,20 @@ input.search {
   background-color: ;
   border-radius: 50%;
 }
-
 /* When the radio button is checked, add a blue background */
 .container input:checked ~ .checkmark {
   background-color: blue;
 }
-
 /* Create the indicator (the dot/circle - hidden when not checked) */
 .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
-
 /* Show the indicator (dot/circle) when checked */
 .container input:checked ~ .checkmark:after {
   display: block;
 }
-
 /* Filter Mask 
 //////////////////////////////////////////////////////////////////////////// */
 .filter-mask {
@@ -472,7 +358,6 @@ input.search {
   -webkit-animation: filterMask 1s ease-in-out both;
   animation: filterMask 1s ease-in-out both;
 }
-
 @-webkit-keyframes filterMask {
   0% {
     background: transparent;
@@ -495,7 +380,6 @@ input.search {
     background: transparent;
   }
 }
-
 /* Table 
 //////////////////////////////////////////////////////////////////////////// */
 table {
@@ -504,31 +388,26 @@ table {
   text-align: left;
   color: #333;
 }
-
 table th,
 table td {
   padding: 0.4em;
   border-top: 1px solid #333;
 }
-
 table th:first-child,
 table td:first-child {
   padding-left: 40px;
   width: 200px;
 }
-
 table th:not(:nth-child(3)),
 table td:not(:nth-child(3)) {
   width: 140px;
 }
-
 table th:nth-child(4),
 table td:nth-child(4) {
   padding-right: 40px;
   text-align: right;
   width: 200px;
 }
-
 /* Fold Table */
 /* View Segment */
 table.fold-table > tbody > tr.view,
@@ -537,7 +416,6 @@ table.fold-table > tbody > th {
   cursor: pointer;
   vertical-align: top;
 }
-
 table.fold-table > tbody > tr.view:hover,
 table.fold-table > tbody > td:hover,
 table.fold-table > tbody > th:hover {
@@ -547,20 +425,17 @@ table.fold-table > tbody > th:hover {
   cursor: pointer;
   font-weight: normal;
 }
-
 /* Fold Table */
 /* Fold Segment */
 table.fold-table tr.fold {
   display: none;
   border-top: 1px solid #333;
 }
-
 table.fold-table .fold td {
   border: 0px solid #333;
   padding-top: 0px;
   padding-bottom: 30px;
 }
-
 table.fold-table .fold td h4,
 table.fold-table .fold td p,
 table.fold-table .fold td ul {
@@ -568,25 +443,21 @@ table.fold-table .fold td ul {
   padding-right: 50px;
   padding-left: unset;
 }
-
 table.fold-table .fold td h4:first-child
 table.fold-table .fold td p:first-child,
 table.fold-table .fold td ul:first-child {
   margin-block-start: 0.5em;
 }
-
 table.fold-table .fold td h4,
 table.fold-table .fold td p,
 table.fold-table .fold td ul li {
   padding-bottom: 1em;
   list-style-type: lower-alpha;
 }
-
 table.fold-table .fold td p strong,
 table.fold-table .fold td ul li strong {
   color: #006bff;
 }
-
 table.fold-table tr.fold td p::selection,
 table.fold-table tr.fold td ul::selection,
 table.fold-table .fold td ul li::selection,
@@ -595,16 +466,13 @@ table.fold-table .fold td ul li strong::selection {
   color: #333;
   background: #ffe500; /* change to other yellow */
 }
-
 table.fold-table tr.view.open {
   color: #006bff;
   font-weight: bold;
 }
-
 table.fold-table tr.fold.open {
   display: table-row;
 }
-
 /* Hidding Answers 
   - is stopping search filter though
   - change to height?
@@ -612,7 +480,6 @@ table.fold-table tr.fold.open {
 .hidden {
   display: none;
 }
-
 /* About +
    Disclaimer +
    Contact
@@ -625,22 +492,18 @@ table.fold-table tr.fold.open {
   padding: 300px 0 50px 0;
   font-size: 16px;
 }
-
 #about div:first-child,
 #disclaimer div:first-child {
   width: 50%;
 }
-
 #contact div {
   flex: 40%;
 }
-
 #disclaimer div img,
 #contact div img {
   float: right;
   padding-right: 50px;
 }
-
 #about p,
 #disclaimer h4,
 #contact h4,
@@ -649,7 +512,6 @@ table.fold-table tr.fold.open {
   padding: 0 20px 1em 0;
   width: 300px;
 }
-
 /* More Help
 //////////////////////////////////////////////////////////////////////////// */
 #more-help {
@@ -662,13 +524,66 @@ table.fold-table tr.fold.open {
   border: 1px solid inherit;
   margin: 5px;
 }
-@media only screen and (max-width: 900px) {
+/* Media @ Width Under 600px
+//////////////////////////////////////////////////////////////////////////// */
+@media all and (max-width: 900px) {
+  h1 {
+  font-size: unset;
+  line-height: unset;
+  }
+  header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+  header img {
+    width: 50px;
+    height: 50px;
+  }
+  header span {
+    font-size: 25px;
+  }
+  header ul {
+    display: none;
+  }
+  .hamburger {
+    display: inline-block;
+  }
+  .landing-text {
+    width: unset;
+    margin-left: unset;
+  }
+  #cam-landing {
+    display: none;
+  }
   .more-box {
     max-width: 40%;
   }
+  .more-box h4,
+  .more-box p {
+    padding: 10px;
+    text-align: justify;
+  }
+  table th:not(:nth-child(3)),
+  table td:not(:nth-child(3)) {
+    display: none;
+  }
+  table th:nth-child(3),
+  table td:nth-child(3) {
+      padding: 0.4em 20px;
+  }
+  #cam-reference { /* Need to fix this to work on larger screens to */
+    width: 100vw;
+  }
 }
-.more-box h4,
-.more-box p {
-  padding: 10px;
-  text-align: justify;
+/* Media @ Width Under 600px
+//////////////////////////////////////////////////////////////////////////// */
+@media all and (max-width: 600px) {
+  footer ul {
+    font-size: 30px;
+    padding: 0 0 20px 20px;
+  }
+  #sharing {
+    display: none; 
+  }
 }
