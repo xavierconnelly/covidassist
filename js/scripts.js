@@ -1,28 +1,15 @@
-// Open Menu on Mobile
+///////////////////////////////////////////////////////////////////////////////////////////// ///
+Accordion ///////////////////////////////////////////////////////////////////////////////
 
-function openMenu(x) {
-    x.classList.toggle("change");
-    
-    var z = window.matchMedia("(max-width: 900px)")
-    if (z.matches) {
-      document.getElementById("mobile-menu").style.left = "0vw";
-  }
-};
-
-// Accordion 
-
-// Search
-
+/// Search ///
 var options = {
   valueNames: ["date", "question", "answer"]
 };
 
-// Ordering Date
-
+/// Ordering Date
 var userList = new List("reference", options);
 
-// Filter
-
+/// Filter ///
 function filterHide(el) {
   for (var i = 0; i < el.length; ++i) {
     el[i].style.display = "none";
@@ -65,31 +52,38 @@ document.getElementById("filter-all").onclick = function () {
   }, 500);
 };
 
-// Scroll to Reference 
+/////////////////////////////////////////////////////////////////////////////////////////////
+/// Maybe defunct? //////////////////////////////////////////////////////////////////////////
 
-$(document).ready(function(){
+function openJosef() {
+    document.getElementById("view").style.display = "none";
+    document.getElementById("josef").style.display = "block";
+}
 
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+/////////////////////////////////////////////////////////////////////////////////////////////
+/// Maybe defunct? //////////////////////////////////////////////////////////////////////////
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
+// Open Menu on Mobile
+
+function openMenu(x) {
+    x.classList.toggle("change");
     
-      // Prevent default anchor click behavior
-      event.preventDefault();
+    var z = window.matchMedia("(max-width: 900px)")
+    if (z.matches) { // If less than 900px
 
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-         scrollTop: $(hash).offset().top
-       }, 800, function(){
-
-      // Add hash (#) to URL when done scrolling (default click behavior)
-      window.location.hash = hash;
-      });
-    } // End if
-  });
-});
+  ///////// Don't think these should be inside the openMenu function ////////////
+    var y = document.getElementById("mobile-menu");
+    if (y.style.left === "0vw") {
+        y.style.left = "100vw";
+  } else {
+        y.style.left = "0vw";
+    }
+  } else {
+      var y = document.getElementById("mobile-menu");
+      if (y.style.left === "50vw") {
+          y.style.left = "100vw";
+      } else {
+        y.style.left = "50vw";
+      }
+  };
+}
