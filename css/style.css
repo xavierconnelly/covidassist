@@ -5,11 +5,9 @@
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
 }
-
 html, body {
   height: 100%;
 }
-
 a {
   text-decoration: none;
   color: inherit;
@@ -607,9 +605,6 @@ table.fold-table tr.fold.open {
 /* Media @ Width Under 600px
 //////////////////////////////////////////////////////////////////////////// */
 @media all and (max-width: 600px) {
-  * {
-    overflow: hidden;
-  }
   footer ul {
     font-size: 30px;
     padding: 0 0 20px 20px;
