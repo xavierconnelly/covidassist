@@ -83,6 +83,7 @@ header ul li:not(:last-child):after {
 }
 /* NEW */
 #logo{
+  background-size: cover;
   display: inline-block;
   height: 100px;
   width: 100px;
@@ -552,6 +553,10 @@ table.fold-table tr.fold.open {
   ul {
     padding: 0;
   }
+  #logo {
+    height: 100px;
+    width: 100px;
+  }
   .hamburger {
     display: inline-block;
   }
@@ -586,6 +591,12 @@ table.fold-table tr.fold.open {
   }
   #cam-reference { /* Need to fix this to work on larger screens to */
     width: 100vw;
+  }
+  #about, #disclaimer, #contact, #more-help {
+    padding: 150px 20px 50px 20px;
+  }
+  #about div:first-child, #disclaimer div:first-child {
+    display: none;
   }
 }
 /* Media @ Width Under 600px
