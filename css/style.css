@@ -595,7 +595,7 @@ table.fold-table tr.fold.open {
   #about, #disclaimer, #contact, #more-help {
     padding: 150px 20px 50px 20px;
   }
-  #about div:first-child, #disclaimer div:first-child {
+  #about div:first-child, #disclaimer div:first-child, #contact div:first-child {
     display: none;
   }
 }
