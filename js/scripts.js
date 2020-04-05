@@ -80,10 +80,10 @@ function openMenu(x) {
     }
   } else {
       var y = document.getElementById("mobile-menu");
-      if (y.style.left === "50vw") {
+      if (y.style.left === "0vw") {
           y.style.left = "100vw";
       } else {
-        y.style.left = "50vw";
+        y.style.left = "0vw";
       }
   };
 }
