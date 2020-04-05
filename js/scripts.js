@@ -5,7 +5,7 @@ function openMenu(x) {
     
     var z = window.matchMedia("(max-width: 900px)")
     if (z.matches) {
-    document.getElementById('mobile-menu').style.left('0vw');
+      document.getElementById("mobile-menu").style.left = "0vw";
   }
 };
 
