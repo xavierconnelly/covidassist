@@ -65,7 +65,7 @@ ul {
 
 /* Header 
 ////////////////////////////////////////////////////////////////////////////*/
-header span {
+header span a {
   font-size: 50px;
   float: left;
 }
@@ -273,6 +273,7 @@ footer ul li {
 @media all and (max-width: 900px) {
   .landing-text {
     width: unset;
+    margin-left: unset;
   }
 }
 
@@ -290,6 +291,12 @@ footer ul li {
   width: 100vw;
   min-height: 100vh;
   margin: -140px 0 300px 0;
+}
+
+@media all and (max-width: 900px) {
+  #cam-landing {
+    display: none;
+  }
 }
 
 
@@ -343,6 +350,12 @@ footer ul li {
 
 .filter-selection span:hover {
   color: blue;
+}
+
+@media only screen and (max-width: 900px) {
+  #cam-reference { /* Need to fix this to work on larger screens to */
+    width: 100vw;
+  }
 }
 
 /* Search + Filter 
