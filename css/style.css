@@ -159,6 +159,7 @@ footer ul li {
   height: 3px;
   margin-top: 5px;
   width: 24px;
+  background: #f9eedc;
 }
 .change .hamburger_line_top {
   -webkit-transform: rotate(45deg) translate3d(5px, 4px, 0);
@@ -528,8 +529,9 @@ table.fold-table tr.fold.open {
 //////////////////////////////////////////////////////////////////////////// */
 @media all and (max-width: 900px) {
   h1 {
-  font-size: 2em;
-  line-height: unset;
+    font-size: 2em;
+    line-height: unset;
+    padding: 0 0 1em 0;
   }
   header {
     height: 50px;
@@ -549,6 +551,9 @@ table.fold-table tr.fold.open {
   }
   .hamburger {
     display: inline-block;
+  }
+  #container {
+    margin: -90px 0 0 0;
   }
   #landing {
     padding: 20px;
