@@ -1,15 +1,28 @@
-///////////////////////////////////////////////////////////////////////////////////////////// ///
-Accordion ///////////////////////////////////////////////////////////////////////////////
+// Open Menu on Mobile
 
-/// Search ///
+function openMenu(x) {
+    x.classList.toggle("change");
+    
+    var z = window.matchMedia("(max-width: 900px)")
+    if (z.matches) {
+    document.getElementById('mobile-menu').style.left('0vw');
+  }
+};
+
+// Accordion 
+
+// Search
+
 var options = {
   valueNames: ["date", "question", "answer"]
 };
 
-/// Ordering Date
+// Ordering Date
+
 var userList = new List("reference", options);
 
-/// Filter ///
+// Filter
+
 function filterHide(el) {
   for (var i = 0; i < el.length; ++i) {
     el[i].style.display = "none";
@@ -52,22 +65,31 @@ document.getElementById("filter-all").onclick = function () {
   }, 500);
 };
 
-/////////////////////////////////////////////////////////////////////////////////////////////
-/// Maybe defunct? //////////////////////////////////////////////////////////////////////////
+// Scroll to Reference 
 
-function openJosef() {
-    document.getElementById("view").style.display = "none";
-    document.getElementById("josef").style.display = "block";
-}
+$(document).ready(function(){
 
-/////////////////////////////////////////////////////////////////////////////////////////////
-/// Maybe defunct? //////////////////////////////////////////////////////////////////////////
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
 
-function openMenu(x) {
-    x.classList.toggle("change");
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
     
-    var z = window.matchMedia("(max-width: 900px)")
-    if (z.matches) { // If less than 900px
-    document.getElementById("mobile-menu").style.left('0vw');
-  }
-};
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+         scrollTop: $(hash).offset().top
+       }, 800, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+    } // End if
+  });
+});
