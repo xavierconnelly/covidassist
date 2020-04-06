@@ -103,8 +103,8 @@ header.active {
 .light-bg {
   background: #f9eedc;
 }
-.light{
-  background: url("https://covidassist.net.au/assets/CA_Logo.svg");
+.dark{
+  background: url("https://covidassist.net.au/assets/CA_Logo_dark.svg");
 }
 .dark-bg {
   background: #333;
