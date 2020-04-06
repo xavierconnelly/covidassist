@@ -70,7 +70,7 @@ ul.number {
   padding-left: unset;
 }
 .dented {
-  padding-left: unset;
+  padding-left: 3ch;
 }
 em {
   color: #006bff;
@@ -470,11 +470,16 @@ table.fold-table tr.fold {
 }
 table.fold-table .fold td {
   border: 0px solid #333;
-  padding-bottom: 30px;
 }
+/*
 table.fold-table .fold td h4,
 table.fold-table .fold td p,
 table.fold-table .fold td ul {
+  max-width: 600px;
+  padding-right: 50px;
+}
+*/
+table.fold-table .fold {
   max-width: 600px;
   padding-right: 50px;
 }
@@ -495,13 +500,20 @@ table.fold-table .fold td p strong,
 table.fold-table .fold td ul li strong {
   color: #006bff;
 }
-table.fold-table tr.fold td p::selection,
-table.fold-table tr.fold td ul::selection,
-table.fold-table .fold td ul li::selection,
-table.fold-table .fold td p strong::selection,
-table.fold-table .fold td ul li strong::selection {
+/*
+table.fold-table a::selection,
+table.fold-table p::selection,
+table.fold-table em::selection,
+table.fold-table ul::selection,
+table.fold-table li::selection,
+table.fold-table strong::selection {
   color: #333;
-  background: #FDB80E; /* change to other yellow */
+  background: #FDB80E;
+}
+*/
+table.fold-table *::selection {
+  color: #333;
+  background: #2c6540;
 }
 table.fold-table tr.view.open {
   color: #333;
@@ -513,6 +525,10 @@ table.fold-table tr.fold.open {
   display: table-row;
 }
 /* Hidding Answers - is stopping search filter though | change to height? */
+.answer {
+  padding: 1em 10px;
+}
+
 .hidden {
   display: none;
 }
