@@ -50,16 +50,16 @@ header {
   -ms-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
-ol .letter {
+ol.letter {
   list-style-type: lower-alpha;
 }
-ol .number {
+ol.number {
   list-style-type: lower-alpha;
 }
 ul {
   list-style-type: none;
 }
-ul .dot {
+ul.dot {
   list-style-type: disc;
 }
 /* Header 
@@ -113,7 +113,7 @@ header.active {
 .light-bg {
   background: #f9eedc;
 }
-.dark{
+.dark {
   background: url("https://covidassist.net.au/assets/CA_Logo_light.svg");
 }
 .dark-bg {
@@ -139,16 +139,16 @@ header.active {
   margin-top: 5px;
   width: 24px;
 }
-.change .hamburger_line_top {
+.change.hamburger_line_top {
   -webkit-transform: rotate(45deg) translate3d(5px, 4px, 0);
   transform: rotate(45deg) translate3d(5px, 4px, 0);
   -webkit-transform: center;
   transform-origin: center;
 }
-.change .hamburger_line_middle {
+.change.hamburger_line_middle {
   opacity: 0;
 }
-.change .hamburger_line_bottom {
+.change.hamburger_line_bottom {
   -webkit-transform: rotate(-45deg) translate3d(7px, -6px, 0);
   transform: rotate(-45deg) translate3d(7px, -6px, 0);
   -webkit-transform: center;
@@ -412,9 +412,8 @@ table {
 }
 table th,
 table td {
-  /*padding: 0.4em;*/
+  padding: 5px 10px;
   border-top: 1px solid #333;
-  padding: 5px 10px 30px 10px;
 }
 table th:first-child,
 table td:first-child {
@@ -501,6 +500,9 @@ table.fold-table tr.fold.open {
   display: table-row;
 }
 /* Hidding Answers - is stopping search filter though | change to height? */
+td.answer {
+  padding: 5px 10px 30px 10px;
+}
 .hidden {
   display: none;
 }
@@ -543,7 +545,7 @@ table.fold-table tr.fold.open {
   flex-wrap: wrap;
   justify-content: center;
 }
-#more-help .more-box {
+#more-help.more-box {
   width: 100%;
   max-width: 300px;
   border: 1px solid inherit;
