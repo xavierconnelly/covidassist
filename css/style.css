@@ -498,11 +498,11 @@ table.fold-table .fold td ul li::selection,
 table.fold-table .fold td p strong::selection,
 table.fold-table .fold td ul li strong::selection {
   color: #333;
-  background: #ffe500; /* change to other yellow */
+  background: #FDB80E; /* change to other yellow */
 }
 table.fold-table tr.view.open {
   color: #333;
-  background: #ffe500; /* 
+  background: #FDB80E; /* 
   color: #006bff;
   font-weight: bold; */
 }
