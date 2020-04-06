@@ -50,22 +50,22 @@ header {
   -ms-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
-ol.letter {
-  list-style-type: lower-alpha;
-}
-ol.number {
-  list-style-type: lower-alpha;
-}
 ul {
   list-style-type: none;
 }
 ul.dot {
   list-style-type: disc;
 }
+ul.letter {
+  list-style-type: lower-alpha;
+}
+ul.number {
+  list-style-type: lower-alpha;
+}
 em {
-  color: blue;
+  color: #006bff;
   font-weight: bold;
-  font-style: none;
+  font-style: normal;
 }
 /* Header 
 ////////////////////////////////////////////////////////////////////////////*/
@@ -468,7 +468,7 @@ table.fold-table .fold td p,
 table.fold-table .fold td ul {
   max-width: 600px;
   padding-right: 50px;
-  padding-left: unset;
+  /*padding-left: unset;*/
 }
 table.fold-table .fold td h4:first-child
 table.fold-table .fold td p:first-child,
