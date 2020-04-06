@@ -464,7 +464,6 @@ table.fold-table tr.fold {
 }
 table.fold-table .fold td {
   border: 0px solid #333;
-  padding-top: 0px;
   padding-bottom: 30px;
 }
 table.fold-table .fold td h4,
@@ -480,8 +479,7 @@ table.fold-table .fold td ul:first-child {
   margin-block-start: 0.5em;
 }
 table.fold-table .fold td h4{
-  margin-bottom: 1em;
-  background: #fcb80e;
+  color: #006bff;
 }
 table.fold-table .fold td p,
 table.fold-table .fold td ol li,
@@ -510,9 +508,6 @@ table.fold-table tr.fold.open {
   display: table-row;
 }
 /* Hidding Answers - is stopping search filter though | change to height? */
-td.answer {
-  padding: 5px 10px 30px 10px;
-}
 .hidden {
   display: none;
 }
