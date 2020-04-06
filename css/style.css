@@ -642,6 +642,9 @@ table.fold-table tr.fold.open {
 /* Media @ Width Under 600px
 //////////////////////////////////////////////////////////////////////////// */
 @media all and (max-width: 600px) {
+  table.fold-table {
+    background: #fff;
+  }
   footer ul {
     font-size: 30px;
     padding: 0 0 20px 20px;
