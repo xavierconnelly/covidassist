@@ -16,6 +16,10 @@ a:not(header a logo):hover {
   cursor: pointer;
   text-decoration: underline;
 }
+table a {
+  text-decoration: underline;
+  color: red;
+}
 a, div, p, span, ul {
   font-family: "IBM Plex Sans", sans-serif;
 }
@@ -60,7 +64,7 @@ ul.letter {
   list-style-type: lower-alpha;
 }
 ul.number {
-  list-style-type: lower-alpha;
+  list-style-type: decimal;
 }
 em {
   color: #006bff;
@@ -511,6 +515,9 @@ td.answer {
 }
 .hidden {
   display: none;
+}
+.td + ul {
+  padding-left: unset;
 }
 /* About +
    Disclaimer +
