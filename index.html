@@ -26,11 +26,7 @@
 
   <body>
     <header>
-<!--  <a href="/index_new.html" class="logo">
-        <img src="https://covidassist.net.au/assets/CA_Logo.svg" alt="covid assist logo">
-        <span>covidassist</span>
-      </a>-->
-      <a href="/index_new.html" class="logo">
+      <a href="/index.html" class="logo">
         <span id="logo" class="light"></span>
         covidassist
       </a>
@@ -299,7 +295,7 @@
               <tr class="view filter-item">
                 <td>Jobkeeper</td>
                 <td>Eligibility</td>
-                <td class="question">General Eligibility</td>
+                <td class="question">General Eligibility for JobKeeper</td>
                 <td>3rd April 2020</td>
                 <td class="date hidden">20|04|03</td>
               </tr>
@@ -422,7 +418,7 @@
                   </ul>
                   <p>The $1,500 payment is paid to your workplace (employer) and your workplace will have to pay you as they regularly would, through the normal payroll process. This includes superannuation payments.</p>
                   <h4>Freelancers, artists, self-employed or in the gig economy:</h4>
-                  <p>If you fall into this category (operate under an ABN) you will receive the $1,500 payment from the ATO (after submitting your JobKeeper application online) to your nominated bank account.<p>
+                  <p>If you fall into this category (operate under an ABN) you will receive the $1,500 payment from the ATO (after submitting your JobKeeper application online) to your nominated bank account.</p>
                 </td>
                 <td></td>
                 <td class="hidden"></td>
@@ -513,33 +509,4 @@
       </div>
     </footer>
   </body>
-  
-<script>
-  // Change Nav Colour On Scroll
-  $(document).ready(function(){
-    $(window).scroll(function() {
-      var height = $(window).scrollTop();
-      if(height > 300) {
-        $('header').addClass('active');
-        $('#logo').addClass('dark');
-        $('.hamburger > div').removeClass('light-bg');
-        $('.hamburger > div').addClass('dark-bg');
-      } else {
-        $('header').removeClass('active');
-        $('#logo').removeClass('dark');
-        $('.hamburger > div').addClass('light-bg');
-        $('.hamburger > div').removeClass('dark-bg');
-      }
-    });
-  });
-</script>
-
-<script>
-  $(function () {
-    $("#reference .fold-table tr.view").on("click", function () {
-      $(this).toggleClass("open").next(".fold").toggleClass("open");
-    });
-  });
-</script>
-
 </html>
