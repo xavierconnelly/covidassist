@@ -51,9 +51,11 @@ function openJosef() {
 // Accordion 
 
   // Show / Hide Answer Section
-  $(function () {
-    $("#reference .fold-table tr.view").on("click", function () {
-      $(this).toggleClass("open").next(".fold").toggleClass("open");
+  $(document).ready(function(){
+    $(function () {
+      $("#reference .fold-table tr.view").on("click", function () {
+        $(this).toggleClass("open").next(".fold").toggleClass("open");
+      });
     });
   });
 
