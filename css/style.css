@@ -152,13 +152,15 @@ header.active {
   position: fixed;
   top: 0;
   left: 100vw;
-  margin: auto;
   background: #2c6540;
   color: #f9eedc; 
   font-size: 2em;    
   text-align: center;
   transition: 0.5s;
   z-index: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #mobile-menu ul li {
   padding: 10px 0;
@@ -579,7 +581,7 @@ table.fold-table tr.fold.open {
     width: unset;
     margin-left: unset;
   }
-  #cam-landing {
+  #cam-landing {∏
     display: none;
   }
   .more-box {
