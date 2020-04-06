@@ -160,9 +160,12 @@ footer ul li {
   z-index: 900;
   transition: all .4s ease;
 }
+/*
 .hamburger_line_top,
 .hamburger_line_middle,
-.hamburger_line_bottom {
+.hamburger_line_bottom
+*/
+.hamburger > div {
   transition: 0.4s;
   height: 3px;
   margin-top: 5px;
