@@ -66,6 +66,12 @@ ul.letter {
 ul.number {
   list-style-type: decimal;
 }
+.dentless {
+  padding-left: unset;
+}
+.dented {
+  padding-left: unset;
+}
 em {
   color: #006bff;
   font-weight: bold;
@@ -471,7 +477,6 @@ table.fold-table .fold td p,
 table.fold-table .fold td ul {
   max-width: 600px;
   padding-right: 50px;
-  /*padding-left: unset;*/
 }
 table.fold-table .fold td h4:first-child
 table.fold-table .fold td p:first-child,
@@ -479,7 +484,7 @@ table.fold-table .fold td ul:first-child {
   margin-block-start: 0.5em;
 }
 table.fold-table .fold td h4{
-  color: #006bff;
+  color: #2c6540;
 }
 table.fold-table .fold td p,
 table.fold-table .fold td ol li,
