@@ -26,9 +26,13 @@
 
   <body>
     <header>
-      <a href="../" class="logo">
+<!--  <a href="/index_new.html" class="logo">
         <img src="https://covidassist.net.au/assets/CA_Logo.svg" alt="covid assist logo">
         <span>covidassist</span>
+      </a>-->
+      <a href="/index_new.html" class="logo">
+        <span id="logo" class="light"></span>
+        covidassist
       </a>
       <div class="menu">
         <ul>
@@ -38,9 +42,9 @@
         <li><a href="/contact">Contact</a></li>
         </ul>
         <div class="hamburger" onclick="openMenu(this)">
-          <div class="hamburger_line_top"></div>
-          <div class="hamburger_line_middle"></div>
-          <div class="hamburger_line_bottom"></div>
+          <div class="hamburger_line_top light-bg"></div>
+          <div class="hamburger_line_middle light-bg"></div>
+          <div class="hamburger_line_bottom light-bg"></div>
         </div>
       </div>
     </header>
@@ -52,7 +56,7 @@
         <li><a href="/contact">Contact</a></li>
       </ul>
     </div>
-    <div id="container">
+    <main id="main">
       <div id="contact">
         <div>
           <img src="assets/Cam_About.png" alt="image of logo: cam the covid assistant">
@@ -64,7 +68,84 @@
           <p>IG | FB</p>
         </div>
       </div>
+    <!DOCTYPE html>
+
+<html lang="eng" xml:lang="eng" xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+      
+      <title>Covid Assist</title>
+      
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <meta name="description" content="A helping hand in trying times. In response to the COVID-19 pandemic, the government has announced sweeping changes to the welfare system. We hope to help you understand what benefits you will and won't receive and what you need to do">
+      <meta name="keywords" content="centrelink, covid-19, covid, 19, welfare, help, what, can, get, payments, coronavirus">
+      <meta name="author" content="Xavier Connelly">
+
+      <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css">
+      <link rel="icon" href="/favicon.svg">
+      <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+
+      <script type="text/javascript" src="/js/scripts.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+      <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+
+  </head>
+
+  <body>
+    <header>
+<!--  <a href="/index_new.html" class="logo">
+        <img src="https://covidassist.net.au/assets/CA_Logo.svg" alt="covid assist logo">
+        <span>covidassist</span>
+      </a>-->
+      <a href="/index_new.html" class="logo">
+        <span id="logo" class="light"></span>
+        covidassist
+      </a>
+      <div class="menu">
+        <ul>
+        <li><a href="/about">About</a></li>
+        <li><a href="/#reference">Reference</a></li>
+        <li><a href="/disclaimer">Disclaimer</a></li>
+        <li><a href="/contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" onclick="openMenu(this)">
+          <div class="hamburger_line_top light-bg"></div>
+          <div class="hamburger_line_middle light-bg"></div>
+          <div class="hamburger_line_bottom light-bg"></div>
+        </div>
+      </div>
+    </header>
+    <div id="mobile-menu">
+      <ul>
+        <li><a href="/about">About</a></li>
+        <li><a href="/#reference">Reference</a></li>
+        <li><a href="/disclaimer">Disclaimer</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
     </div>
+    <main id="main">
+      <div id="disclaimer">
+        <div>
+          <img src="assets/Cam_About.png" alt="image of logo: cam the covid assistant">
+        </div>
+        <div>
+          <h4>Disclaimer</h4>
+          <p>This information is up to date as of 30 March 2020.</p>
+          <p>CovidAssist does not provide legal advice.</p>
+          <p>By using this site you accept that CovidAssist is not providing you with legal advice.</p>
+          <p>CovidAssist is a free service that gives information about navigating welfare and services through the Coronavirus (Covid-19) crisis. While we did our best to make sure that all this information is accurate, we do not accept any responsibility for the accuracy of the information provided.</p>
+          <p>If you’re not sure about the information provided, you should contact your local community legal centre for legal advice.</p>
+        </div>
+        <div>
+          <h4>Privacy</h4>
+          <p>CovidAssist respects your right to privacy and is committed to protecting the privacy of all people who use the site.</p>
+          <p>The limited information we collect from people who use the website will only be used to improve the CovidAssist service. Your information will only be released to third parties if required by law or to improve the CovidAssist service.</p>
+        </div>
+      </div>
+    </main>
     <footer>
       <ul>
         <li><a href="/about">About</a></li>
@@ -81,13 +162,33 @@
       </div>
     </footer>
   </body>
+  
+<script>
+  // Change Nav Colour On Scroll
+  $(document).ready(function(){
+    $(window).scroll(function() {
+      var height = $(window).scrollTop();
+      if(height > 300) {
+        $('header').addClass('active');
+        $('#logo').addClass('dark');
+        $('.hamburger > div').removeClass('light-bg');
+        $('.hamburger > div').addClass('dark-bg');
+      } else {
+        $('header').removeClass('active');
+        $('#logo').removeClass('dark');
+        $('.hamburger > div').addClass('light-bg');
+        $('.hamburger > div').removeClass('dark-bg');
+      }
+    });
+  });
+</script>
 
-    <script>
-        $(function () {
-          $("#reference .fold-table tr.view").on("click", function () {
-            $(this).toggleClass("open").next(".fold").toggleClass("open");
-          });
-        });
-    </script>
+<script>
+  $(function () {
+    $("#reference .fold-table tr.view").on("click", function () {
+      $(this).toggleClass("open").next(".fold").toggleClass("open");
+    });
+  });
+</script>
 
 </html>
