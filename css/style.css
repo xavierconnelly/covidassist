@@ -479,13 +479,13 @@ table.fold-table .fold td ul {
   padding-right: 50px;
 }
 */
-table.fold-table .fold {
+table.fold-table.fold.td{
   max-width: 600px;
   padding-right: 50px;
 }
-table.fold-table .fold td h4:first-child
-table.fold-table .fold td p:first-child,
-table.fold-table .fold td ul:first-child {
+table.fold-table.fold td h4:first-child
+table.fold-table.fold td p:first-child,
+table.fold-table.fold td ul:first-child {
   margin-block-start: 0.5em;
 }
 table.fold-table .fold td h4{
@@ -500,19 +500,8 @@ table.fold-table .fold td p strong,
 table.fold-table .fold td ul li strong {
   color: #006bff;
 }
-/*
-table.fold-table a::selection,
-table.fold-table p::selection,
-table.fold-table em::selection,
-table.fold-table ul::selection,
-table.fold-table li::selection,
-table.fold-table strong::selection {
-  color: #333;
-  background: #FDB80E;
-}
-*/
 table.fold-table *::selection {
-  color: #333;
+  color: #eee;
   background: #2c6540;
 }
 table.fold-table tr.view.open {
