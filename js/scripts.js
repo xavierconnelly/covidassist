@@ -8,7 +8,7 @@ function openMenu(x) {
     var y = document.getElementById("mobile-menu");
     if (y.style.left === "0vw") {
         y.style.left = "100vw";
-        *.style.overflow = "hidden"
+        document.main.style.overflow = "hidden";
   } else {
         y.style.left = "0vw";
     }
@@ -16,7 +16,7 @@ function openMenu(x) {
       var y = document.getElementById("mobile-menu");
       if (y.style.left === "0vw") {
           y.style.left = "100vw";
-          *.style.overflow = "unset"
+          document.main.style.overflow = "unset";
       } else {
         y.style.left = "0vw";
       }
