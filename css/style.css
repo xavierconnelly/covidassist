@@ -497,8 +497,10 @@ table.fold-table .fold td ul li strong::selection {
   background: #ffe500; /* change to other yellow */
 }
 table.fold-table tr.view.open {
+  color: #333;
+  background: #ffe500; /* 
   color: #006bff;
-  font-weight: bold;
+  font-weight: bold; */
 }
 table.fold-table tr.fold.open {
   display: table-row;
