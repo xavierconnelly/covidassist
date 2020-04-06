@@ -62,6 +62,11 @@ ul {
 ul.dot {
   list-style-type: disc;
 }
+em {
+  color: blue;
+  font-weight: bold;
+  font-style: none;
+}
 /* Header 
 ////////////////////////////////////////////////////////////////////////////*/
 header span a {
@@ -476,8 +481,7 @@ table.fold-table .fold td h4{
 }
 table.fold-table .fold td p,
 table.fold-table .fold td ol li,
-table.fold-table .fold td ul li,
- {
+table.fold-table .fold td ul li {
   padding-bottom: 1em;
 }
 table.fold-table .fold td p strong,
