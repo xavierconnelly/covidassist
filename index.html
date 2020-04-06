@@ -524,10 +524,12 @@
       if(height > 300) {
         $('header').addClass('active');
         $('#logo').addClass('dark');
+        $('.hamburger > div').removeClass('light-bg');
         $('.hamburger > div').addClass('dark-bg');
       } else {
         $('header').removeClass('active');
         $('#logo').removeClass('dark');
+        $('.hamburger > div').addClass('light-bg');
         $('.hamburger > div').removeClass('dark-bg');
       }
     });
