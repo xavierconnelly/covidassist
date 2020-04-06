@@ -609,6 +609,10 @@ table.fold-table tr.fold.open {
   #about div:first-child, #disclaimer div:first-child, #contact div:first-child {
     display: none;
   }
+  #about p, #disclaimer h4, #contact h4, #disclaimer div p, #contact div p {
+    padding: 0 0 1em 0;
+    width: unset;
+  }
 }
 /* Media @ Width Under 600px
 //////////////////////////////////////////////////////////////////////////// */
