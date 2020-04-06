@@ -456,7 +456,7 @@ table.fold-table > tbody > th {
 table.fold-table > tbody > tr.view:hover,
 table.fold-table > tbody > td:hover,
 table.fold-table > tbody > th:hover {
-  background-color: blue;
+  background-color: #006bff;
   color: white;
   transition: 0.2s;
   cursor: pointer;
