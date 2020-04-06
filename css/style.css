@@ -471,23 +471,23 @@ table.fold-table tr.fold {
 table.fold-table .fold td {
   border: 0px solid #333;
 }
-table.fold-table.fold td h4,
-table.fold-table.fold td p,
-table.fold-table.fold td ul {
+table.fold-table .fold td h4,
+table.fold-table .fold td p,
+table.fold-table .fold td ul {
   max-width: 600px;
 }
-table.fold-table.fold td h4:first-child
-table.fold-table.fold td p:first-child,
-table.fold-table.fold td ul:first-child {
+table.fold-table .fold td h4:first-child
+table.fold-table .fold td p:first-child,
+table.fold-table .fold td ul:first-child {
   margin-block-start: 0.5em;
 }
 table.fold-table.fold td h4{
   color: #2c6540;
 }
-table.fold-table.fold td p,
-table.fold-table.fold td h4,
-table.fold-table.fold td ol li,
-table.fold-table.fold td ul li {
+table.fold-table .fold td p,
+table.fold-table .fold td h4,
+table.fold-table .fold td ol li,
+table.fold-table .fold td ul li {
   padding-bottom: 1em;
 }
 table.fold-table .fold td p strong,
