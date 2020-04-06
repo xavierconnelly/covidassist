@@ -502,6 +502,7 @@ table.fold-table tr.fold.open {
 #contact,
 #more-help {
   display: flex;
+  flex-wrap: wrap;
   padding: 300px 0 50px 0;
   font-size: 16px;
 }
