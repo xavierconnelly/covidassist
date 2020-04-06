@@ -23,6 +23,24 @@ function openMenu(x) {
   };
 }
 
+// Change Nav Colour On Scroll
+$(document).ready(function(){
+  $(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if(height > 300) {
+      $('header').addClass('active');
+      $('#logo').addClass('dark');
+      $('.hamburger > div').removeClass('light-bg');
+      $('.hamburger > div').addClass('dark-bg');
+    } else {
+      $('header').removeClass('active');
+      $('#logo').removeClass('dark');
+      $('.hamburger > div').addClass('light-bg');
+      $('.hamburger > div').removeClass('dark-bg');
+    }
+  });
+});
+
 // Use for HIDE / SHOW Cam
 
 function openJosef() {
@@ -31,6 +49,13 @@ function openJosef() {
 }
 
 // Accordion 
+
+  // Show / Hide Answer Section
+  $(function () {
+    $("#reference .fold-table tr.view").on("click", function () {
+      $(this).toggleClass("open").next(".fold").toggleClass("open");
+    });
+  });
 
   // Search 
   var options = {
