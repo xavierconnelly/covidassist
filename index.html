@@ -488,7 +488,6 @@
                 <td></td>
                 <td class="hidden"></td>
               </tr>
-<!-- INSERT TABLE ROW ABOVE HERE -->
             </tbody>
           </table>
           <!-- mask is last -->
@@ -497,8 +496,7 @@
         <div id="chatbot">
         </div>
       </div>
-
-<!-- PASTE TO HERE -------------------------------------------------------------->    </main>
+    </main>
     <footer>
       <ul>
         <li><a href="/about">About</a></li>
@@ -519,54 +517,29 @@
 
 
 <script>
-// Change Nav Colour On Scroll
-$(document).ready(function(){
-  $(window).scroll(function() {
-    var height = $(window).scrollTop();
-    if(height > 300) {
-      $('header').addClass('active');
-      $('#logo').addClass('dark');
-    } else {
-      $('header').removeClass('active');
-      $('#logo').removeClass('dark');
-    }
-  });
-});
-</script>
-
-  <script>
-      $(function () {
-        $("#reference .fold-table tr.view").on("click", function () {
-          $(this).toggleClass("open").next(".fold").toggleClass("open");
-        });
-      });
-  </script>
-
-  <script>
+  // Change Nav Colour On Scroll
   $(document).ready(function(){
-    // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
-
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
-
-        // Store hash
-        var hash = this.hash;
-
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function(){
-
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
-        });
-      } // End if
+    $(window).scroll(function() {
+      var height = $(window).scrollTop();
+      if(height > 300) {
+        $('header').addClass('active');
+        $('#logo').addClass('dark');
+        $('#hamburger > div').addClass('dark-bg');
+      } else {
+        $('header').removeClass('active');
+        $('#logo').removeClass('dark');
+        $('#hamburger > div').removeClass('dark-bg');
+      }
     });
   });
-  </script>
+</script>
+
+<script>
+  $(function () {
+    $("#reference .fold-table tr.view").on("click", function () {
+      $(this).toggleClass("open").next(".fold").toggleClass("open");
+    });
+  });
+</script>
 
 </html>
