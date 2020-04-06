@@ -26,7 +26,7 @@ body {
   width: 100vw;
   overflow-x: hidden;
 }
-h1, h2, h3, h4, h5, h6, header span {
+h1, h2, h3, h5, h6, header span {
   font-family: "Comfortaa", sans-serif;
 }
 h1 {
@@ -50,8 +50,17 @@ header {
   -ms-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
+ol .letter {
+  list-style-type: lower-alpha;
+}
+ol .number {
+  list-style-type: lower-alpha;
+}
 ul {
   list-style-type: none;
+}
+ul .dot {
+  list-style-type: disc;
 }
 /* Header 
 ////////////////////////////////////////////////////////////////////////////*/
@@ -403,8 +412,9 @@ table {
 }
 table th,
 table td {
-  padding: 0.4em;
+  /*padding: 0.4em;*/
   border-top: 1px solid #333;
+  padding: 5px 10px 30px 10px;
 }
 table th:first-child,
 table td:first-child {
@@ -461,11 +471,15 @@ table.fold-table .fold td p:first-child,
 table.fold-table .fold td ul:first-child {
   margin-block-start: 0.5em;
 }
-table.fold-table .fold td h4,
+table.fold-table .fold td h4{
+  margin-bottom: 1em;
+  background: #fcb80e;
+}
 table.fold-table .fold td p,
-table.fold-table .fold td ul li {
+table.fold-table .fold td ol li,
+table.fold-table .fold td ul li,
+ {
   padding-bottom: 1em;
-  list-style-type: lower-alpha;
 }
 table.fold-table .fold td p strong,
 table.fold-table .fold td ul li strong {
@@ -486,10 +500,7 @@ table.fold-table tr.view.open {
 table.fold-table tr.fold.open {
   display: table-row;
 }
-/* Hidding Answers 
-  - is stopping search filter though
-  - change to height?
-  */
+/* Hidding Answers - is stopping search filter though | change to height? */
 .hidden {
   display: none;
 }
