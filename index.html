@@ -1,547 +1,625 @@
-<!DOCTYPE html>
-
-<html lang="eng" xml:lang="eng" xmlns="http://www.w3.org/1999/xhtml">
-
-  <head>
-      
-      <title>Covid Assist</title>
-      
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-
-      <meta name="description" content="A helping hand in trying times. In response to the COVID-19 pandemic, the government has announced sweeping changes to the welfare system. We hope to help you understand what benefits you will and won't receive and what you need to do">
-      <meta name="keywords" content="centrelink, covid-19, covid, 19, welfare, help, what, can, get, payments, coronavirus">
-      <meta name="author" content="Xavier Connelly">
-
-      <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css">
-      <link rel="icon" href="/favicon.svg">
-      <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
-
-      <script type="text/javascript" src="/js/scripts.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
-      <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
-
-  </head>
-
-  <body>
-    <header>
-<!--  <a href="/index_new.html" class="logo">
-        <img src="https://covidassist.net.au/assets/CA_Logo.svg" alt="covid assist logo">
-        <span>covidassist</span>
-      </a>-->
-      <a href="/index_new.html" class="logo">
-        <span id="logo" class="light"></span>
-        covidassist
-      </a>
-      <div class="menu">
-        <ul>
-        <li><a href="/about">About</a></li>
-        <li><a href="/#reference">Reference</a></li>
-        <li><a href="/disclaimer">Disclaimer</a></li>
-        <li><a href="/contact">Contact</a></li>
-        </ul>
-        <div class="hamburger" onclick="openMenu(this)">
-          <div class="hamburger_line_top"></div>
-          <div class="hamburger_line_middle"></div>
-          <div class="hamburger_line_bottom"></div>
-        </div>
-      </div>
-    </header>
-    <div id="mobile-menu">
-      <ul>
-        <li><a href="/about">About</a></li>
-        <li><a href="/#reference">Reference</a></li>
-        <li><a href="/disclaimer">Disclaimer</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
-    </div>
-    <main id="container">
-      <div id="landing">
-        <div class="landing-text">
-          <h1>A helpful <br /> hand in trying <br />times</h1>
-          <p>In response to the Coronavirus (COVID-19) Crisis, the Australian Government has announced a number of sweeping changes to our welfare system and safety nets.</p><br>
-          <p>This site is intended to help you navigate the confusing wage subsidy, welfare and social support services provided by Centrelink, and state and territory governments during this time.</p><br>
-          <p>We will be updating these <a href="/#reference">FAQs</a>, and introducing further tools to help assist you over the coming days.</p>
-        </div>
-        <img id="cam-landing" src="/assets/Cam_Gov_Landing.png" alt="Chatbot with speech bubble: don't speak government?">
-      </div>
-<!-- PASTE FROM HERE -------------------------------------------------------------->
-
-      <div id="reference">
-<!--        <button onclick="window.location.href = '#reference';"/> -->
-        <img id="cam-reference" src="/assets/Cam_Help_Reference.png" alt="Chatbot with speech bubble: not sure where to start?">
-        <div id="accordion">
-          <div class="filter-selection">
-            <div>
-              Filter:
-            </div>
-            <span class="container">
-              All
-              <input type="radio" id="filter-all" class="filter-input" name="filter" checked />
-              <span for="filter-all" class="filter-label checkmark"></span>
-            </span>
-            <span class="container">
-              Eligibility
-              <input type="radio" id="blue" class="filter-input" name="filter" />
-              <span for="filter-blue" class="filter-label "></span>
-            </span>
-            <span class="container">
-              Applying
-              <input type="radio" id="green" class="filter-input" name="filter" />
-              <span for="filter-green" class="filter-label checkmark"></span>
-            </span>
-            <span class="container">
-              Payments
-              <input type="radio" name="radio" />
-              <span for="filter-red" class="filter-label checkmark"></span>
-            </span>
-            <input class="search" placeholder="Search" />
-          </div>
-          <table class="fold-table filter-wrap">
-            <thead>
-              <tr>
-                <th class="mobile_hide">Service</th>
-                <th class="mobile_hide">Category</th>
-                <th>FAQ</th>
-                <th class="mobile_hide sort" data-sort="date">Updated</th>
-                <th class="mobile_hide hidden"></th>
-              </tr>
-            </thead>
-            <tbody class="list">
-<!--Centrelink  | Applying   | How do I apply for a Centrelink payment? (a step-by-step guide)-->
-              <tr class="view filter-item green">
-                <td>Centrelink</td>
-                <td>Applying</td>
-                <td class="question">How do I apply for a Centrelink payment? (a step-by-step guide)</td>
-                <td>4th April 2020</td>
-                <td class="date hidden">20|04|04</td>
-              </tr>
-              <tr class="fold">
-                <td></td>
-                <td></td>
-                <td class="answer">
-                  <p>Don't ring the Centrelink or Services Australia hotline and don't go into a service centre. Try to do as much as you can online.</p>
-                  <p>You may click on the links in this step-by-step guide as you go.</p>
-                  <ol class="number">
-                    <li>Go online and <a href="https://my.gov.au/LoginServices/main/login?execution=e1s1">log in</a> to your existing MyGov account or <a href="https://www.servicesaustralia.gov.au/individuals/online-help/create-mygov-account">create a new one.</a></li>
-                    <li>
-                      <p>If you have received Centrelink payments in the past, including as a young person or while studying, and have a MyGov and Centrelink account linked, jump to step four.</p>
-                      <p>Once you log in to MyGov account, you can “register your intent to claim” a Centrelink payment.</p>
-                      <p>The only information you need at this stage is your MyGov login. Services Australia (Centrelink) will call you to arrange next steps.</p>
-                      <p>If you register between 23 and 29 March 2020, your payment will start from 23 March 2020, if you submit your full claim by 19 April 2020.</p>
-                      <p>If you register from 30 March 2020 your payment will start from the date you registered your intention to claim, if your claim is accepted.</p>
-                      <p>More information about how to register your intent to claim can be found on the <a href="https://www.servicesaustralia.gov.au/individuals/subjects/affected-coronavirus-covid-19/if-you-need-payment-coronavirus-covid-19/register-your-intention-claim-payment-coronavirus-covid-19">Services Australia page.</a></p>
-                    </li>
-                    <li>
-                      <p>Once you have clicked “registered your intent to claim” with Centrelink, Centrelink will contact you to confirm your identity. They will give you your Customer Reference Number (CRN) and a linking code. You’ll need these to set up access to your Centrelink online account.</p> 
-                      <p>When they contact you, you’ll need to give them proof of your identity.</p>
-                    </li>
-                    <li>
-                      <ul>
-                        <li>Log in to MyGov and go to your Centrelink account</li>
-                        <li>Select “make a claim” from the menu or home page</li>
-                        <li>You will need to select the section that says “Looking for work” (unless you are a student).</li>
-                        <li>This will have you apply for JobSeeker. Find out more about the <a href="">JobSeeker and Coronavirus supplement</a>. If you are a student or apprentice, select the relevant section.</li>
-                        <li>You'll have to submit any required documents online now, but you'll have 14 days to submit any supplementary documents.</li>
-                      </ul>
-                    </li>
-                    <li>
-                      <p>As part of the claim, you may need to book a phone appointment. Some people have reported problems with the website at this point (among others).</p>
-                      <p>You'll need to make a note of your appointment time and make sure your phone is with you.</p>
-                      <p>They'll call from a private number. Answer it!</p>
-                    </li>
-                    <li>
-                      <p>Wait. Centrelink will let you know if your claim has been approved.</p>
-                      <p>If it is, they'll tell you when you need to report to them, and how.</p>
-                      <p>This may come through your MyGov inbox or the Express Plus Centrelink app (if you've downloaded it) or by post.</p>
-                      <p>Reporting just means letting Centrelink know how much money you earned over the past 14 days and confirming you've stuck to the mutual obligations laid out in your job plan.</p>
-                      <p>You'll have to report every two weeks.</p>
-                      <p>If you don't report, you won't get paid. If you're late reporting, your payment will be late.</p>
-                      <p>You can report online or over the phone.</p>
-                    </li>
-                  </ol> 
-                </td>
-                <td></td>
-                <td class="hidden"></td>
-              </tr>              
-<!--Centrelink  | Applying   | Intent to apply - What is registering an intent to apply, and how do I do this?-->
-              <tr class="view filter-item green">
-                <td>Centrelink</td>
-                <td>Applying</td>
-                <td class="question">Intent to apply - What is registering an intent to apply, and how do I do this?</td>
-                <td>4th April 2020</td>
-                <td class="date hidden">20|04|04</td>
-              </tr>
-              <tr class="fold">
-                <td></td>
-                <td></td>
-                <td class="answer">
-                  <p>Registering your “intent to apply” helps people who are trying to apply for a Centrelink payment, by marking the date that they started trying to apply.</p>
-                  <p>Registering your intent to apply isn’t the same as applying, however it means that you can rest assured that you will be back paid to the date you registered your intent to apply, should your application be accepted once complete.</p>
-                  <p>If you register between 23 and 29 March 2020, your payment will start from 23 March 2020, if you submit your full claim by 19 April 2020.</p>
-                </td>
-                <td></td>
-                <td class="hidden"></td>
-              </tr>              
-<!--Centrelink  | Payments   | Backdating payments - will payments be backdated-->
-              <tr class="view filter-item green">
-                <td>Centrelink</td>
-                <td>Payments</td>
-                <td class="question">Backdating payments - will payments be backdated</td>
-                <td>4th April 2020</td>
-                <td class="date hidden">20|04|04</td>
-              </tr>
-              <tr class="fold">
-                <td></td>
-                <td></td>
-                <td class="answer">
-                  <p>Yes, payments will be backdated to when you first register your intent to claim.</p>
-                  <p>If you register between 23 and 29 March 2020, your payment will start from 23 March 2020, if you submit your full claim by 19 April 2020.</p>
-                  <p>If you register from 30 March 2020 your payment will start from the date you registered your intention to claim, if your claim is accepted.</p>
-                </td>
-                <td></td>
-                <td class="hidden"></td>
-              </tr>
-<!--General  | Eligibility   | What is the difference between JobKeeper and JobSeeker?-->
-              <tr class="view filter-item green">
-                <td>General</td>
-                <td>Eligibility</td>
-                <td class="question">What is the difference between JobKeeper and JobSeeker?</td>
-                <td>4th April 2020</td>
-                <td class="date hidden">20|04|04</td>
-              </tr>
-              <tr class="fold">
-                <td></td>
-                <td></td>
-                <td class="answer">
-                  <p>JobKeeper and JobSeeker are very different things but some marketing genius in the PM’s office thought it was a brilliant idea to give them similar names, for a little extra confusion.</p>
-                  <p><em>JobKeeper</em> is a wage subsidy paid to workplaces (employers), which they have to pass entirely on to workers (employees). It is not welfare or a Centrelink benefit. It is paid to workplaces by the ATO. JobKeeper was introduced by the Government as a result of the COVID-19 crisis. </p>
-                  <p><em>JobSeeker</em>is a Centrelink welfare benefit and previously known as NewStart or colloquially known as the dole. It was designed before the COVID-19 crisis however has been modified slightly as a response to COVID-19. Anyone who qualifies for JobSeeker will also receive the Coronavirus Supplement, which is an extra $550 per fortnight. The Government has relaxed the rules slightly, which means you don’t have to be actively seeking work as intensely as you would have previously been required - in recognition that it’s actually quite hard to find work in the current environment. </p>
-                </td>
-                <td></td>
-                <td class="hidden"></td>
-              </tr>
-<!--What to do: | General   | The workplace I work for has closed and I have been laid off. They will or might reopen after the crisis.-->
-              <tr class="view filter-item green">
-                <td>General</td>
-                <td></td>
-                <td class="question">The workplace I work for has closed and I have been laid off. They will or might reopen after the crisis.</td>
-                <td>4th April 2020</td>
-                <td class="date hidden">20|04|04</td>
-              </tr>
-              <tr class="fold">
-                <td></td>
-                <td></td>
-                <td class="answer">
-                  <p>If the business you worked for shuts its doors and you're made redundant or fired (after March 1), and they will (or might) reopen after the crisis, you should contact your employer (if they haven’t contacted you yet).</p>
-                  <p>They may re-assess their situation and apply for the new JobKeeper subsidy. This may help them afford you as a worker to remain on the books.</p>
-                  <p>If they are eligible for the $1,500 per fortnight subsidy, you will technically be re-employed and paid $1,500 at minimum. As you will technically be employed, you are not eligible for Centrelink.</p>
-                  <p>This $1,500 would have to be paid to you, by your employer. See the FAQ on payment rates for more information.</p>
-                </td>
-                <td></td>
-                <td class="hidden"></td>
-              </tr>
-<!--JobKeeper  | General   | My boss has offered to pay me JobKeeper, what do I do? -->
-              <tr class="view filter-item green">
-                <td>JobKeeper</td>
-                <td>General</td>
-                <td class="question">My boss has offered to pay me JobKeeper, what do I do?</td>
-                <td>4th April 2020</td>
-                <td class="date hidden">20|04|04</td>
-              </tr>
-              <tr class="fold">
-                <td></td>
-                <td></td>
-                <td class="answer">
-                  <p>If your workplace has offered to take you back on (put you on the books), and pay you the JobKeeper payment after being stood down, or offered to re-hire you as a result of the JobKeeper subsidy - you have two choices:</p>
-                  <p>Your choices are:</p>
-                  <ol>
-                    <li><em>Apply for or remain on a Centrelink payment</em></li>
-                    <ul>
-                      <li>Potential positives:</li>
-                      <ul>
-                        <li>You will not have to work. But that may also be a negative, as engaging in work provides positive benefits.</li>
-                      </ul>
-                      <li>Potential negatives:</li>
-                      <ul>
-                        <li>You will not necessarily remain “connected” to your employer.</li>
-                        <li>Your employer is not required to keep you on the books (employed) over the course of the crisis and therefore does not have any obligations to employ you after the crisis is over.</li>
-                        <li>You won’t receive employee entitlements such as superannuation and leave.</li>
-                        <li>Some Centrelink requirements may be an administrative burden to complete.</li> 
-                        <li>You will not be able to earn much private income, before you are cut off from Centrelink payments.</li>
-                        <li>Centrelink payments are less than what your employee would have to pay you under the JobKeeper program.</li>
-                        <li>Even if you work under $1,500 worth of your time, you will have to be paid the entire $1,500 from your workplace.</li>
-                      </ul>
-                    </ul>
-                    <li><em>Be paid by your employer with the JobKeeper subsidy</em></li>
-                    <ul>
-                      <li>Potential positives:</li>
-                      <ul>
-                        <li>For some workers (such as casuals or part-time employees, especially those in lower paid industries) the JobKeeper payment is potentially more than they would usually earn as you have to be paid the full $1,500 per fortnight.</li>
-                        <li>This keeps you in contact in a relationship with your employer and therefore once the crisis is over, you will likely start to resume a normal employment relationship.</li>
-                        <li>You will continue to receive all the employee entitlements such as superannuation and leave.</li>
-                        <li>It may help keep your employer’s business viable by participating in the JobKeeper program.</li>
-                      </ul>
-                    </ul>
-                    <li>Potential negatives:</li>
-                    <ul>
-                    <li>The payment is higher than any Centrelink payments so it is also taxed slightly more. However this is a minor point and not considered to be important in making your decision.</li>
-                    </ul>
-                  </ol>
-                </td>
-                <td></td>
-                <td class="hidden"></td>
-              </tr>
-<!--JobKeeper | Eligibility | General Eligibility-->
-              <tr class="view filter-item">
-                <td>Jobkeeper</td>
-                <td>Eligibility</td>
-                <td class="question">General Eligibility</td>
-                <td>3rd April 2020</td>
-                <td class="date hidden">20|04|03</td>
-              </tr>
-              <tr class="fold">
-                <td></td>
-                <td></td>
-                <td class="answer">
-                  <h4>Full-time, part-time or casual (12+ month) workers:</h4>
-                  <p>Workplaces (employers) will be eligible for the subsidy if:</p>
-
-                  <ul>
-                    <li>their turnover has fallen by more than 30 per cent (within the month) if they have a turnover of under $1 billion; or</li>
-                    <li>their turnover has fallen by more than 50 per cent (within the month) if they have a turnover of under $1 billion</li>
-                  </ul>
-                  <p>Your workplace will then apply (through the ATO or their accountant) for the $1,500 per fortnight subsidy.</p>
-                  <p><i>The $1,500 per fortnight will be paid to their bank account and your workplace has to pay it to you.</i></p>
-                  <br>
-                  <h4>Sole-traders (freelancers, artists, self-employed or in the gig economy):</h4>
-                  <p>Sole-traders will be eligible for the subsidy if:</p>
-                  <ul>
-                    <li>their turnover has fallen by more than 30 per cent (within the month)</li>
-                  <p>As a sole trader, you will need to provide the ATO with your business, nominate an individual to receive the payment (yourself) and provide your Tax File Number.</p>
-                  <p>You will need to provide a declaration of your business activity and a monthly update to declare your continued eligibility for the payments. <i>Payment will be made monthly to your bank account.</i></p>
-                </td>
-                <td></td>
-                <td class="hidden"></td>
-              </tr>
-<!--JobKeeper | Eligibility | What if I have not been operating as a sole-trader (freelancer, artist, self-employed or in the gig economy) for 12 months?-->
-              <tr class="view filter-item green">
-                <td>Jobkeeper</td>
-                <td>Eligibility</td>
-                <td class="question">What if I have not been operating as a sole-trader (freelancer, artist, self-employed or in the gig economy) for 12 months?</td>
-                <td>3rd April 2020</td>
-                <td class="date hidden">20|04|03</td>
-              </tr>
-              <tr class="fold">
-                <td></td>
-                <td></td>
-                <td class="answer">
-                  <p>If you have not been operating as a sole-trader for 12 months or more, the Tax Commissioner will have discretion to consider additional information that you can provide to establish that you have been adversely affected by the impacts of the Coronavirus.</p>
-                  <p>This means that if you can still apply and will likely be approved if you have been operating for less than 12 months - but may be required to show some other evidence and documents to the ATO later down the track.</p>
-                </td>
-                <td></td>
-                <td class="hidden"></td>
-              </tr>
-<!--JobKeeper | Eligibility | Worker (employee) with multiple workplaces (employers)-->
-              <tr class="view filter-item green">
-                <td>JobKeeper</td>
-                <td>Eligibility</td>
-                <td class="question">Worker (employee) with multiple workplaces (employers)</td>
-                <td>3rd April 2020</td>
-                <td class="date hidden">20|04|03</td>
-              </tr>
-              <tr class="fold">
-                <td></td>
-                <td></td>
-                <td class="answer">
-                  <p>Where workers have multiple workplaces (employers) – only one workplace will be eligible to receive the subsidy. The worker (employee)  should tell their primary workplace to claim the JobKeeper Payment on their behalf.</p>
-                  <p>This will likely be the workplace that you are claiming the ‘tax free threshold’ from. If you don’t know what the ‘tax free threshold’ is, or who you are claiming the ‘tax free threshold’from, simply select the workplace you work the most with.</p>
-                  <p>If you work with different workplaces equally - make a sensible decision based on your relationship with the workplace or boss.</p>
-                </td>
-                <td></td>
-                <td class="hidden"></td>
-              </tr>
-<!--JobKeeper | Eligibility | Workers (employees) that are not Australian citizens-->
-              <tr class="view filter-item green">
-                <td>JobKeeper</td>
-                <td>Eligibility</td>
-                <td class="question">Workers (employees) that are not Australian citizens</td>
-                <td>3rd April 2020</td>
-                <td class="date hidden">20|04|03</td>
-              </tr>
-              <tr class="fold">
-                <td></td>
-                <td></td>
-                <td class="answer">
-                  <p>Only Australian Citizens, or people holding a permanent visa, a protected special category visa, a non-protected special category visa who has been residing continually in Australia for 10 years or more, or a New Zealander on a special category (subclass 444) visa are eligible.</p>
-                  <p>This is broader than Centrelink however does not cover all international citizens.</p>
-                </td>
-                <td></td>
-                <td class="hidden"></td>
-              </tr>
-<!--JobKeeper | Requirements | As a sole-trader (freelancer, artist, self-employed or in the gig economy), do I prove my income has fallen?-->
-              <tr class="view filter-item">
-                <td>Jobkeeper</td>
-                <td>Requirements</td>
-                <td class="question">As a sole-trader (freelancer, artist, self-employed or in the gig economy), do I prove my income has fallen?</td>
-                <td>3rd April 2020</td>
-                <td class="date hidden">20|04|03</td>
-              </tr>
-              <tr class="fold">
-                <td></td>
-                <td></td>
-                <td class="answer">
-                  <p>Self-employed individuals (including freelancers, artists etc) will be eligible to receive the JobKeeper Payment where they expect to suffer a 30% decline in turnover relative to a comparable period a year ago (of at least a month).</p>
-                  <p>To prove that you have faced a 30% fall in revenue, you need to show that your revenue has fallen relative to your revenue in the same month a year earlier. This can also be changed to a 3 month window, if your revenue is less consistent. So compare 3 months to 3 months.</p>
-                  <p>If you have not been operating as a sole-trader for 12 months or more, or if your turnover a year earlier was not representative of your usual or average revenue, the Tax Commissioner will have discretion to consider additional information that you can provide to establish that you have been adversely affected by the impacts of the Coronavirus.</p>
-                  <p>This means that if you can still apply if you have been operating for less than 12 months - but may be required to show some other evidence later down the track.</p>
-                  <p>There will be some tolerance where, in good faith, you estimate a 30% or greater fall in turnover but actually experience a slightly smaller fall.</p>
-                </td>
-                <td></td>
-                <td class="hidden"></td>
-              </tr><!--JobKeeper | Payment     | As a worker (employee), how do I receive this money and how much will I get?-->
-              <tr class="view filter-item green">
-                <td>JobKeeper</td>
-                <td>Payment</td>
-                <td class="question">As a worker (employee), how do I receive this money and how much will I get?</td>
-                <td>3rd April 2020</td>
-                <td class="date hidden">20|04|03</td>
-              </tr>
-              <tr class="fold">
-                <td></td>
-                <td></td>
-                <td class="answer">
-                  <h4>Full-time, part-time or casual (12+ month) employees:</h4>
-                  <p>Workers (employees) will receive this payment in a number of different ways.</p>
-                  <ul>
-                    <li>If you normally receive $1,500 or more per fortnight (before tax), you will continue to receive your regular income from your workplace, so long as you continue to work the same amount. The JobKeeper payment will simply provide a subsidy to your workplace.</li>
-                    <li>If you normally receive less than $1,500  per fortnight (before tax), your workplace must pay you, at a minimum, $1,500 per fortnight (before tax). There is a chance your workplace will make you work more hours in this case. If you start to work more than $1,500 worth per fortnight, you have to be paid extra from your workplace.</li>
-                    <li>If you have been stood down (and remain stood down), your employer must pay you, at a minimum, $1,500 per fortnight (before tax). If you remain stood down, you do not have to work to receive the $1,500 but must go back to work as soon as the crisis stops impacting your work.</li>
-                    <li>If you were employed on 1 March 2020, and then ceased employment due to the crisis, and then were re-hired by the same employer, you will receive, at a minimum, $1,500 per fortnight (before tax)</li>
-                  </ul>
-                  <p>The $1,500 payment is paid to your workplace (employer) and your workplace will have to pay you as they regularly would, through the normal payroll process. This includes superannuation payments.</p>
-                  <h4>Freelancers, artists, self-employed or in the gig economy:</h4>
-                  <p>If you fall into this category (operate under an ABN) you will receive the $1,500 payment from the ATO (after submitting your JobKeeper application online) to your nominated bank account.<p>
-                </td>
-                <td></td>
-                <td class="hidden"></td>
-              </tr>
-<!--JobKeeper | Admin       | Are the JobKeeper payments taxed?-->
-              <tr class="view filter-item green">
-                <td>JobKeeper</td>
-                <td>Admin</td>
-                <td class="question">Are the JobKeeper payments taxed?</td>
-                <td>3rd April 2020</td>
-                <td class="date hidden">20|04|03</td>
-              </tr>
-              <tr class="fold">
-                <td></td>
-                <td></td>
-                <td class="answer">
-                  <p>Yes, they’re taxed just as normal income is taxed. But so are Centrelink payments.</p>
-                </td>
-                <td></td>
-                <td class="hidden"></td>
-              </tr> 
-<!--JobKeeper | Admin       | Do employers have to pay superannuation when we’re getting the JobKeeper payment?-->
-              <tr class="view filter-item green">
-                <td>JobKeeper</td>
-                <td>Admin</td>
-                <td class="question">Do employers have to pay superannuation when we’re getting the JobKeeper payment?</td>
-                <td>3rd April 2020</td>
-                <td class="date hidden">20|04|03</td>
-              </tr>
-              <tr class="fold">
-                <td></td>
-                <td></td>
-                <td class="answer">
-                  <p>Yes, your employer has to pay superannuation just as they normally would.</p>
-                </td>
-                <td></td>
-                <td class="hidden"></td>
-              </tr>  
-<!--Employmnt | General     | My hours or income has been cut, but I’m still working and have a little bit of income-->
-              <tr class="view filter-item green">
-                <td>Employment</td>
-                <td>Employment</td>
-                <td class="question">My hours or income has been cut, but I’m still working and have a little bit of income</td>
-                <td>3rd April 2020</td>
-                <td class="date hidden">20|04|03</td>
-              </tr>
-              <tr class="fold">
-                <td></td>
-                <td></td>
-                <td class="answer">
-                  <h4>Full-time, part-time or casual (12+ month) employees:</h4>
-                  <p>If you are still working, but less than usual, you should ask your workplace if they are eligible for the JobKeeper subsidy.</p>
-                  <p>If your workplace applies for the JobKeeper payment and is approved, they have to pay you a minimum of $1,500 per fortnight.</p>
-                  <p>Even if you are working less than $1,500 per fortnight, they still have to pay you this at a minimum. Yes, this is effectively free money.</p>
-                  <h4>Freelancers, artists, self-employed or in the gig economy:</h4>
-                  <p>If you work for yourself, and you have determined that your income has declined by 30% compared to the year before, you will be eligible to receive the $1,500 JobKeeper subsidy from the government. As long as your income through your ABN has fallen by at least 30%, you should apply for the JobKeeper subsidy, rather than Centrelink.</p>
-                  <h4>Casual (under 12 month) employees:</h4>
-                  <p>If you have not  been at this workplace for more than 12 months, you will not be eligible for the JobKeeper subsidy. If you are working but earning under a certain amount, you may still be eligible for a small Centrelink payment. Read the FAQ on <a href=”/”>REPLACE THIS</a> to find out about these rates.</p>
-                  <p>If you have been at this workplace for more than 12 months, you will be eligible for the JobKeeper subsidy. You should ask your workplace if they are eligible for the JobKeeper subsidy.</p>
-                  <p>If your workplace applies for the JobKeeper payment and is approved, they have to pay you a minimum of $1,500 per fortnight.</p>
-                  <p>Even if you are working less than $1,500 per fortnight, they still have to pay you this at a minimum. Yes, this is effectively free money.<p>
-                </td>
-                <td></td>
-                <td class="hidden"></td>
-              </tr>
-            </tbody>
-          </table>
-          <!-- mask is last -->
-          <div id="filter-mask"></div>
-        </div>
-        <div id="chatbot">
-        </div>
-      </div>
-    </main>
-    <footer>
-      <ul>
-        <li><a href="/about">About</a></li>
-        <li><a href="/#reference">Reference</a></li>
-        <li><a href="/disclaimer">Disclaimer</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
-      <div id="sharing">
-        <div>Share with others:</div>
-        <a target="blank" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fcovidassist.net.au%2F"> Facebook </a>
-        <a target="blank" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fcovidassist.net.au%2F&text=We%27re+here+to+help+you+navigate+the+confusing+welfare+and+social+support+services+provided+by+Centrelink%2C+and+state+and+territory+governments+during+the+Coronavirus+crisis."> Twitter </a>
-        <a target="blank" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fcovidassist.net.au%2F&title=Covid%20Assist&summary=We%27re+here+to+help+you+navigate+the+confusing+welfare+and+social+support+services+provided+by+Centrelink%2C+and+state+and+territory+governments+during+the+Coronavirus+crisis."> LinkedIn </a>
-        <a target="blank" href="mailto:?Subject=Covid%20Assist&body=Body%20goes%20here"> Email </a>
-      </div>
-    </footer>
-  </body>
-
-
-
-<script>
-  // Change Nav Colour On Scroll
-  $(document).ready(function(){
-    $(window).scroll(function() {
-      var height = $(window).scrollTop();
-      if(height > 300) {
-        $('header').addClass('active');
-        $('#logo').addClass('dark');
-        $('.hamburger > div').removeClass('light-bg');
-        $('.hamburger > div').addClass('dark-bg');
-      } else {
-        $('header').removeClass('active');
-        $('#logo').removeClass('dark');
-        $('.hamburger > div').addClass('light-bg');
-        $('.hamburger > div').removeClass('dark-bg');
-      }
-    });
-  });
-</script>
-
-<script>
-  $(function () {
-    $("#reference .fold-table tr.view").on("click", function () {
-      $(this).toggleClass("open").next(".fold").toggleClass("open");
-    });
-  });
-</script>
-
-</html>
+* {
+  outline: px solid grey;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+html {
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:not(header a logo):hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+a, div, p, span, ul {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+body {
+  background: #2c6540;
+  color: #f9eedc;
+  line-height: 1.3;
+  width: 100vw;
+  overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, h6, header span {
+  font-family: "Comfortaa", sans-serif;
+}
+h1 {
+  font-size: 80px;
+  line-height: 1.2em;
+}
+header {
+  position: -webkit-sticky; /* Safari */  
+  position: sticky;
+  top: 40px;
+  padding: 40px;
+  margin-top: 40px;
+  height: 100px;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+ul {
+  list-style-type: none;
+}
+/* Header 
+////////////////////////////////////////////////////////////////////////////*/
+header span a {
+  font-size: 50px;
+  float: left;
+}
+header ul {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+header ul li {
+  display: inline-block;
+  padding: 0px 5px 0px 5px;
+  white-space: nowrap;
+}
+header ul li:not(:last-child):after {
+  content: "|";
+  padding: 0px 0px 0px 5px;
+}
+.logo {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  position: ;
+  left: 0;
+}
+/* NEW */
+#logo{
+  background-size: cover;
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+/* On Scroll
+////////////////////////////////////////////////////////////////////////////*/
+header.active {
+  color: #333;
+}
+.light{
+  background: url("https://covidassist.net.au/assets/CA_Logo.svg");
+}
+.light-bg {
+  background: #f9eedc;
+}
+.dark{
+  background: url("https://covidassist.net.au/assets/CA_Logo_light.svg");
+}
+.dark-bg {
+  background: #333;
+}
+/* Footer 
+////////////////////////////////////////////////////////////////////////////*/
+footer {
+  padding: ;
+  color: #333;
+  background: #fcb80e;
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+  height: 300px;
+  width: 100vw;
+}
+footer ul {
+  list-style-type: none;
+  font-size: 35px;
+  padding: 0 0 40px 40px;
+  position: absolute;
+  bottom: 0;
+}
+footer ul li {
+  margin: 0;
+  padding: 0;
+}
+#sharing {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 40px 40px 0;
+}
+#sharing a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 0 10px;
+}
+#sharing a:hover {
+  text-decoration: underline;
+  font-style: italic;
+  color: #333;
+}
+/* Hamburger 
+//////////////////////////////////////////////////////////////////////////*/
+.hamburger {
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin: 40px;
+  height: 20px;
+  width: 20px;
+  z-index: 900;
+  transition: all .4s ease;
+}
+/*
+.hamburger_line_top,
+.hamburger_line_middle,
+.hamburger_line_bottom
+*/
+.hamburger > div {
+  transition: 0.4s;
+  height: 3px;
+  margin-top: 5px;
+  width: 24px;
+}
+.change .hamburger_line_top {
+  -webkit-transform: rotate(45deg) translate3d(5px, 4px, 0);
+  transform: rotate(45deg) translate3d(5px, 4px, 0);
+  -webkit-transform: center;
+  transform-origin: center;
+}
+.change .hamburger_line_middle {
+  opacity: 0;
+}
+.change .hamburger_line_bottom {
+  -webkit-transform: rotate(-45deg) translate3d(7px, -6px, 0);
+  transform: rotate(-45deg) translate3d(7px, -6px, 0);
+  -webkit-transform: center;
+  transform-origin: center;
+}
+/* Mobile Menu //////////////////////////////////////////////////////////////////////////*/
+#mobile-menu {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  left: 100vw;
+  margin: auto;
+  background: #2c6540;
+  color: #f9eedc; 
+  font-size: 2em;    
+  text-align: center;
+  transition: 0.5s;
+  z-index: 300;
+}
+#mobile-menu ul li {
+  padding: 10px 0;
+}
+/* Main Content 
+//////////////////////////////////////////////////////////////////////////// */
+#landing {
+  min-height: 100vh;
+  padding: 20px 20px 70px 50px;
+}
+.landing-text {
+  width: 700px;
+  margin-left: 150px;
+  padding-top: 240px;
+}
+#cam-landing {
+  width: 500px;
+  position: absolute;
+  right: 200px;
+  top: 200px;
+}
+#container {
+  box-shadow: 4px 4px 1rem rgba(0, 0, 0, 0.25);
+  background: #2c6540;
+  z-index: 1;
+  width: 100vw;
+  min-height: 100vh;
+  margin: -140px 0 300px 0;
+}
+/* Accordion, Filter, Search
+//////////////////////////////////////////////////////////////////////////// */
+.filter-selection {
+  display: none; /* to Delete When fixed///////// */
+}
+#reference {
+  background: #eee;
+  padding-bottom: 100px;
+  font-size: 16px;
+  min-height: 100vh;
+}
+#reference button {
+  background: url(/assets/Arrow_down.png) no-repeat;
+  background-position: center;
+  width: 40px;
+  height: 20px;
+  border: none;
+  cursor: pointer;
+  margin: 0 0 0 -16px;
+  position: absolute;
+  display: block;
+  left: 50%;
+  top: -40px;
+  display: none;
+}
+.filter-selection {
+  padding-bottom: 30px;
+}
+.filter-selection span {
+  /*padding: 0px 10px;*/
+  cursor: pointer;
+}
+.filter-selection span:hover {
+  color: blue;
+}
+/* Search + Filter 
+//////////////////////////////////////////////////////////////////////////// */
+input {
+  border: solid 0px;
+  color: #333;
+  margin-bottom: 10px;
+  background: #eee;
+  border-bottom: 1px solid #333;
+}
+input:focus {
+  outline: none;
+  border-color: #aaa;
+}
+input.search {
+  display: block;
+  padding-top: 0px;
+  float: right;
+}
+.sort {
+  cursor: pointer;
+}
+.sort:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  content: "";
+  position: relative;
+  top: -10px;
+  right: -5px;
+}
+.sort.asc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #333;
+  content: "";
+  position: relative;
+  top: 13px;
+  right: -5px;
+}
+.sort.desc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #333;
+  content: "";
+  position: relative;
+  top: -10px;
+  right: -5px;
+}
+/* The container ///////////////////     RENAME      //////////////////////*/
+.container {
+  position: relative;
+  padding-left: 20px;
+  /*padding-right: 20px;*/
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* Hide the browser's default radio button */
+.container input {
+  display: inline-block;
+}
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: ;
+  border-radius: 50%;
+}
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: blue;
+}
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+/* Filter Mask 
+//////////////////////////////////////////////////////////////////////////// */
+.filter-mask {
+  position: absolute;
+  top: 160px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-animation: filterMask 1s ease-in-out both;
+  animation: filterMask 1s ease-in-out both;
+}
+@-webkit-keyframes filterMask {
+  0% {
+    background: transparent;
+  }
+  50% {
+    background: #eee;
+  }
+  100% {
+    background: transparent;
+  }
+}
+@keyframes filterMask {
+  0% {
+    background: transparent;
+  }
+  50% {
+    background: #eee;
+  }
+  100% {
+    background: transparent;
+  }
+}
+/* Table 
+//////////////////////////////////////////////////////////////////////////// */
+table {
+  width: 100%;
+  border-spacing: unset;
+  text-align: left;
+  color: #333;
+}
+table th,
+table td {
+  padding: 0.4em;
+  border-top: 1px solid #333;
+}
+table th:first-child,
+table td:first-child {
+  padding-left: 40px;
+  width: 200px;
+}
+table th:not(:nth-child(3)),
+table td:not(:nth-child(3)) {
+  width: 140px;
+}
+table th:nth-child(4),
+table td:nth-child(4) {
+  padding-right: 40px;
+  text-align: right;
+  width: 200px;
+}
+/* Fold Table */
+/* View Segment */
+table.fold-table > tbody > tr.view,
+table.fold-table > tbody > td,
+table.fold-table > tbody > th {
+  cursor: pointer;
+  vertical-align: top;
+}
+table.fold-table > tbody > tr.view:hover,
+table.fold-table > tbody > td:hover,
+table.fold-table > tbody > th:hover {
+  background-color: blue;
+  color: white;
+  transition: 0.2s;
+  cursor: pointer;
+  font-weight: normal;
+}
+/* Fold Table */
+/* Fold Segment */
+table.fold-table tr.fold {
+  display: none;
+  border-top: 1px solid #333;
+}
+table.fold-table .fold td {
+  border: 0px solid #333;
+  padding-top: 0px;
+  padding-bottom: 30px;
+}
+table.fold-table .fold td h4,
+table.fold-table .fold td p,
+table.fold-table .fold td ul {
+  max-width: 600px;
+  padding-right: 50px;
+  padding-left: unset;
+}
+table.fold-table .fold td h4:first-child
+table.fold-table .fold td p:first-child,
+table.fold-table .fold td ul:first-child {
+  margin-block-start: 0.5em;
+}
+table.fold-table .fold td h4,
+table.fold-table .fold td p,
+table.fold-table .fold td ul li {
+  padding-bottom: 1em;
+  list-style-type: lower-alpha;
+}
+table.fold-table .fold td p strong,
+table.fold-table .fold td ul li strong {
+  color: #006bff;
+}
+table.fold-table tr.fold td p::selection,
+table.fold-table tr.fold td ul::selection,
+table.fold-table .fold td ul li::selection,
+table.fold-table .fold td p strong::selection,
+table.fold-table .fold td ul li strong::selection {
+  color: #333;
+  background: #ffe500; /* change to other yellow */
+}
+table.fold-table tr.view.open {
+  color: #006bff;
+  font-weight: bold;
+}
+table.fold-table tr.fold.open {
+  display: table-row;
+}
+/* Hidding Answers 
+  - is stopping search filter though
+  - change to height?
+  */
+.hidden {
+  display: none;
+}
+/* About +
+   Disclaimer +
+   Contact
+//////////////////////////////////////////////////////////////////////////// */
+#about,
+#disclaimer,
+#contact,
+#more-help {
+  display: flex;
+  padding: 300px 0 50px 0;
+  font-size: 16px;
+}
+#about div:first-child,
+#disclaimer div:first-child {
+  width: 50%;
+}
+#contact div {
+  flex: 40%;
+}
+#disclaimer div img,
+#contact div img {
+  float: right;
+  padding-right: 50px;
+}
+#about p,
+#disclaimer h4,
+#contact h4,
+#disclaimer div p,
+#contact div p {
+  padding: 0 20px 1em 0;
+  width: 300px;
+}
+/* More Help
+//////////////////////////////////////////////////////////////////////////// */
+#more-help {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#more-help .more-box {
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid inherit;
+  margin: 5px;
+}
+/* Media @ Width Under 600px
+//////////////////////////////////////////////////////////////////////////// */
+@media all and (max-width: 900px) {
+  h1 {
+    font-size: 2em;
+    line-height: unset;
+    padding: 0 0 1em 0;
+  }
+  header {
+    height: 50px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+  }
+  header img {
+    width: 50px;
+    height: 50px;
+  }
+  header span {
+    font-size: 25px;
+  }
+  header ul {
+    display: none;
+  }
+  ul {
+    padding: 0;
+  }
+  #logo {
+    height: 50px;
+    width: 50px;
+  }
+  .hamburger {
+    display: inline-block;
+  }
+  #container {
+    margin: -90px 0 0 0;
+  }
+  #landing {
+    padding: 20px;
+  }
+  .landing-text {
+    width: unset;
+    margin-left: unset;
+  }
+  #cam-landing {
+    display: none;
+  }
+  .more-box {
+    max-width: 40%;
+  }
+  .more-box h4,
+  .more-box p {
+    padding: 10px;
+    text-align: justify;
+  }
+  table th:not(:nth-child(3)),
+  table td:not(:nth-child(3)) {
+    display: none;
+  }
+  table th:nth-child(3),
+  table td:nth-child(3) {
+      padding: 0.4em 20px;
+  }
+  #cam-reference { /* Need to fix this to work on larger screens to */
+    width: 100vw;
+  }
+  #about, #disclaimer, #contact, #more-help {
+    padding: 150px 20px 50px 20px;
+  }
+  #about div:first-child, #disclaimer div:first-child, #contact div:first-child {
+    display: none;
+  }
+}
+/* Media @ Width Under 600px
+//////////////////////////////////////////////////////////////////////////// */
+@media all and (max-width: 600px) {
+  footer ul {
+    font-size: 30px;
+    padding: 0 0 20px 20px;
+  }
+  #sharing {
+    display: none; 
+  }
+}
