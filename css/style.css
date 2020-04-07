@@ -440,14 +440,13 @@ table td {
   padding: 5px 10px;
   border-top: 1px solid #333; /*black*/
 }
+table th:not(:nth-child(3)),
+table td:not(:nth-child(3)) {
+  width: 150px;
+}
 table th:first-child,
 table td:first-child {
   padding-left: 40px;
-  width: 200px;
-}
-table th:not(:nth-child(3)),
-table td:not(:nth-child(3)) {
-  width: 140px;
 }
 table th:nth-child(4),
 table td:nth-child(4) {
@@ -548,11 +547,11 @@ table.fold-table tr.fold.open {
 }
 #about p,
 #disclaimer h4,
-#contact h4,
 #disclaimer div p,
+#contact h4,
 #contact div p {
-  padding: 0 20px 1em 0;
-  width: 300px;
+  padding: 0px 90px 1em 0;
+  width: 340px;
 }
 .icon {
   height: 24px;
@@ -620,7 +619,7 @@ table.fold-table tr.fold.open {
     margin: -90px 0 200px 0;
   }
   #landing {
-    padding: 20px;
+    padding: 60px;
   }
   .landing-text {
     width: unset;
@@ -666,6 +665,7 @@ table.fold-table tr.fold.open {
   }
   #about, #disclaimer, #contact, #more-help {
     padding: 150px 20px 50px 20px;
+    width: 300px;
   }
   #about div:first-child, #disclaimer div:first-child, #contact div:first-child {
     display: none;
@@ -709,6 +709,9 @@ table.fold-table tr.fold.open {
   main {
     margin: unset;
     margin: 0 0 200px 0;
+  }
+  #landing {
+    padding: 20px;
   }
   .landing-text {
     padding-top: 120px;
