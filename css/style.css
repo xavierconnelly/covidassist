@@ -1,5 +1,5 @@
 * {
-  outline: px solid grey;
+  outline: px solid red;
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -73,7 +73,7 @@ ul.number {
   padding-left: 3ch;
 }
 em {
-  color: #006bff;
+  color: #006bff; /*blue*/
   font-weight: bold;
   font-style: normal;
 }
@@ -120,19 +120,19 @@ header ul li:not(:last-child):after {
 /* On Scroll
 ////////////////////////////////////////////////////////////////////////////*/
 header.active {
-  color: #333;
+  color: #333; /*black*/
 }
 .light{
   background: url("https://covidassist.net.au/assets/CA_Logo.svg");
 }
 .light-bg {
-  background: #f9eedc;
+  background: #f9eedc; /*cream*/
 }
 .dark {
   background: url("https://covidassist.net.au/assets/CA_Logo_light.svg");
 }
 .dark-bg {
-  background: #333;
+  background: #333; /*black*/
 }
 /* Hamburger 
 //////////////////////////////////////////////////////////////////////////*/
@@ -176,8 +176,8 @@ header.active {
   position: fixed;
   top: 0;
   left: 100vw;
-  background: #2c6540;
-  color: #f9eedc; 
+  background: #2c6540; /*green*/
+  color: #f9eedc; /*cream*/
   font-size: 2em;    
   text-align: center;
   transition: 0.5s;
@@ -193,8 +193,8 @@ header.active {
 ////////////////////////////////////////////////////////////////////////////*/
 footer {
   padding: ;
-  color: #333;
-  background: #fcb80e;
+  color: #333; /*black*/
+  background: #fcb80e; /*yellow*/
   position: fixed;
   bottom: 0;
   z-index: -1;
@@ -227,17 +227,17 @@ footer ul li {
 #sharing a:hover {
   text-decoration: underline;
   font-style: italic;
-  color: #333;
+  color: #333; /*black*/
 }
 /* Main Content 
 //////////////////////////////////////////////////////////////////////////// */
 main {
-  box-shadow: 4px 4px 1rem rgba(0, 0, 0, 0.25);
-  background: #2c6540;
-  z-index: 1;
+  background: #2c6540; /*green*/
   width: 100vw;
   min-height: 100vh;
   margin: -140px 0 300px 0;
+  box-shadow: 4px 4px 1rem rgba(0, 0, 0, 0.25);
+  z-index: 1;
 }
 #landing {
   min-height: 100vh;
@@ -260,7 +260,7 @@ main {
   display: none; /* to Delete When fixed///////// */
 }
 #reference {
-  background: #eee;
+  background: #eee; /*grey*/
   padding-bottom: 100px;
   font-size: 16px;
   min-height: 100vh;
@@ -292,15 +292,15 @@ main {
 /* Search + Filter 
 //////////////////////////////////////////////////////////////////////////// */
 input {
-  border: solid 0px;
-  color: #333;
+  color: #333; /*black*/
+  background: #eee; /*grey*/
   margin-bottom: 10px;
-  background: #eee;
+  border: solid 0px;
   border-bottom: 1px solid #333;
 }
 input:focus {
   outline: none;
-  border-color: #aaa;
+  border-color: #aaa; /*light-grey*/
 }
 input.search {
   display: block;
@@ -428,7 +428,7 @@ table {
 table th,
 table td {
   padding: 5px 10px;
-  border-top: 1px solid #333;
+  border-top: 1px solid #333; */black*/
 }
 table th:first-child,
 table td:first-child {
@@ -453,23 +453,14 @@ table.fold-table > tbody > th {
   cursor: pointer;
   vertical-align: top;
 }
-table.fold-table > tbody > tr.view:hover,
-table.fold-table > tbody > td:hover,
-table.fold-table > tbody > th:hover {
-  background-color: #006bff;
-  color: white;
-  transition: 0.2s;
-  cursor: pointer;
-  font-weight: normal;
-}
 /* Fold Table */
 /* Fold Segment */
 table.fold-table tr.fold {
   display: none;
-  border-top: 1px solid #333;
+  border-top: 1px solid #333; */black*/
 }
 table.fold-table .fold td {
-  border: 0px solid #333;
+  border: 0px solid #333; */black*/
 }
 table.fold-table .fold td h4,
 table.fold-table .fold td p,
@@ -482,7 +473,7 @@ table.fold-table .fold td ul:first-child {
   margin-block-start: 0.5em;
 }
 table.fold-table.fold td h4{
-  color: #2c6540;
+  color: #2c6540; */dark-green*/
 }
 table.fold-table .fold td p,
 table.fold-table .fold td h4,
@@ -492,17 +483,15 @@ table.fold-table .fold td ul li {
 }
 table.fold-table .fold td p strong,
 table.fold-table .fold td ul li strong {
-  color: #006bff;
+  color: #006bff; */?*/
 }
 table.fold-table *::selection {
-  color: #eee;
-  background: #2c6540;
+  color: #eee; */grey*/
+  background: #2c6540; */dark-green*/
 }
 table.fold-table tr.view.open {
-  color: #333;
-  background: #FDB80E; /* 
-  color: #006bff;
-  font-weight: bold; */
+  color: #333; */black*/
+  background: #FDB80E; */blue*/
 }
 table.fold-table tr.fold.open {
   display: table-row;
@@ -623,7 +612,7 @@ table.fold-table tr.fold.open {
   }
   table th:nth-child(3),
   table td:nth-child(3) {
-      padding: 0.4em 20px;
+    padding: 0.4em 20px;
   }
   #cam-reference { /* Need to fix this to work on larger screens to */
     width: 100vw;
@@ -638,12 +627,19 @@ table.fold-table tr.fold.open {
     padding: 0 0 1em 0;
     width: unset;
   }
+  table.fold-table > tbody > tr.view:hover,
+  table.fold-table > tbody > td:hover,
+  table.fold-table > tbody > th:hover {
+    background-color: #006bff; */blue*/
+    color: white; */white*/
+    cursor: pointer;
+  }
 }
 /* Media @ Width Under 600px
 //////////////////////////////////////////////////////////////////////////// */
 @media all and (max-width: 600px) {
   table.fold-table .fold {
-    background: #fff;
+    background: #ffb4007a; */light-yellow*/
   }
   footer ul {
     font-size: 30px;
