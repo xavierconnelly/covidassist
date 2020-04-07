@@ -676,6 +676,9 @@ table.fold-table tr.fold.open {
 /* Media @ Width Under 600px
 //////////////////////////////////////////////////////////////////////////// */
 @media all and (max-width: 600px) {
+  /*body {
+    height: 100%;
+  }*/
   header {
     background: #2c6540; /*green*/
     color: #f9eedc; /*cream*/
@@ -697,6 +700,7 @@ table.fold-table tr.fold.open {
   }
   main {
     margin: unset;
+    margin: 0 0 200px 0;
   }
   .landing-text {
     padding-top: 120px;
