@@ -691,6 +691,10 @@ table.fold-table tr.fold.open {
     width: 40px;
     height: 40px;
   }
+  #logo {
+    height: 40px;
+    width: 40px;
+  }
   main {
     margin: unset;
   }
