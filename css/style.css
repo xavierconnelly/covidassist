@@ -180,7 +180,7 @@ header a {
   padding: unset;
 }
 #mobile-menu ul li {
-  display: unset;
+  display: grid;
   padding: 10px 0;
 }
 /* On Scroll
