@@ -16,10 +16,10 @@ function openMenu(x) {
     if (y.style.left === "0vw") {
         y.style.left = "100vw";
         document.body.style.overflow = "hidden";
-        $('header').addClass('active');
-        $('#logo').addClass('dark');
-        $('.hamburger > div').removeClass('light-bg');
-        $('.hamburger > div').addClass('dark-bg');
+        $('header').removeClass('active');
+        $('#logo').removeClass('dark');
+        $('.hamburger > div').addClass('light-bg');
+        $('.hamburger > div').removeClass('dark-bg');
   } else {
         y.style.left = "0vw";
     }
