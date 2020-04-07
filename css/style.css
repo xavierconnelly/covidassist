@@ -636,6 +636,23 @@ table.fold-table tr.fold.open {
   table td:nth-child(3) {
     padding: 0.4em 20px;
   }
+  table.fold-table .fold {
+    background: #ffb4007a; /*light-yellow*/
+  }
+  table.fold-table tr.view.open {
+    color: #333; /*black*/
+    background: #fdB80e; /*yellow*/
+  }
+  table.fold-table > tbody > tr.view:hover,
+  table.fold-table > tbody > td:hover,
+  table.fold-table > tbody > th:hover {
+    color: #333; /*black*/
+    background-color: #fdB80e; /*yellow*/
+    cursor: pointer;
+  }
+  .dentless {
+    padding-left: 2ch;
+  }
   #cam-reference { /* Need to fix this to work on larger screens to */
     width: 100vw;
   }
@@ -673,23 +690,6 @@ table.fold-table tr.fold.open {
   }
   .landing-text {
     margin-left: unset;
-  }
-  table.fold-table .fold {
-    background: #ffb4007a; /*light-yellow*/
-  }
-  table.fold-table tr.view.open {
-    color: #333; /*black*/
-    background: #fdB80e; /*yellow*/
-  }
-  table.fold-table > tbody > tr.view:hover,
-  table.fold-table > tbody > td:hover,
-  table.fold-table > tbody > th:hover {
-    color: #333; /*black*/
-    background-color: #fdB80e; /*yellow*/
-    cursor: pointer;
-  }
-  .dentless {
-    padding-left: 2ch;
   }
   footer ul {
     font-size: 30px;
