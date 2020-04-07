@@ -459,8 +459,8 @@ table.fold-table > tbody > th {
 table.fold-table > tbody > tr.view:hover,
 table.fold-table > tbody > td:hover,
 table.fold-table > tbody > th:hover {
-  color: white; */white*/
-  background-color: #006bff; */blue*/
+  color: white; /*white*/
+  background-color: #006bff; /*blue*/
   cursor: pointer;
 }
 /* Fold Table - Fold Segment */
