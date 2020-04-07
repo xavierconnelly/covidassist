@@ -15,7 +15,11 @@ function openMenu(x) {
     var y = document.getElementById("mobile-menu");
     if (y.style.left === "0vw") {
         y.style.left = "100vw";
-        document.main.style.overflow = "hidden";
+        document.body.style.overflow = "hidden";
+        $('header').addClass('active');
+        $('#logo').addClass('dark');
+        $('.hamburger > div').removeClass('light-bg');
+        $('.hamburger > div').addClass('dark-bg');
   } else {
         y.style.left = "0vw";
     }
@@ -23,7 +27,7 @@ function openMenu(x) {
       var y = document.getElementById("mobile-menu");
       if (y.style.left === "0vw") {
           y.style.left = "100vw";
-          document.main.style.overflow = "unset";
+          document.body.style.overflow = "unset";
       } else {
         y.style.left = "0vw";
       }
