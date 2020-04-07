@@ -14,13 +14,13 @@ $(document).ready(function() {
 
 // Open Menu on Mobile
 function openMenu(x) {
-    x.classList.toggle("change");
+  x.classList.toggle("change");
     
-    var z = window.matchMedia("(max-width: 900px)")
-    if (z.matches) { // If less than 900px
+  var z = window.matchMedia("(max-width: 900px)")
+  if (z.matches) { // If less than 900px
 
-    var y = document.getElementById("mobile-menu");
-    if (y.style.left === "0vw") {
+  var y = document.getElementById("mobile-menu");
+  if (y.style.left === "0vw") {
         y.style.left = "100vw";
         document.body.style.overflow = "unset";
         $('header').addClass('active');
@@ -39,14 +39,14 @@ function openMenu(x) {
       var y = document.getElementById("mobile-menu");
       if (y.style.left === "0vw") {
           y.style.left = "100vw";
-          document.body.style.overflow = "unset";
+          document.body.style.overflow = "hidden";
           $('header').addClass('active');
           $('#logo').addClass('dark');
           $('.hamburger > div').removeClass('light-bg');
           $('.hamburger > div').addClass('dark-bg');
       } else {
           y.style.left = "0vw";
-          document.body.style.overflow = "hidden";
+          document.body.style.overflow = "";
           $('header').removeClass('active');
           $('#logo').removeClass('dark');
           $('.hamburger > div').addClass('light-bg');
@@ -72,10 +72,3 @@ $(document).ready(function(){
     }
   });
 });
-
-// Use for HIDE / SHOW Cam
-
-// function openJosef() {
-//    document.getElementById("view").style.display = "none";
-//    document.getElementById("josef").style.display = "block";
-// }
