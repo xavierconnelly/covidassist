@@ -689,6 +689,7 @@ table.fold-table tr.fold.open {
     width: 100vw;
   }
   .landing-text {
+    padding-top: 200px;
     margin-left: unset;
   }
   footer ul {
