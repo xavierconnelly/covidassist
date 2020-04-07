@@ -1,6 +1,8 @@
 // Load FAQ Section
 $(document).ready(function() {
+  $('header').load('header.html');
   $('#faq').load('faq.html');
+  $('footer').load('footer.html');
 });
 
 // Open Menu on Mobile
