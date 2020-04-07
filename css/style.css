@@ -445,16 +445,21 @@ table td:nth-child(4) {
   text-align: right;
   width: 200px;
 }
-/* Fold Table */
-/* View Segment */
+/* Fold Table - View Segment */
 table.fold-table > tbody > tr.view,
 table.fold-table > tbody > td,
 table.fold-table > tbody > th {
   cursor: pointer;
   vertical-align: top;
 }
-/* Fold Table */
-/* Fold Segment */
+table.fold-table > tbody > tr.view:hover,
+table.fold-table > tbody > td:hover,
+table.fold-table > tbody > th:hover {
+  background-color: #006bff; */blue*/
+  color: white; */white*/
+  cursor: pointer;
+}
+/* Fold Table - Fold Segment */
 table.fold-table tr.fold {
   display: none;
   border-top: 1px solid #333; */black*/
@@ -483,11 +488,11 @@ table.fold-table .fold td ul li {
 }
 table.fold-table .fold td p strong,
 table.fold-table .fold td ul li strong {
-  color: #006bff; */?*/
+  color: #006bff; */blue*/
 }
 table.fold-table *::selection {
   color: #eee; */grey*/
-  background: #2c6540; */dark-green*/
+  background: #2c6540; */green*/
 }
 table.fold-table tr.view.open {
   color: #333; */black*/
