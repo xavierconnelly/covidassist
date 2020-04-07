@@ -194,7 +194,7 @@ header.active {
 footer {
   padding: ;
   color: #333; /*black*/
-  background: #fcb80e; /*yellow*/
+  background: #fdb80e; */yellow*/
   position: fixed;
   bottom: 0;
   z-index: -1;
@@ -287,7 +287,7 @@ main {
   cursor: pointer;
 }
 .filter-selection span:hover {
-  color: blue;
+  color: #006bff; /*blue*/
 }
 /* Search + Filter 
 //////////////////////////////////////////////////////////////////////////// */
@@ -372,7 +372,7 @@ input.search {
 }
 /* When the radio button is checked, add a blue background */
 .container input:checked ~ .checkmark {
-  background-color: blue;
+  background-color: #006bff; /*blue*/
 }
 /* Create the indicator (the dot/circle - hidden when not checked) */
 .checkmark:after {
@@ -491,7 +491,7 @@ table.fold-table *::selection {
 }
 table.fold-table tr.view.open {
   color: #333; */black*/
-  background: #FDB80E; */blue*/
+  background: #fdB80e; */yellow*/
 }
 table.fold-table tr.fold.open {
   display: table-row;
@@ -640,6 +640,13 @@ table.fold-table tr.fold.open {
 @media all and (max-width: 600px) {
   table.fold-table .fold {
     background: #ffb4007a; */light-yellow*/
+  }
+  table.fold-table > tbody > tr.view:hover,
+  table.fold-table > tbody > td:hover,
+  table.fold-table > tbody > th:hover {
+    background-color: #fdb80e; */yellow*/
+    color: #333; */black*/
+    cursor: pointer;
   }
   footer ul {
     font-size: 30px;
