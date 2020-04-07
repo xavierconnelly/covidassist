@@ -92,6 +92,7 @@ header a {
   -o-transition: all 1s ease-in-out;
   -ms-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
+  z-index: 900;
 }
 .logo {
   margin-right: auto;
@@ -175,7 +176,11 @@ header a {
   justify-content: center;
   align-items: center;
 }
+#mobile-menu ul {
+  padding: unset;
+}
 #mobile-menu ul li {
+  display: unset;
   padding: 10px 0;
 }
 /* On Scroll
