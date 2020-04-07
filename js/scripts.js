@@ -49,7 +49,7 @@ $(document).ready(function(){
 });
 
 // Accordion - Show / Hide Answer Section
-$('#faq').load(function(){
+$('#faq').ready(function(){
   $(function () {
     $("#faq .fold-table tr.view").on("click", function () {
       $(this).toggleClass("open").next(".fold").toggleClass("open");
