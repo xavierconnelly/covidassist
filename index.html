@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="eng" xml:lang="eng" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="eng" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
   <head>
       
@@ -45,5 +45,15 @@
     <footer>
 <!-- AJAX ***FOOTER*** CONTENT GOES HERE -->
     </footer>
+    <script type="text/javascript">      
+    // Accordion - Show / Hide Answer Section
+    $('#faqs').ready(function(){
+      $(function () {
+        $("#faqs .fold-table tr.view").on("click", function () {
+          $(this).toggleClass("open").next(".fold").toggleClass("open");
+        });
+      });
+    });  
+    </script>
   </body>
 </html>
