@@ -1,3 +1,8 @@
+// Load FAQ Section
+$(document).ready(function() {
+  $('#faq').load('faq.html');
+});
+
 // Open Menu on Mobile
 function openMenu(x) {
     x.classList.toggle("change");
@@ -43,17 +48,17 @@ $(document).ready(function(){
 
 // Use for HIDE / SHOW Cam
 
-function openJosef() {
-    document.getElementById("view").style.display = "none";
-    document.getElementById("josef").style.display = "block";
-}
+// function openJosef() {
+//    document.getElementById("view").style.display = "none";
+//    document.getElementById("josef").style.display = "block";
+// }
 
 // Accordion 
 
   // Show / Hide Answer Section
   $(document).ready(function(){
     $(function () {
-      $("#reference .fold-table tr.view").on("click", function () {
+      $("#faq .fold-table tr.view").on("click", function () {
         $(this).toggleClass("open").next(".fold").toggleClass("open");
       });
     });
@@ -65,7 +70,7 @@ function openJosef() {
   };
 
   // Ordering Date
-  var userList = new List("reference", options);
+  var userList = new List("faq", options);
 
   // Filter
   function filterHide(el) {
