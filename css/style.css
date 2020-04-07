@@ -190,13 +190,13 @@ header.active {
   color: #333; /*black*/
 }
 .light{
-  background: url("https://covidassist.net.au/assets/CA_Logo.svg");
+  background: url("/assets/CA_Logo.svg");
 }
 .light-bg {
   background: #f9eedc; /*cream*/
 }
 .dark {
-  background: url("https://covidassist.net.au/assets/CA_Logo_light.svg");
+  background: url("/assets/CA_Logo_light.svg");
 }
 .dark-bg {
   background: #333; /*black*/
@@ -553,6 +553,13 @@ table.fold-table tr.fold.open {
 #contact div p {
   padding: 0 20px 1em 0;
   width: 300px;
+}
+.icon {
+  height: 24px;
+  width: 24px;
+}
+.facebook {
+  background: url("/assets/fb_icon.svg");
 }
 /* More Help
 //////////////////////////////////////////////////////////////////////////// */
