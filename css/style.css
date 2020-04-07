@@ -592,11 +592,8 @@ table.fold-table tr.fold.open {
   header span {
     font-size: 25px;
   }
-  header ul {
+  .menu {
     display: none;
-  }
-  ul {
-    padding: 0;
   }
   #logo {
     height: 50px;
