@@ -560,7 +560,20 @@ table.fold-table tr.fold.open {
   border: 1px solid inherit;
   margin: 5px;
 }
-/* Media @ Width Under 600px
+
+
+/* Media @ Width Under 1200px
+//////////////////////////////////////////////////////////////////////////// */
+@media all and (max-width: 1200px) {
+  .landing-text {
+    margin-left: 0px;
+    padding-top: 320px;
+  }
+  #cam-landing {
+    right: 100px;
+  }
+}
+/* Media @ Width Under 900px
 //////////////////////////////////////////////////////////////////////////// */
 @media all and (max-width: 900px) {
   h1 {
@@ -601,8 +614,6 @@ table.fold-table tr.fold.open {
     padding: 20px;
   }
   .landing-text {
-    margin-left: 0px;
-    padding-top: 320px;
     width: unset;
   }
   #cam-landing {
@@ -661,9 +672,6 @@ table.fold-table tr.fold.open {
   }
   .landing-text {
     margin-left: unset;
-  }
-  #cam-landing {
-    right: 100px;
   }
   table.fold-table .fold {
     background: #ffb4007a; /*light-yellow*/
