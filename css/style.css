@@ -601,8 +601,9 @@ table.fold-table tr.fold.open {
     padding: 20px;
   }
   .landing-text {
+    margin-left: 0px;
+    padding-top: 320px;
     width: unset;
-    margin-left: unset;
   }
   #cam-landing {
     display: none;
@@ -657,6 +658,12 @@ table.fold-table tr.fold.open {
     margin-top: 0;
     height: 100px;
     width: 100vw;
+  }
+  .landing-text {
+    margin-left: unset;
+  }
+  #cam-landing {
+    right: 100px;
   }
   table.fold-table .fold {
     background: #ffb4007a; /*light-yellow*/
