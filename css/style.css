@@ -646,9 +646,9 @@ table.fold-table tr.fold.open {
     color: #f9eedc; /*cream*/
     box-shadow: 4px 4px 1rem rgba(0, 0, 0, 0.25); /*black*/
     position: fixed;
-    top: 40px;
+    top: 0;
     padding: 40px;
-    margin-top: 40px;
+    margin-top: 0;
     height: 100px;
     width: 100vw;
   }
