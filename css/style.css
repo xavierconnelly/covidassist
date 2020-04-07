@@ -194,7 +194,7 @@ header.active {
 footer {
   padding: ;
   color: #333; /*black*/
-  background: #fdb80e; */yellow*/
+  background: #fdb80e; /*yellow*/
   position: fixed;
   bottom: 0;
   z-index: -1;
@@ -236,7 +236,7 @@ main {
   width: 100vw;
   min-height: 100vh;
   margin: -140px 0 300px 0;
-  box-shadow: 4px 4px 1rem rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 1rem rgba(0, 0, 0, 0.25); /*black*/
   z-index: 1;
 }
 #landing {
@@ -326,7 +326,7 @@ input.search {
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 5px solid #333;
+  border-top: 5px solid #333; /*black*/
   content: "";
   position: relative;
   top: 13px;
@@ -337,14 +337,13 @@ input.search {
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-bottom: 5px solid #333;
+  border-bottom: 5px solid #333; /*black*/
   content: "";
   position: relative;
   top: -10px;
   right: -5px;
 }
-/* The container ///////////////////     RENAME      //////////////////////*/
-.container {
+.container { /* The container ///    RENAME this /////   //////////////////////*/
   position: relative;
   padding-left: 20px;
   /*padding-right: 20px;*/
@@ -400,7 +399,7 @@ input.search {
     background: transparent;
   }
   50% {
-    background: #eee;
+    background: #eee; /*grey*/
   }
   100% {
     background: transparent;
@@ -411,7 +410,7 @@ input.search {
     background: transparent;
   }
   50% {
-    background: #eee;
+    background: #eee; /*grey*/
   }
   100% {
     background: transparent;
@@ -423,12 +422,12 @@ table {
   width: 100%;
   border-spacing: unset;
   text-align: left;
-  color: #333;
+  color: #333; /*black*/
 }
 table th,
 table td {
   padding: 5px 10px;
-  border-top: 1px solid #333; */black*/
+  border-top: 1px solid #333; /*black*/
 }
 table th:first-child,
 table td:first-child {
@@ -462,10 +461,10 @@ table.fold-table > tbody > th:hover {
 /* Fold Table - Fold Segment */
 table.fold-table tr.fold {
   display: none;
-  border-top: 1px solid #333; */black*/
+  border-top: 1px solid #333; /*black*/
 }
 table.fold-table .fold td {
-  border: 0px solid #333; */black*/
+  border: 0px solid #333; /*black*/
 }
 table.fold-table .fold td h4,
 table.fold-table .fold td p,
@@ -477,8 +476,8 @@ table.fold-table .fold td p:first-child,
 table.fold-table .fold td ul:first-child {
   margin-block-start: 0.5em;
 }
-table.fold-table.fold td h4{
-  color: #2c6540; */dark-green*/
+table.fold-table.fold td h4 {
+  color: #2c6540; /*green*/
 }
 table.fold-table .fold td p,
 table.fold-table .fold td h4,
@@ -488,15 +487,15 @@ table.fold-table .fold td ul li {
 }
 table.fold-table .fold td p strong,
 table.fold-table .fold td ul li strong {
-  color: #006bff; */blue*/
+  color: #006bff; /*blue*/
 }
 table.fold-table *::selection {
-  color: #eee; */grey*/
-  background: #2c6540; */green*/
+  color: #eee; /*grey*/
+  background: #2c6540; /*green*/
 }
 table.fold-table tr.view.open {
-  color: #333; */black*/
-  background: #fdB80e; */yellow*/
+  color: #333; /*black*/
+  background: #fdB80e; /*yellow*/
 }
 table.fold-table tr.fold.open {
   display: table-row;
@@ -635,8 +634,8 @@ table.fold-table tr.fold.open {
   table.fold-table > tbody > tr.view:hover,
   table.fold-table > tbody > td:hover,
   table.fold-table > tbody > th:hover {
-    background-color: #006bff; */blue*/
-    color: white; */white*/
+    background-color: #006bff; /*blue*/
+    color: white; /*white*/
     cursor: pointer;
   }
 }
@@ -644,13 +643,13 @@ table.fold-table tr.fold.open {
 //////////////////////////////////////////////////////////////////////////// */
 @media all and (max-width: 600px) {
   table.fold-table .fold {
-    background: #ffb4007a; */light-yellow*/
+    background: #ffb4007a; /*light-yellow*/
   }
   table.fold-table > tbody > tr.view:hover,
   table.fold-table > tbody > td:hover,
   table.fold-table > tbody > th:hover {
-    background-color: #fdb80e; */yellow*/
-    color: #333; */black*/
+    background-color: #fdb80e; /*yellow*/
+    color: #333; /*black*/
     cursor: pointer;
   }
   footer ul {
