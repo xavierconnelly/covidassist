@@ -1,7 +1,7 @@
 // Load FAQ Section
 $(document).ready(function() {
   $('header').load('header.html');
-  $('#faq').load('faq.html');
+  $('#faqs').load('faqs.html');
   $('footer').load('footer.html');
 });
 
@@ -49,9 +49,9 @@ $(document).ready(function(){
 });
 
 // Accordion - Show / Hide Answer Section
-$('#faq').ready(function(){
+$('#faqs').ready(function(){
   $(function () {
-    $("#faq .fold-table tr.view").on("click", function () {
+    $("#faqs .fold-table tr.view").on("click", function () {
       $(this).toggleClass("open").next(".fold").toggleClass("open");
     });
   });
