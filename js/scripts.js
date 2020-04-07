@@ -47,7 +47,7 @@ $(document).ready(function(){
 });
 
 // Accordion - Show / Hide Answer Section
-$('#faq').ready(function(){
+$('#faq').load(function(){
   $(function () {
     $("#faq .fold-table tr.view").on("click", function () {
       $(this).toggleClass("open").next(".fold").toggleClass("open");
