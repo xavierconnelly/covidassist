@@ -79,33 +79,9 @@ em {
 }
 /* Header 
 ////////////////////////////////////////////////////////////////////////////*/
-header span a {
-  font-size: 50px;
+header a {
   float: left;
 }
-header ul {
-  height: 100px;
-  display: flex;
-  align-items: center;
-  margin: 0;
-}
-header ul li {
-  display: inline-block;
-  padding: 0px 5px 0px 5px;
-  white-space: nowrap;
-}
-header ul li:not(:last-child):after {
-  content: "|";
-  padding: 0px 0px 0px 5px;
-}
-.logo {
-  margin-right: auto;
-  display: flex;
-  align-items: center;
-  position: ;
-  left: 0;
-}
-/* NEW */
 #logo{
   background-size: cover;
   display: inline-block;
@@ -117,26 +93,33 @@ header ul li:not(:last-child):after {
   -ms-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
+.logo {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  position: ;
+  left: 0;
+}
+/* Desktop Nav Menu 
+//////////////////////////////////////////////////////////////////////////*/
 .menu {
   display: flex;
   align-items: center;
 }
-/* On Scroll
-////////////////////////////////////////////////////////////////////////////*/
-header.active {
-  color: #333; /*black*/
+.menu a {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  margin: 0;
 }
-.light{
-  background: url("https://covidassist.net.au/assets/CA_Logo.svg");
+.menu a  {
+  display: inline-block;
+  padding: 0px 5px 0px 5px;
+  white-space: nowrap;
 }
-.light-bg {
-  background: #f9eedc; /*cream*/
-}
-.dark {
-  background: url("https://covidassist.net.au/assets/CA_Logo_light.svg");
-}
-.dark-bg {
-  background: #333; /*black*/
+.menu a:not(:last-child):after {
+  content: "|";
+  padding: 0px 0px 0px 5px;
 }
 /* Hamburger 
 //////////////////////////////////////////////////////////////////////////*/
@@ -194,6 +177,23 @@ header.active {
 }
 #mobile-menu ul li {
   padding: 10px 0;
+}
+/* On Scroll
+////////////////////////////////////////////////////////////////////////////*/
+header.active {
+  color: #333; /*black*/
+}
+.light{
+  background: url("https://covidassist.net.au/assets/CA_Logo.svg");
+}
+.light-bg {
+  background: #f9eedc; /*cream*/
+}
+.dark {
+  background: url("https://covidassist.net.au/assets/CA_Logo_light.svg");
+}
+.dark-bg {
+  background: #333; /*black*/
 }
 /* Footer 
 ////////////////////////////////////////////////////////////////////////////*/
@@ -560,8 +560,6 @@ table.fold-table tr.fold.open {
   border: 1px solid inherit;
   margin: 5px;
 }
-
-
 /* Media @ Width Under 1200px
 //////////////////////////////////////////////////////////////////////////// */
 @media all and (max-width: 1200px) {
@@ -684,7 +682,7 @@ table.fold-table tr.fold.open {
   table.fold-table > tbody > td:hover,
   table.fold-table > tbody > th:hover {
     color: #333; /*black*/
-    background-color: #006bff; /*blue*/
+    background-color: #fdB80e; /*yellow*/
     cursor: pointer;
   }
   .dentless {
