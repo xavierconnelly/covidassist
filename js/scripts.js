@@ -5,6 +5,13 @@ $(document).ready(function() {
   $('footer').load('footer.html');
 });
 
+// Accordion - Show / Hide Answer Section
+$(document).ready(function() {
+  $("#faqs .fold-table tr.view").on("click", function () {
+    $(this).toggleClass("open").next(".fold").toggleClass("open");
+  });
+});
+
 // Open Menu on Mobile
 function openMenu(x) {
     x.classList.toggle("change");
@@ -63,15 +70,6 @@ $(document).ready(function(){
       $('.hamburger > div').addClass('light-bg');
       $('.hamburger > div').removeClass('dark-bg');
     }
-  });
-});
-
-// Accordion - Show / Hide Answer Section
-$('#faqs').ready(function(){
-  $(function () {
-    $("#faqs .fold-table tr.view").on("click", function () {
-      $(this).toggleClass("open").next(".fold").toggleClass("open");
-    });
   });
 });
 
