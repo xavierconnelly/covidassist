@@ -9,7 +9,8 @@ html {
   height: 100%;
 }
 :root {
-  background: #fdb80e; /*yellow*/
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(red, yellow); /* Standard syntax (must be last) */
 }
 a {
   text-decoration: none;
