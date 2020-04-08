@@ -205,6 +205,27 @@ header.active {
 .dark-bg {
   background: #333; /*black*/
 }
+/* New 
+////////////////////////////////////////////////////////////////////////////*/
+.main,
+.content--overlap {
+  background-color: yellow;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+  padding-bottom: 0;
+  position: relative;
+  z-index: 2;
+}
+.content {
+  min-height: 100vh;
+}
+.content--overlap {
+  min-height: 150vh;
+}
+.content > *:last-child,
+.content--overlap > *:last-child {
+  margin-bottom: 0;
+  padding-bottom: 300px; /* Match to footer height */
+}
 /* Footer 
 ////////////////////////////////////////////////////////////////////////////*/
 .footer {
@@ -223,7 +244,6 @@ header.active {
   position: static;
   height: 300px; /* Match to footer height */
 }
-
 footer ul {
   list-style-type: none;
   font-size: 35px;
