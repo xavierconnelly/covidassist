@@ -88,8 +88,8 @@ header a {
 #logo{
   background-size: cover;
   display: inline-block;
-  height: 100px;
-  width: 100px;
+  height: 70px;
+  width: 70px;
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
