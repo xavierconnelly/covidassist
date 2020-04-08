@@ -5,13 +5,6 @@ $(document).ready(function() {
   $('footer').load('footer.html');
 });
 
-// Accordion - Show / Hide Answer Section
-$(document).ajaxComplete(function() {
-  $("#faqs .fold-table tr.view").on("click", function () {
-    $(this).toggleClass("open").next(".fold").toggleClass("open");
-  });
-});
-
 // Open Menu on Mobile
 function openMenu(x) {
 x.classList.toggle("change");    
