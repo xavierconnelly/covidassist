@@ -210,7 +210,7 @@ footer {
   background: #fdb80e; /*yellow*/
   position: fixed;
   bottom: 0;
-  z-index: -1;
+  z-index: 1;
   height: 300px;
   width: 100vw;
 }
@@ -246,11 +246,12 @@ footer ul li {
 //////////////////////////////////////////////////////////////////////////// */
 main {
   background: #2c6540; /*green*/
+  box-shadow: 4px 4px 1rem rgba(0, 0, 0, 0.25); /*black*/
   width: 100vw;
   min-height: 100vh;
   margin: -140px 0 300px 0;
-  box-shadow: 4px 4px 1rem rgba(0, 0, 0, 0.25); /*black*/
-  z-index: 1;
+  position: relative;
+  z-index: 2;
 }
 #landing {
   min-height: 100vh;
