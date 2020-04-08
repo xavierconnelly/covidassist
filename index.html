@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="eng" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
   <head>
       <meta charset="utf-8">
@@ -44,25 +44,24 @@
         <img id="cam-landing" src="/assets/Cam_Gov_Landing.png" alt="Chatbot with speech bubble: don't speak government?">
       </div>
       <div id="faqs" class="content content--overlap">
-<!-- AJAX ***FOOTER*** CONTENT GOES HERE -->
+<!-- AJAX ***FAQs*** CONTENT GOES HERE -->
       </div>
     </main>
     <footer class="footer">
 <!-- AJAX ***FOOTER*** CONTENT GOES HERE -->
     </footer>
     <footer class="footer footer-clone">
-      something else
+      Allows the footer to be shown on mobile
     </footer>
     <script type="text/javascript">      
-    // Accordion - Show / Hide Answer Section
-    $('#faqs').ready(function(){
-      $(function () {
-        $("#faqs .fold-table tr.view").on("click", function () {
-          $(this).toggleClass("open").next(".fold").toggleClass("open");
+      // Accordion - Show / Hide Answer Section
+      $('#faqs').ready(function(){
+        $(function () {
+          $("#faqs .fold-table tr.view").on("click", function () {
+            $(this).toggleClass("open").next(".fold").toggleClass("open");
+          });
         });
-      });
-    });  
+      });  
     </script>
-
   </body>
 </html>
