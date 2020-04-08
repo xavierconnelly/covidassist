@@ -1,7 +1,7 @@
 // Load FAQ Section
-//  $('#faqs').load('faqs.html');
 $(document).ready(function() {
   $('header').load('header.html');
+  $('#faqs').load('faqs.html');
   $('footer').load('footer.html');
 });
 
