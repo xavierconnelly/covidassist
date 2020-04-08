@@ -282,6 +282,9 @@ main {
   margin-left: 150px;
   padding-top: 240px;
 }
+.landing-text a {
+  color: #ffb400;
+}
 #cam-landing {
   width: 800px;
   position: absolute;
@@ -302,15 +305,16 @@ main {
 #faqs button {
   background: url(/assets/Arrow_down.png) no-repeat;
   background-position: center;
-  width: 40px;
-  height: 20px;
+  background-size: 40px;
+  width: 70px;
+  height: 30px;
   border: none;
   cursor: pointer;
-  margin: 0 0 0 -16px;
+  margin: 0 0 0 -35px;
   position: absolute;
   display: block;
   left: 50%;
-  top: -40px;
+  top: -60px;
   display: none;
 }
 .filter-selection {
