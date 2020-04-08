@@ -265,10 +265,10 @@ footer ul li {
 //////////////////////////////////////////////////////////////////////////// */
 main {
   background: #265d3a; /*green*/
-  box-shadow: 4px 4px 1rem rgba(0, 0, 0, 0.25); /*black*/
+  box-shadow: 4px 4px 1rem rgba(0, 0, 0, 0.3); /*black*/
   width: 100vw;
   min-height: 100vh;
-  margin: -140px 0 0 0;
+  margin: -160px 0 0 0;
   /*margin bottom Not sure is necessary*/
   position: relative;
   z-index: 2;
