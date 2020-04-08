@@ -1,4 +1,6 @@
-*, *:after, *:before {
+*,
+*:after,
+*:before {
   outline: px solid red;
   margin: 0;
   box-sizing: border-box;
@@ -85,7 +87,7 @@ em {
 header a {
   float: left;
 }
-#logo{
+#logo {
   background-size: cover;
   display: inline-block;
   height: 70px;
