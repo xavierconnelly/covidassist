@@ -205,27 +205,6 @@ header.active {
 .dark-bg {
   background: #333; /*black*/
 }
-/* New 
-////////////////////////////////////////////////////////////////////////////*/
-.main,
-.content--overlap {
-  background-color: yellow;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
-  padding-bottom: 0;
-  position: relative;
-  z-index: 2;
-}
-.content {
-  min-height: 100vh;
-}
-.content--overlap {
-  min-height: 150vh;
-}
-.content > *:last-child,
-.content--overlap > *:last-child {
-  margin-bottom: 0;
-  padding-bottom: 300px; /* Match to footer height */
-}
 /* Footer 
 ////////////////////////////////////////////////////////////////////////////*/
 .footer {
@@ -272,6 +251,26 @@ footer ul li {
   font-style: italic;
   color: #333; /*black*/
 }
+/* New 
+////////////////////////////////////////////////////////////////////////////*/
+.main,
+.content--overlap {
+  /*box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);*/
+  padding-bottom: 0;
+  position: relative;
+  z-index: 2;
+}
+.content {
+  min-height: 100vh;
+}
+.content--overlap {
+  min-height: 150vh;
+}
+.content > *:last-child,
+.content--overlap > *:last-child {
+  margin-bottom: 0;
+  padding-bottom: 300px; /* Match to footer height */
+}
 /* Main Content 
 //////////////////////////////////////////////////////////////////////////// */
 main {
@@ -279,7 +278,7 @@ main {
   box-shadow: 4px 4px 1rem rgba(0, 0, 0, 0.25); /*black*/
   width: 100vw;
   min-height: 100vh;
-  margin: -140px 0 300px 0;
+  /*margin: -140px 0 300px 0;*/
   position: relative;
   z-index: 2;
 }
