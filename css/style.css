@@ -263,13 +263,15 @@ footer ul li {
 .content {
   min-height: 100vh;
 }
+/*
 .content--overlap {
   min-height: 150vh;
 }
+*/
 .content > *:last-child,
 .content--overlap > *:last-child {
   margin-bottom: 0;
-  padding-bottom: 300px; /* Match to footer height */
+ /* padding-bottom: 300px; /* Match to footer height */
 }
 /* Main Content 
 //////////////////////////////////////////////////////////////////////////// */
