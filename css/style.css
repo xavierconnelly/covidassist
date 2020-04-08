@@ -763,7 +763,12 @@ table.fold-table tr.fold.open {
   }
   .landing-text {
     padding-top: 120px;
+    padding-bottom: 50px;
     margin-left: unset;
+  }
+  #faqs button {
+    background-size: 30px;
+    height: 20px;
   }
   footer {
     height: 200px;
