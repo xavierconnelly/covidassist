@@ -7,7 +7,7 @@ $(document).ready(function() {
 
 // Accordion - Show / Hide Answer Section
 $(document).ready(function() {
-  $("#faqs .fold-table tr.view").on("click", function () {
+  $("#accordion .fold-table tr.view").on("click", function () {
     $(this).toggleClass("open").next(".fold").toggleClass("open");
   });
 });
