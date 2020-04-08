@@ -8,6 +8,9 @@
 html {
   height: 100%;
 }
+:root {
+  background: #fdb80e; /*yellow*/
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -204,16 +207,23 @@ header.active {
 }
 /* Footer 
 ////////////////////////////////////////////////////////////////////////////*/
-footer {
-  padding: ;
-  color: #333; /*black*/
-  background: #fdb80e; /*yellow*/
+.footer {
   position: fixed;
-  bottom: 0;
-  z-index: 1;
+  bottom: 0px;
+  left: 0px;
   height: 300px;
-  width: 100vw;
+  width: 100%;
+  z-index: 1;
+  color: #333; /*black */
+  background: #fdb80e; /*yellow */
 }
+.footer-clone {
+  opacity: 1;
+  pointer-events: none;
+  position: static;
+  height: 300px; /* Match to footer height */
+}
+
 footer ul {
   list-style-type: none;
   font-size: 35px;
