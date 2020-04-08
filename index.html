@@ -3,23 +3,19 @@
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
   <head>
+      
+      <title>Covid Assist</title>
+      
       <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1.0">
-      <meta property="og:title" content="Covid Assist">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <meta name="og:description" content="In response to the COVID-19 pandemic, the government has announced sweeping changes to the welfare system. We hope to help you understand what benefits you will and won't receive and what you need to do">
-      <meta property="og:image" content="https:/covidassist.net.au/assets/Cam_Gov_Landing.png">
-      <meta property="og:url" content="https:/covidassist.net.au/">
-      <meta name="twitter:card" content="summary_large_image">
-
-      <meta property="og:site_name" content="Covid Assist">
-      <meta name="twitter:image:alt" content="Alt text for image">
+      <meta name="description" content="A helping hand in trying times. In response to the COVID-19 pandemic, the government has announced sweeping changes to the welfare system. We hope to help you understand what benefits you will and won't receive and what you need to do">
       <meta name="keywords" content="centrelink, covid-19, covid, 19, welfare, help, what, can, get, payments, coronavirus">
       <meta name="author" content="Xavier Connelly">
 
       <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css">
       <link rel="icon" href="/assets/Favicon_100x100_dark.png">
-
+      
       <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
 
@@ -34,17 +30,16 @@
 <!-- AJAX ***HEADER*** CONTENT GOES HERE -->
     </header>
     <main id="main">
-      <div id="landing" class="content content--overlap">
-        <div class="landing-text">
-          <h1>A helpful <br /> hand in trying <br />times</h1>
-          <p>In response to the Coronavirus (COVID-19) Crisis, the Australian Government has announced a number of sweeping changes to our welfare system and safety nets.</p><br>
-          <p>This site is intended to help you navigate the confusing wage subsidy, welfare and social support services provided by Centrelink, and state and territory governments during this time.</p><br>
-          <p>We will be updating these <a href="/#faqs">FAQs</a>, and introducing further tools to help assist you over the coming days.</p>
+      <div id="contact">
+        <div>
+          <img src="assets/Cam_About.png" alt="image of logo: cam the covid assistant">
         </div>
-        <img id="cam-landing" src="/assets/Cam_Gov_Landing.png" alt="Chatbot with speech bubble: don't speak government?">
-      </div>
-      <div id="faqs" class="content content--overlap">
-<!-- AJAX ***FAQs*** CONTENT GOES HERE -->
+        <div>
+          <p>See something missing, or an error in any of the information? Reach out to us and we’ll do our best to address it.</p>
+          <p>Note we are a small team so will unfortunately not be able to answer specific questions related to your situation.</p>
+          <p>EMAIL<br>hello [at] covidassist.net.au</p>
+          <p>FACEBOOK<br><a target="blank" href="https://www.facebook.com/CovidAssistMate">@covidassistmate</a>
+        </div>
       </div>
     </main>
     <footer class="footer">
@@ -53,25 +48,15 @@
     <footer class="footer footer-clone">
       Allows the footer to be shown on mobile
     </footer>
-<!--    
-<script type="text/javascript">      
+    <script type="text/javascript">      
       // Accordion - Show / Hide Answer Section
-      $('#faqs').ready(function(){
+      $(document).ready(function(){
         $(function () {
           $("#faqs .fold-table tr.view").on("click", function () {
             $(this).toggleClass("open").next(".fold").toggleClass("open");
           });
         });
       });  
-    </script>
--->   
-<script type="text/javascript">      
-      // Accordion - Show / Hide Answer Section
-      $('#faqs').ready(function(){
-          $("#faqs .fold-table tr.view").on("click", function () {
-            $(this).toggleClass("open").next(".fold").toggleClass("open");
-          });
-        });
     </script>
   </body>
 </html>
