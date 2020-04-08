@@ -6,7 +6,7 @@ $(document).ready(function() {
 });
 
 // Accordion - Show / Hide Answer Section
-$(document).ready(function() {
+$(document).ajaxComplete(function() {
   $("#faqs .fold-table tr.view").on("click", function () {
     $(this).toggleClass("open").next(".fold").toggleClass("open");
   });
