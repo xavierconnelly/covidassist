@@ -499,6 +499,9 @@ table.fold-table tr.fold {
   display: none;
   border-top: 1px solid #333; /*black*/
 }
+table.fold-table .fold {
+  background: #ffb4007a; /*light-yellow*/
+}
 table.fold-table .fold td {
   border: 0px solid #333; /*black*/
 }
@@ -668,9 +671,6 @@ table.fold-table tr.fold.open {
   table th:nth-child(3),
   table td:nth-child(3) {
     padding: 0.4em 20px;
-  }
-  table.fold-table .fold {
-    background: #ffb4007a; /*light-yellow*/
   }
   table.fold-table tr.view.open {
     color: #333; /*black*/
