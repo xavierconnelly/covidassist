@@ -324,19 +324,35 @@ table td {
   padding: 5px 10px;
   border-top: 1px solid #333; /*black*/
 }
-table th:not(:nth-child(3)),
-table td:not(:nth-child(3)) {
-  width: 150px;
-}
+/* Moving Table In From Left */
 table th:first-child,
 table td:first-child {
   padding-left: 40px;
 }
+/* Question Part */
+table th:not(:nth-child(3)),
+table td:not(:nth-child(3)) {
+  width: 150px;
+}
+/* Updated */
 table th:nth-child(4),
 table td:nth-child(4) {
   padding-right: 40px;
   text-align: right;
   width: 200px;
+}
+/* Extra
+//////////////////////////////////////////////////////////////////////////// */
+.hidden {
+  display: none;
+}
+.table-heading {
+  color: #f9eedc; /*grey*/
+  background: #265d3a; /*green*/
+}
+table.fold-table *::selection {
+  color: #f9eedc; /*grey*/
+  background: #265d3a; /*green*/
 }
 /* Question
 //////////////////////////////////////////////////////////////////////////// */
@@ -351,22 +367,27 @@ table.fold-table > tbody > th {
   background-color: #006bff; /*blue*/
   cursor: pointer;
 }
+.question.open {
+  color: #333; /*black*/
+  background: #fdB80e; /*yellow*/
+}
 /* Answer
 //////////////////////////////////////////////////////////////////////////// */
-table.fold-table tr.fold,
 .answer {
   display: none;
   border-top: 1px solid #333; /*black*/
-}
-.answer {
   background: #ffb4007a; /*light-yellow*/
   padding: 1em 50px 1em 10px;
+  margin-block-start: 0.5em;
 }
-.hidden {
-  display: none;
+.answer.open {
+  display: table-row;
 }
 .answer:nth-child(4) {
   max-width: 600px;
+}
+.answer h4 {
+  color: #265d3a; /*green*/
 }
 .td + ul {
   padding-left: unset;
@@ -376,39 +397,12 @@ table.fold-table tr.fold,
 table.fold-table .fold td {
   border: 0px solid #333; /*black*/
 }
-table.fold-table .fold td h4:first-child
-table.fold-table .fold td p:first-child,
-table.fold-table .fold td ul:first-child {
-  margin-block-start: 0.5em;
-}
-table.fold-table.fold td h4 {
-  color: #265d3a; /*green*/
-}
+
 table.fold-table .fold td p,
 table.fold-table .fold td h4,
 table.fold-table .fold td ol li,
 table.fold-table .fold td ul li {
   padding-bottom: 1em;
-}
-table.fold-table .fold td p strong,
-table.fold-table .fold td ul li strong {
-  color: #006bff; /*blue*/
-}
-table.fold-table *::selection {
-  color: #f9eedc; /*grey*/
-  background: #265d3a; /*green*/
-}
-.question.open {
-  color: #333; /*black*/
-  background: #fdB80e; /*yellow*/
-}
-table.fold-table tr.fold.open {
-  display: table-row;
-}
-/*  */
-.table-heading {
-  color: #f9eedc; /*grey*/
-  background: #265d3a; /*green*/
 }
 /* About +
    Disclaimer +
