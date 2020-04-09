@@ -382,7 +382,7 @@ table td:nth-child(4) {
   border: 0px solid #333; /*black*/
 }
 .answer td div {
-  max-width: 600px;
+  max-width: 500px;
 }
 .answer h4 {
   color: #265d3a; /*green*/
