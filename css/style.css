@@ -533,6 +533,10 @@ table td:nth-child(4) {
     padding: 10px;
     text-align: justify;
   }
+.table-heading th:not(:nth-child(1)),
+.table-heading td:not(:nth-child(1)) {
+    display: none;
+}
 .question th:not(:nth-child(3)),
 .question td:not(:nth-child(3)),
 .answer th:not(:nth-child(3)),
