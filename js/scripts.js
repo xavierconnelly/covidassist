@@ -1,9 +1,10 @@
-// Load FAQ Section
+// Load Content with AJAX
 $(document).ready(function() {
   $('header').load('header.html');
-  $('#faqs').load('faqs.html');
   $('footer').load('footer.html');
 });
+//  $('#faqs').load('faqs.html');
+
 
 // Open Menu on Mobile
 function openMenu(x) {
