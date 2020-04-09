@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+      
+      <title>Covid Assist</title>
+      
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <meta name="description" content="A helping hand in trying times. In response to the COVID-19 pandemic, the government has announced sweeping changes to the welfare system. We hope to help you understand what benefits you will and won't receive and what you need to do">
+      <meta name="keywords" content="centrelink, covid-19, covid, 19, welfare, help, what, can, get, payments, coronavirus">
+      <meta name="author" content="Xavier Connelly">
+
+      <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css">
+      <link rel="icon" href="/assets/Favicon_100x100_dark.png">
+      
+      <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+      <script type="text/javascript" src="/js/scripts.js"></script>
+      <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+
+  </head>
+
+  <body>
+    <header>
+<!-- AJAX ***HEADER*** CONTENT GOES HERE -->
+    </header>
+    <main id="main">
+      <div id="404" class="content content--overlap">
+        Opps, nothing here.
+      </div>
+    </main>
+    <footer class="footer">
+<!-- AJAX ***FOOTER*** CONTENT GOES HERE -->
+    </footer>
+    <footer class="footer footer-clone">
+      Allows the footer to be shown on mobile
+    </footer>
+    <script type="text/javascript">      
+      // Accordion - Show / Hide Answer Section
+      $('#faqs').ready(function(){
+        $(function () {
+          $("#faqs .fold-table tr.view").on("click", function () {
+            $(this).toggleClass("open").next(".fold").toggleClass("open");
+          });
+        });
+      });  
+    </script>
+  </body>
+</html>
