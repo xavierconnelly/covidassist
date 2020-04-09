@@ -56,8 +56,8 @@
     <script type="text/javascript">
     // Accordion - Show / Hide Answer Section
     $(document).ajaxComplete(function() {
-      $("#faqs .fold-table tr.view").on("click", function () {
-        $(this).toggleClass("open").next(".fold").toggleClass("open");
+      $(".question").on("click", function () {
+        $(this).toggleClass("open").next(".answer").toggleClass("open");
       });
     });
     </script>
