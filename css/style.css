@@ -544,6 +544,11 @@ table.fold-table tr.fold.open {
   color: #f9eedc; /*grey*/
   background: #265d3a; /*green*/
 }
+.table-heading:hover {
+  color: #f9eedc;
+  background: #265d3a;
+  cursor: unset;
+}
 /* Hidding Answers - is stopping search filter though | change to height? */
 .answer {
   padding: 1em 50px 1em 10px;
