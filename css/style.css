@@ -243,25 +243,6 @@ footer ul li {
   font-style: italic;
   color: #333; /*black*/
 }
-/* New 
-////////////////////////////////////////////////////////////////////////////*/
-.main,
-.content--overlap {
-  /*box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);*/
-  padding-bottom: 0;
-  position: relative;
-  z-index: 2;
-}
-/*
-.content--overlap {
-  min-height: 150vh;
-}
-*/
-.content > *:last-child,
-.content--overlap > *:last-child {
-  margin-bottom: 0;
- /* padding-bottom: 300px; /* Match to footer height */
-}
 /* Main Content 
 //////////////////////////////////////////////////////////////////////////// */
 main {
@@ -270,10 +251,23 @@ main {
   width: 100vw;
   min-height: 100vh;
   margin: -120px 0 0 0;
-  /*margin bottom Not sure is necessary*/
   position: relative;
   z-index: 2;
 }
+/* To Show Footer
+////////////////////////////////////////////////////////////////////////////*/
+.main,
+.content--overlap {
+  padding-bottom: 0;
+  position: relative;
+  z-index: 2;
+}
+.content > *:last-child,
+.content--overlap > *:last-child {
+  margin-bottom: 0;
+}
+/* Home Page
+//////////////////////////////////////////////////////////////////////////// */
 #landing {
   min-height: 100vh;
   padding: 20px 20px 70px 50px;
@@ -344,37 +338,43 @@ table td:nth-child(4) {
   text-align: right;
   width: 200px;
 }
-/* Fold Table - View Segment */
+/* Question
+//////////////////////////////////////////////////////////////////////////// */
 table.fold-table > tbody > tr.view,
 table.fold-table > tbody > td,
 table.fold-table > tbody > th {
   cursor: pointer;
   vertical-align: top;
 }
-/*
-table.fold-table > tbody > tr.view:hover,
-table.fold-table > tbody > td:hover,
-table.fold-table > tbody > th:hover {
-  color: white; /*white
-  background-color: #006bff; /*blue
+.question:hover {
+  color: white; /*white*/
+  background-color: #006bff; /*blue*/
   cursor: pointer;
 }
-*/
-/* Fold Table - Fold Segment */
-table.fold-table tr.fold {
+/* Answer
+//////////////////////////////////////////////////////////////////////////// */
+table.fold-table tr.fold,
+.answer {
   display: none;
   border-top: 1px solid #333; /*black*/
 }
-table.fold-table .fold {
+.answer {
   background: #ffb4007a; /*light-yellow*/
+  padding: 1em 50px 1em 10px;
 }
+.hidden {
+  display: none;
+}
+.answer:nth-child(4) {
+  max-width: 600px;
+}
+.td + ul {
+  padding-left: unset;
+}
+/* Move + clean up
+//////////////////////////////////////////////////////////////////////////// */
 table.fold-table .fold td {
   border: 0px solid #333; /*black*/
-}
-table.fold-table .fold td h4,
-table.fold-table .fold td p,
-table.fold-table .fold td ul {
-  max-width: 600px;
 }
 table.fold-table .fold td h4:first-child
 table.fold-table .fold td p:first-child,
@@ -398,7 +398,7 @@ table.fold-table *::selection {
   color: #f9eedc; /*grey*/
   background: #265d3a; /*green*/
 }
-table.fold-table tr.view.open {
+.question.open {
   color: #333; /*black*/
   background: #fdB80e; /*yellow*/
 }
@@ -409,22 +409,6 @@ table.fold-table tr.fold.open {
 .table-heading {
   color: #f9eedc; /*grey*/
   background: #265d3a; /*green*/
-}
-.question:hover {
-  color: white; /*white*/
-  background-color: #006bff; /*blue*/
-  cursor: pointer;
-}
-
-/* Hidding Answers - is stopping search filter though | change to height? */
-.answer {
-  padding: 1em 50px 1em 10px;
-}
-.hidden {
-  display: none;
-}
-.td + ul {
-  padding-left: unset;
 }
 /* About +
    Disclaimer +
@@ -571,13 +555,11 @@ table.fold-table tr.fold.open {
   table td:nth-child(3) {
     padding: 0.4em 20px;
   }
-  table.fold-table tr.view.open {
+  .question.open {
     color: #333; /*black*/
     background: #fdB80e; /*yellow*/
   }
-  table.fold-table > tbody > tr.view:hover,
-  table.fold-table > tbody > td:hover,
-  table.fold-table > tbody > th:hover {
+  .question:hover {
     color: #333; /*black*/
     background-color: #fdB80e; /*yellow*/
     cursor: pointer;
@@ -598,12 +580,6 @@ table.fold-table tr.fold.open {
   #about p, #disclaimer h4, #contact h4, #disclaimer div p, #contact div p {
     padding: 0 0 1em 0;
     width: unset;
-  }
-  table.fold-table > tbody > tr.view:hover,
-  table.fold-table > tbody > td:hover,
-  table.fold-table > tbody > th:hover {
-    background-color: #fdB80e; /*yellow*/
-    cursor: pointer;
   }
 }
 /* Media @ Width Under 600px
