@@ -9,3 +9,6 @@ RewriteCond %{REQUEST_FILENAME}\.html -f
 
 # Show the actual page with the .html extension
 RewriteRule ^(.*)$ $1.html [NC,L]
+
+# Send to 404 page
+ErrorDocuument 404  /404-page.html
