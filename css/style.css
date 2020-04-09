@@ -44,12 +44,12 @@ h1 {
   line-height: 1.2em;
 }
 header {
+  position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 20px;
   padding: 40px;
   margin-top: 20px;
   height: 100px;
-  position: sticky;
   display: -webkit-flex;
   display: flex;
   align-items: center;
@@ -538,6 +538,11 @@ table.fold-table tr.view.open {
 }
 table.fold-table tr.fold.open {
   display: table-row;
+}
+/*  */
+.table-heading {
+  color: #f9eedc; /*grey*/
+  background: #265d3a; /*green*/
 }
 /* Hidding Answers - is stopping search filter though | change to height? */
 .answer {
