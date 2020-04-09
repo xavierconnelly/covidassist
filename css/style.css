@@ -314,15 +314,19 @@ main {
 /* Table 
 //////////////////////////////////////////////////////////////////////////// */
 table {
-  color: #333; /*black*/
   width: 100%;
   border-spacing: unset;
   text-align: left;
+}
+table *::selection {
+  color: #f9eedc; /*grey*/
+  background: #265d3a; /*green*/
 }
 table th,
 table td {
   padding: 5px 10px;
   border-top: 1px solid #333; /*black*/
+  vertical-align: top;
 }
 /* Moving Table In From Left */
 table th:first-child,
@@ -334,9 +338,8 @@ table th:not(:nth-child(3)),
 table td:not(:nth-child(3)) {
   width: 150px;
 }
-/* Updated */
-table th:nth-child(4),
-table td:nth-child(4) {
+/* Updated Part */
+table tr:nth-child(4) {
   padding-right: 40px;
   text-align: right;
   width: 200px;
@@ -350,18 +353,8 @@ table td:nth-child(4) {
   color: #f9eedc; /*grey*/
   background: #265d3a; /*green*/
 }
-table.fold-table *::selection {
-  color: #f9eedc; /*grey*/
-  background: #265d3a; /*green*/
-}
 /* Question
 //////////////////////////////////////////////////////////////////////////// */
-table.fold-table > tbody > tr.view,
-table.fold-table > tbody > td,
-table.fold-table > tbody > th {
-  cursor: pointer;
-  vertical-align: top;
-}
 .question:hover {
   color: white; /*white*/
   background-color: #006bff; /*blue*/
