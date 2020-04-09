@@ -492,7 +492,7 @@
     </footer>
     <script type="text/javascript">
     // Accordion - Show / Hide Answer Section
-    $(document).ajaxComplete(function() {
+    $(document).ready(function() {
       $(".question").on("click", function () {
         $(this).toggleClass("open").next(".answer").toggleClass("open");
       });
