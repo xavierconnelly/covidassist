@@ -11,4 +11,4 @@ RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
 
 # Send to 404 page
-ErrorDocument 404  /404-page.html
+ErrorDocument 404 /404-page.html
