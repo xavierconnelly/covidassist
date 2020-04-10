@@ -525,22 +525,25 @@ table td:nth-child(4) {
   #cam-landing {
     display: none;
   }
-  .more-box {
+/*  .more-box {
     max-width: 40%;
   }
   .more-box h4,
   .more-box p {
     padding: 10px;
     text-align: justify;
-  }
-.table-heading th:not(:nth-child(1)),
-.table-heading td:not(:nth-child(1)) {
+  }*/
+  thead {
     display: none;
-}
-.question th:not(:nth-child(3)),
-.question td:not(:nth-child(3)),
-.answer th:not(:nth-child(3)),
-.answer td:not(:nth-child(3)) {
+  }
+  .table-heading th:not(:nth-child(1)),
+  .table-heading td:not(:nth-child(1)) {
+    display: none;
+  }
+  .question th:not(:nth-child(3)),
+  .question td:not(:nth-child(3)),
+  .answer th:not(:nth-child(3)),
+  .answer td:not(:nth-child(3)) {
     display: none;
   }
   table th:nth-child(3),
