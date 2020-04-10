@@ -452,11 +452,14 @@ table td:nth-child(4) {
 /* Media @ Width Under 1600px
 //////////////////////////////////////////////////////////////////////////// */
 @media all and (max-width: 1600px) {
-    #cam-landing {
+  #landing-text {
+    margin-left: 100px;
+  }
+  #cam-landing {
     width: 700px;
     position: absolute;
-    right: 200px;
-    top: 1660px;
+    right: 100px;
+    top: 166px;
   }
 }
 /* Media @ Width Under 1600px
