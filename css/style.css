@@ -187,13 +187,13 @@ header.active {
   color: #333; /*black*/
 }
 .light{
-  background: url("./assets/CA_Logo.svg");
+  background: url("../assets/CA_Logo.svg");
 }
 .light-bg {
   background: #f9eedc; /*cream*/
 }
 .dark {
-  background: url("./assets/CA_Logo_light.svg");
+  background: url("../assets/CA_Logo_light.svg");
 }
 .dark-bg {
   background: #333; /*black*/
