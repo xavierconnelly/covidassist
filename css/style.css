@@ -187,13 +187,13 @@ header.active {
   color: #333; /*black*/
 }
 .light{
-  background: url("/assets/CA_Logo.svg");
+  background: url("./assets/CA_Logo.svg");
 }
 .light-bg {
   background: #f9eedc; /*cream*/
 }
 .dark {
-  background: url("/assets/CA_Logo_light.svg");
+  background: url("./assets/CA_Logo_light.svg");
 }
 .dark-bg {
   background: #333; /*black*/
@@ -231,6 +231,9 @@ footer ul li {
   bottom: 0;
   right: 0;
   padding: 0 40px 40px 0;
+}
+#sharing div {
+  padding: 0 10px;
 }
 #sharing a {
   text-decoration: none;
@@ -299,7 +302,7 @@ main {
   min-height: 100vh;
 }
 #faqs button {
-  background: url(/assets/Arrow_down.png) no-repeat;
+  background: url(./assets/Arrow_down.png) no-repeat;
   background-position: center;
   background-size: 40px;
   width: 70px;
@@ -421,7 +424,10 @@ table td:nth-child(4) {
   float: right;
   padding-right: 50px;
 }
-#about p,
+#about p {
+  padding: 0px 10px 1em 0;
+  width: 400px;
+}
 #disclaimer h4,
 #disclaimer div p,
 #contact h4,
@@ -435,7 +441,7 @@ table td:nth-child(4) {
   display: block;
 }
 .facebook {
-  background: url("/assets/fb_icon_cream.svg");
+  background: url("./assets/fb_icon_cream.svg");
 }
 /* More Help
 //////////////////////////////////////////////////////////////////////////// */
